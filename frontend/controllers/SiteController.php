@@ -7,7 +7,9 @@ use common\models\Address;
 use common\models\Advantages;
 use common\models\AdvantagesIcons;
 use common\models\Application;
+use common\models\Catalog;
 use common\models\Gallery;
+use common\models\Posts;
 use common\models\Settings;
 use common\models\TopBanner;
 use frontend\models\ResendVerificationEmailForm;
@@ -87,11 +89,13 @@ class SiteController extends Controller
         $main_banner = TopBanner::find()->one();
         $address = Address::find()->one();
         $about = About::find()->limit(2)->all();
-        $advantages = Advantages::find()->one();
+        $advantages = Advantages::find()->all();
         $ad_icons = AdvantagesIcons::find()->all();
 
-        $gallery = Gallery::find()->orderBy(['id' => SORT_DESC])->limit(9)->all();
-        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery'));
+        $gallery = Posts::find()->orderBy(['id' => SORT_DESC])->limit(9)->all();
+        $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
+
+        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery','catalog'));
     }
 
     /**
