@@ -8,6 +8,7 @@ use common\models\Advantages;
 use common\models\AdvantagesIcons;
 use common\models\Application;
 use common\models\Catalog;
+use common\models\Element;
 use common\models\Gallery;
 use common\models\Posts;
 use common\models\Settings;
@@ -94,8 +95,9 @@ class SiteController extends Controller
 
         $gallery = Posts::find()->orderBy(['id' => SORT_DESC])->limit(9)->all();
         $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
+        $element = Element::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
 
-        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery','catalog'));
+        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery','catalog','element'));
     }
 
     /**
@@ -142,6 +144,12 @@ class SiteController extends Controller
     {
 
         return $this->render('contact');
+    }
+
+    public function actionLabaratory()
+    {
+
+        return $this->render('labaratory');
     }
 
     /**

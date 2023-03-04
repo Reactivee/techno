@@ -2,21 +2,39 @@
 /** @var yii\web\View $this */
 /** @var \common\models\Process $process */
 $this->title = "Галерея";
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
+<div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2>SEO &amp; Digital Marketing Agency</h2>
+                                </div>
+                                <div class="col-lg-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section>
     <div class="container">
-        <div class="mt-4 text-center text-md-left">
-            <h2 class="section_title my-3 color_black">
-                <?= $factory['title_' . \Yii::$app->language] ?>
-
-            </h2>
-            <h5>  <?= $factory['text_' . \Yii::$app->language] ?></h5>
+        <div class="main_title">
+            <span>ПРОИЗВОДСТВО</span>
         </div>
-
 
         <div class="tab-content mt-4" id="myTabContent">
 

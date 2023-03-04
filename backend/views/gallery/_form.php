@@ -64,6 +64,7 @@ foreach ($prod_img as $image) {
                             console.log(uploadedImages)
                         }'),
             'filedeleted' => new JsExpression('function(event, key) {
+                   
                             deletedImages.push(key);
                             deleted.value = JSON.stringify(deletedImages);
                         }'),

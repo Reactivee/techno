@@ -89,28 +89,7 @@ class CategoryController extends Controller
         ]);
     }
 
-    /**
-     * Displays Kuman Jinsi.
-     *
-     * @return mixed
-     */
-    public function actionKumas($limit = null)
-    {
 
-        $limit = $limit ? $limit : 9;
-        $category = Category::find()
-            ->where(['type' => 'kuman'])
-            ->one();
-
-        $materials = Materials::find()->limit($limit)->all();
-
-        return $this->render('type_kuman', [
-            'category' => $category,
-            'materials' => $materials,
-            'limit'=>$limit
-        ]);
-
-    }
 
     /**
      * Displays all category .
@@ -151,7 +130,7 @@ class CategoryController extends Controller
     }
 
 
-    public function actionProduct($slug)
+    public function actionProduct()
     {
         $cats = Category::findOne(['slug' => $slug]);
         $sorts = Sorts::find()->where(['status' => 1])->all();

@@ -61,11 +61,11 @@ class MediaController extends Controller
 
     }
 
-    public function actionNews($id)
+    public function actionNews($id = null)
     {
-        $news = Posts::findOne($id);
-        if (!$news)
-            throw new NotFoundHttpException();
+//        $news = Posts::findOne($id);
+//        if (!$news)
+//            throw new NotFoundHttpException();
 
         return $this->render('news', [
             'news' => $news,

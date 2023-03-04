@@ -19,13 +19,15 @@
 	$('.loop').owlCarousel({
       center: true,
       items:2,
-      loop:true,
-      nav: true,
+      loop:false,
+      nav: false,
       margin:30,
       responsive:{
           
           992:{
-              items:4
+              items:5,
+              loop:true,
+              nav: false
           }
       }
   });

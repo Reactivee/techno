@@ -2,20 +2,18 @@
 
 namespace backend\controllers;
 
-use common\models\About;
-use common\models\AboutSearch;
-use common\models\Gallery;
+use common\models\Team;
+use common\models\TeamSearch;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\Response;
 use yii\web\UploadedFile;
 
 /**
- * AboutController implements the CRUD actions for About model.
+ * TeamController implements the CRUD actions for Team model.
  */
-class AboutController extends Controller
+class TeamController extends Controller
 {
     /**
      * @inheritDoc
@@ -36,13 +34,13 @@ class AboutController extends Controller
     }
 
     /**
-     * Lists all About models.
+     * Lists all Team models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new AboutSearch();
+        $searchModel = new TeamSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -52,7 +50,7 @@ class AboutController extends Controller
     }
 
     /**
-     * Displays a single About model.
+     * Displays a single Team model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -65,37 +63,40 @@ class AboutController extends Controller
     }
 
     /**
-     * Creates a new About model.
+     * Creates a new Team model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new About();
+        $model = new Team();
 
         if ($this->request->isPost) {
-
             if ($model->load($this->request->post())) {
-                $img = $model->img = UploadedFile::getInstance($model, 'img');
-
-                if ($img) {
-                    $folder = Yii::getAlias('@frontend') . '/web/uploads/about/';
-                    if (!file_exists($folder)) {
-                        mkdir($folder, 0777, true);
+                if ($model->load($this->request->post())) {
+                    $img = $model->empty = UploadedFile::getInstance($model, 'empty');
+                    if ($img) {
+                        $folder = Yii::getAlias('@frontend') . '/web/uploads/team/';
+                        if (!file_exists($folder)) {
+                            mkdir($folder, 0777, true);
+                        }
+                        $generateName = Yii::$app->security->generateRandomString();
+                        $path = $folder . $generateName . '.' . $img->extension;
+                        $img->saveAs($path);
+                        $path = '/frontend/web/uploads/team/' . $generateName . '.' . $img->extension;
+                        $model->empty = $path;
                     }
-                    $generateName = Yii::$app->security->generateRandomString();
-                    $path = $folder . $generateName . '.' . $img->extension;
-                    $img->saveAs($path);
-                    $path = '/frontend/web/uploads/about/' . $generateName . '.' . $img->extension;
-                    $model->img = $path;
+
+                    if ($model['oldAttributes']['empty'] && !$img) {
+                        $model->empty = $model['oldAttributes']['empty'];
+                    }
+
+                    $model->save();
+                    \Yii::$app->session->addFlash('success', 'success');
+                    return $this->redirect(['view', 'id' => $model->id]);
                 }
-                $model->save();
-                Yii::$app->session->addFlash('success', 'success');
                 return $this->redirect(['view', 'id' => $model->id]);
             }
-
-            return $this->redirect(['view', 'id' => $model->id]);
-
         } else {
             $model->loadDefaultValues();
         }
@@ -106,7 +107,7 @@ class AboutController extends Controller
     }
 
     /**
-     * Updates an existing About model.
+     * Updates an existing Team model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -118,26 +119,27 @@ class AboutController extends Controller
 
         if ($this->request->isPost && $model->load($this->request->post())) {
 
-            $img = UploadedFile::getInstance($model, 'img');
-
+            $img = $model->empty = UploadedFile::getInstance($model, 'empty');
             if ($img) {
-
-                $folder = Yii::getAlias('@frontend') . '/web/uploads/about/';
+                $folder = Yii::getAlias('@frontend') . '/web/uploads/team/';
                 if (!file_exists($folder)) {
                     mkdir($folder, 0777, true);
                 }
                 $generateName = Yii::$app->security->generateRandomString();
                 $path = $folder . $generateName . '.' . $img->extension;
                 $img->saveAs($path);
-                $path = '/frontend/web/uploads/about/' . $generateName . '.' . $img->extension;
-                $model->img = $path;
+                $path = '/uploads/team/' . $generateName . '.' . $img->extension;
+                $model->empty = $path;
             }
 
-            if ($model['oldAttributes']['img'] && !$img) {
-                $model->img = $model['oldAttributes']['img'];
+            if ($model['oldAttributes']['empty'] && !$img) {
+                $model->empty = $model['oldAttributes']['empty'];
             }
-            Yii::$app->session->addFlash('success', 'success');
+
             $model->save();
+            \Yii::$app->session->addFlash('success', 'success');
+            return $this->redirect(['view', 'id' => $model->id]);
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -147,7 +149,7 @@ class AboutController extends Controller
     }
 
     /**
-     * Deletes an existing About model.
+     * Deletes an existing Team model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -161,34 +163,18 @@ class AboutController extends Controller
     }
 
     /**
-     * Finds the About model based on its primary key value.
+     * Finds the Team model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return About the loaded model
+     * @return Team the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = About::findOne(['id' => $id])) !== null) {
+        if (($model = Team::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
-
-    public function actionDeleteImage($id)
-    {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-
-        if ($this->request->post()) {
-
-            $imgs = About::find()
-                ->where(['id' => $id])
-                ->one();
-            if ($imgs) {
-                $imgs->img = null;
-                $imgs->save();
-            }
-        }
     }
 }

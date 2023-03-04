@@ -111,64 +111,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                                     ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
                                     ["label" => "Site Settings", "url" => ["/settings"], "icon" => "gavel"],
-//                                    [
-//                                        "label" => "Widgets",
-//                                        "icon" => "th",
-//                                        "url" => "#",
-//                                        "items" => [
-//                                            ["label" => "Menu", "url" => ["site/menu"]],
-//                                            ["label" => "Panel", "url" => ["site/panel"]],
-//                                        ],
-//                                    ],
-//                                    [
-//                                        "label" => "Badges",
-//                                        "url" => "#",
-//                                        "icon" => "table",
-//                                        "items" => [
-//                                            [
-//                                                "label" => "Default",
-//                                                "url" => "#",
-//                                                "badge" => "123",
-//                                            ],
-//                                            [
-//                                                "label" => "Success",
-//                                                "url" => "#",
-//                                                "badge" => "new",
-//                                                "badgeOptions" => ["class" => "label-success"],
-//                                            ],
-//                                            [
-//                                                "label" => "Danger",
-//                                                "url" => "#",
-//                                                "badge" => "!",
-//                                                "badgeOptions" => ["class" => "label-danger"],
-//                                            ],
-//                                        ],
-//                                    ],
-//                                    [
-//                                        "label" => "Multilevel",
-//                                        "url" => "#",
-//                                        "icon" => "table",
-//                                        "items" => [
-//                                            [
-//                                                "label" => "Second level 1",
-//                                                "url" => "#",
-//                                            ],
-//                                            [
-//                                                "label" => "Second level 2",
-//                                                "url" => "#",
-//                                                "items" => [
-//                                                    [
-//                                                        "label" => "Third level 1",
-//                                                        "url" => "#",
-//                                                    ],
-//                                                    [
-//                                                        "label" => "Third level 2",
-//                                                        "url" => "#",
-//                                                    ],
-//                                                ],
-//                                            ],
-//                                        ],
-//                                    ],
                                 ],
                             ]
                         )

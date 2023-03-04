@@ -7,8 +7,11 @@ use common\models\AboutIn;
 use common\models\AboutSet;
 use common\models\Address;
 use common\models\Advantages;
+use common\models\AdvantagesIcons;
 use common\models\Process;
 use common\models\ProcessImages;
+use common\models\Team;
+use common\models\Worth;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -86,11 +89,14 @@ class AboutController extends Controller
      *
      * @return mixed
      */
-    public function actionFactory()
+    public function actionStory()
     {
         $process = Process::find()->all();
-        return $this->render('factory', [
-            'process' => $process
+//        dd($process);
+        $ad_icons = AdvantagesIcons::find()->all();
+        return $this->render('story', [
+            'process' => $process,
+            'ad_icons' => $ad_icons
         ]);
     }
 
@@ -99,16 +105,32 @@ class AboutController extends Controller
      *
      * @return mixed
      */
-    public function actionGallery($id)
+    public function actionFactory()
     {
 
-        $gallery = ProcessImages::find()->where(['process_id' => $id])->all();
-        $factory = Process::findOne($id);
+        $gallery = ProcessImages::find()->all();
+//        $factory = Process::findOne($id);
         return $this->render('gallery', [
             'process' => $gallery,
-            'factory' => $factory
+//            'factory' => $factory
         ]);
     }
 
+    public function actionWorth()
+    {
+
+        $team = Team::find()->all();
+        $worth = Worth::find()->all();
+
+        return $this->render('worth', [
+            'team' => $team,
+            'worth' => $worth
+        ]);
+    }
+
+    public function actionMission()
+    {
+        return $this->render('mission');
+    }
 
 }

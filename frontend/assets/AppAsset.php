@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
         'css/templatemo-seo-dream.css',
         'css/animated.css',
         'css/owl.css',
+//        'css/style.css',
     ];
     public $js = [
         'https://unpkg.com/aos@2.3.1/dist/aos.js',

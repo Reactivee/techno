@@ -57,25 +57,56 @@ $settings = Settings::find()->one();
                             <img class="w-100" src="/uploads/logo/Group_22.png" alt="asd">
                         </a>
                     </div>
-                    <div class="col-9">
+                    <ul class="col-9">
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#features">Features</a></li>
-                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                            <li class="scroll-to-section"><a href="#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                            <li class="scroll-to-section position-relative"><a href="#top" class="">О Нас </a>
+                                <div class="nav_sub bg_techno  flex-column">
+                                    <a href='/about/story'>История и планы развития</a>
+                                    <a href="/about">О Компании</a>
+                                    <a href="/about/worth">Ценности предприятия </a>
+                                    <a href="/about/mission">Миссия </a>
+<!--                                    <a href="#">Наши цели </a>-->
+<!--                                    <a href="#">ПРЕИМУЩЕСТВА ПРЕДПРИЯТИЯ</a>-->
+                                    <a href="/about/factory">ПРОИЗВОДСТВО</a>
+                                </div>
+                            </li>
+                            <li class="scroll-to-section position-relative"><a href="#features">ПРОДУКЦИЯ</a>
+                                <div class="nav_sub bg_techno  flex-column">
+                                    <a href='#'>Наши услуги</a>
+                                    <a href='/category/all-category'>ПРОДУКЦИЯ</a>
+                                </div>
+                            </li>
+                            <li class="scroll-to-section position-relative"><a href="#about">Партнеры</a>
+                                <div class="nav_sub bg_techno  flex-column">
+                                    <a href='/partner'>Поставщики</a>
+                                    <a href="/partner/client">Клиенты</a>
+                                </div>
+                            </li>
+                            <li class="scroll-to-section"><a href="#services">Информация для партнеров</a></li>
+
+                            <!--                            <li class="scroll-to-section"><a href="#portfolio">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ ОТДЕЛ КОНТРОЛЯ-->
+                            <!--                                    КАЧЕСТВА</a></li>-->
+                            <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
+
+                                <div class="nav_sub bg_techno  flex-column">
+                                    <a href='/media'>Фотогалерея</a>
+                                    <a href="/media">Видео галерея</a>
+                                </div>
+
+                            </li>
+                            <li class="scroll-to-section"><a href="/contact">Контакты</a></li>
+                            <li class="scroll-to-section"><a href="/vacancy">Вакансии</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                    </div>
-                    <!-- ***** Menu End ***** -->
-                </nav>
             </div>
+            <!-- ***** Menu End ***** -->
+            </nav>
         </div>
+    </div>
     </div>
 </header>
 <!-- ***** Header Area End ***** -->
