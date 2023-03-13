@@ -103,6 +103,7 @@ class ProductController extends Controller
         if ($this->request->isPost && $model->load($this->request->post())) {
 
             if ($model->save()) {
+
                 $model->saveImages();
                 Yii::$app->session->addFlash('success', 'Success');
             }

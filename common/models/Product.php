@@ -119,9 +119,11 @@ class Product extends \yii\db\ActiveRecord
     public function saveImages()
     {
         $images = $this['uploaded_images'];
-        $re_images = json_decode($images);
-        if ($images) {
 
+        $re_images = json_decode($images);
+//        dd($re_images);
+
+        if ($images) {
             foreach ($re_images as $file) {
 
                 $pr_iMagEs = new ProductImages();
@@ -130,6 +132,8 @@ class Product extends \yii\db\ActiveRecord
                 $pr_iMagEs->name = $file->generate_name;
                 $pr_iMagEs->save();
 
+                $this->image = $file->path;
+                $this->save();
             }
         }
     }
@@ -147,6 +151,12 @@ class Product extends \yii\db\ActiveRecord
     public function getOption()
     {
         return $this->hasMany(OptionsProduct::className(), ['product_id' => 'id']);
+    }
+
+    public function getElement()
+    {
+        return $this->hasMany(Element::className(), ['product_id' => 'id']);
+
     }
 
 }

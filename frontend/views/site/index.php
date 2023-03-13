@@ -2,7 +2,6 @@
 /** @var yii\web\View $this */
 /** @var \common\models\Advantages $advantages */
 $this->title = 'My Yii Application';
-
 //\Yii::$app->language = 'ru-RU';
 ?>
 
@@ -45,30 +44,24 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
 <div id="about" class="about-us section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="advan-content">
                     <div class="card purple">
-                        <h2 class="text-center mb-3 font-weight-bold">Наши преимущества</h2>
+                        <h4 class="text-center mb-3 font-weight-bold">Наши преимущества</h4>
                         <ul class="p-0 m-0 advan-content_items">
-                            <li>
-                                Аккредитованная испытательная лаборатория
-                            </li>
-                            <li>
-                                Аккредитованная испытательная лаборатория
-                            </li>
-                            <li>
-                                Аккредитованная испытательная лаборатория
-                            </li>
-                            <li>
-                                Аккредитованная испытательная лаборатория
-                            </li>
+                            <? foreach ($advantages as $item) { ?>
+                                <li>
+                                    <?= $item->title_ru ?>
+                                </li>
+                            <? } ?>
+
                         </ul>
 
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-8 mb-5">
+            <div class="col-lg-9 mb-5">
                 <div class="skills-content">
                     <div class="section-heading wow bounceIn animated pl-3" data-wow-duration="1s" data-wow-delay="0.2s"
                          style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
@@ -77,7 +70,7 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                <div class="progress" data-percentage="80">
+                                <div class="progress" data-percentage="100">
                     <span class="progress-left">
                       <span class="progress-bar"></span>
                     </span>
@@ -86,8 +79,8 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            80%<br>
-                                            <span>HTML/CSS/JS</span>
+                                            8<br>
+                                            <span>Лет опыта работ</span>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +88,7 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                         </div>
                         <div class="col-lg-4">
                             <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                <div class="progress" data-percentage="60">
+                                <div class="progress" data-percentage="100">
                     <span class="progress-left">
                       <span class="progress-bar"></span>
                     </span>
@@ -104,8 +97,8 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            60%<br>
-                                            <span>Wordpress</span>
+                                            200<br>
+                                            <span>Работников</span>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +106,7 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                         </div>
                         <div class="col-lg-4">
                             <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="progress" data-percentage="90">
+                                <div class="progress" data-percentage="100">
                     <span class="progress-left">
                       <span class="progress-bar"></span>
                     </span>
@@ -122,8 +115,8 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            90%<br>
-                                            <span>Marketing</span>
+                                            50+<br>
+                                            <span>Компаний с нами сотруднияют</span>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +146,7 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
     <div class="container wow  fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
         <div class="row">
             <div class="col-lg-12">
-                <div class="loop owl-carousel products_owl pt-4">
+                <div class="loop owl-carousel products_owl">
 
                     <? foreach ($element as $item) {
                         echo \frontend\widgets\ElementWidget::widget(['products' => $item])
@@ -187,47 +180,47 @@ height: 93px;" src="/uploads/logo/line1.svg" alt="">
     </div>
 </div>
 
-<div class="container">
-
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="/frontend/web/uploads/images/about-left-image.png" alt="">
-            </div>
-        </div>
-        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="section-heading">
-
-                <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                    <div class="about-item">
-                        <h4>750+</h4>
-                        <h6>projects finished</h6>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-4">
-                    <div class="about-item">
-                        <h4>340+</h4>
-                        <h6>happy clients</h6>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-4">
-                    <div class="about-item">
-                        <h4>128+</h4>
-                        <h6>awards</h6>
-                    </div>
-                </div>
-            </div>
-            <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent">SEO Dream</a> is
-                free digital marketing CSS template provided by TemplateMo website. You are allowed to use this
-                template for your business websites. Please DO NOT redistribute this template ZIP file on any Free
-                CSS collection websites. You may contact us for more information. Thank you.</p>
-            <div class="main-green-button"><a href="#">Discover company</a></div>
-        </div>
-    </div>
-</div>
+<!--<div class="container">-->
+<!---->
+<!--    <div class="row">-->
+<!--        <div class="col-lg-6">-->
+<!--            <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">-->
+<!--                <img src="/frontend/web/uploads/images/about-left-image.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">-->
+<!--            <div class="section-heading">-->
+<!---->
+<!--                <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-4 col-sm-4">-->
+<!--                    <div class="about-item">-->
+<!--                        <h4>750+</h4>-->
+<!--                        <h6>projects finished</h6>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-4">-->
+<!--                    <div class="about-item">-->
+<!--                        <h4>340+</h4>-->
+<!--                        <h6>happy clients</h6>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-4">-->
+<!--                    <div class="about-item">-->
+<!--                        <h4>128+</h4>-->
+<!--                        <h6>awards</h6>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent">SEO Dream</a> is-->
+<!--                free digital marketing CSS template provided by TemplateMo website. You are allowed to use this-->
+<!--                template for your business websites. Please DO NOT redistribute this template ZIP file on any Free-->
+<!--                CSS collection websites. You may contact us for more information. Thank you.</p>-->
+<!--            <div class="main-green-button"><a href="#">Discover company</a></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!--Как Мы работаем-->
 <div id="services" class="our-services section position-relative">

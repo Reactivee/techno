@@ -49,14 +49,12 @@ class MediaController extends Controller
         $searchModel = new GallerySearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
-        $searchModel = new PostsSearch();
-        $dataProviderNews = $searchModel->search($this->request->queryParams);
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'dataProviderVideos' => $dataProviderVideos,
-            'dataProviderNews' => $dataProviderNews,
         ]);
 
     }

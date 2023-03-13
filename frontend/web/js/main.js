@@ -46,6 +46,7 @@ let swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
 let swiperview = new Swiper(".viewSwiper", {
     // direction: "vertical",
     slidesPerView: 3,

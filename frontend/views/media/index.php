@@ -30,7 +30,7 @@ $this->title = "Галерея";
 </div>
 <section>
 
-    <div class="container">
+    <div class="container pb-5">
         <div class="main_title  my-4">
             <span>Информация для партнеров</span>
         </div>
@@ -38,7 +38,7 @@ $this->title = "Галерея";
         <div class="media_tab_wrapper">
             <ul class="nav d-flex  text-center align-items-center" id="myTab" role="tablist">
                 <li class="nav-media  py-2" role="presentation">
-                    <a class="active text-decoration-none w-100 stretched-link " id="home-tab" data-toggle="tab"
+                    <a class="active text-decoration-none w-100 " id="home-tab" data-toggle="tab"
                        href="#home" role="tab"
                        aria-controls="home" aria-selected="true">
                         Photo
@@ -46,7 +46,7 @@ $this->title = "Галерея";
                 </li>
                 <span class="vertical_line"></span>
                 <li class="nav-media  py-2" role="presentation">
-                    <a class="w-100 text-decoration-none w-100 stretched-link media_link color_black" id="profile-tab"
+                    <a class="w-100 text-decoration-none w-100 media_link color_black" id="profile-tab"
                        data-toggle="tab" href="#profile" role="tab"
                        aria-controls="profile" aria-selected="false">Video</a>
                 </li>
@@ -54,11 +54,22 @@ $this->title = "Галерея";
 
             <div class="tab-content mt-4" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-asdasd
+                    <div class="row">
+                        <? foreach ($dataProvider->models as $item) { ?>
+                            <div class="col-md-3 mb-4">
+                                <img class="w-100" src="<?= $item->img ?>" alt="">
+                            </div>
+                        <? } ?>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-asd
+                    <div class="row">
+                        <? foreach ($dataProvider->models as $item) { ?>
+                            <div class="col-md-3">
+                                <img class="w-100" src="<?= $item->img ?>" alt="">
+                            </div>
+                        <? } ?>
+                    </div>
                 </div>
 
             </div>

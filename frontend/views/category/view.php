@@ -5,141 +5,142 @@
 
 use yii\widgets\Pjax;
 
-$images = $element->images;
+//$images = $element->images;
 
 ?>
+    <div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
 
-    <div class="container">
-        <div class="category__banner_breadcrumb d-flex color_gray pt-5">
-            <a class="text-decoration-none color_black mr-2" href="/">Главная /</a>
-            <a class="text-decoration-none color_black mx-2" href="/category/all-category">Каталог /</a>
-            <span class="color_black"><?= $element['title_' . Yii::$app->language] ?></span>
-
-        </div>
-        <div class="view_block my-4">
-
+        <div class="container">
             <div class="row">
-
-                <div class="col-md-6">
-                    <div class="view_sliders d-flex  ">
-                        <div class="item_gallery_slider mt-4 mt-md-0">
-                            <div class="swiper viewSwiper ">
-                                <div class="swiper-wrapper d-flex flex-column ">
-
-<!--                                    --><?// foreach ($item_images as $image) {
-                                        $sub_element = \common\models\Element::findOne($item_images[0]->element_id)
-                                        ?>
-                                        <div class="swiper-slide w-auto h-auto ">
-                                            <a class="" href="view?slug=<?= $sub_element->slug ?>">
-                                                <div class="small_item" onclick="showImg(this)">
-
-                                                    <img class="w-100 small_item_img demo"
-                                                         src="/frontend/web<?= $item_images[0]->path ?>"
-                                                         alt="slider">
-
-                                                </div>
-                                            </a>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2>SEO &amp; Digital Marketing Agency</h2>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="line_item d-flex align-items-center">
+                                            <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">
+                                                <h3>оставить
+                                                    заявку</h3></button>
                                         </div>
-<!--                                    --><?// } ?>
-
-<!--                                    --><?// foreach ($images as $image) {
-                                        $sub_element = \common\models\Element::findOne($images[0]->element_id)
-                                        ?>
-                                        <div class="swiper-slide w-auto h-auto ">
-                                            <a class=" " href="view?slug=<?= $sub_element->slug ?>">
-                                                <div class="small_item" onclick="showImg(this)">
-
-                                                    <img class="w-100 small_item_img demo"
-                                                         src="/frontend/web<?= $images[0]->path ?>"
-                                                         alt="slider">
-
-                                                </div>
-                                            </a>
-                                        </div>
-<!--                                    --><?// } ?>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="big_img_view viewed">
-                            <a data-lightbox="example-set"
-                               class="demo demo_big"
-                               href="/frontend/web<?= $images[0]->path ?>">
-                                <img class="w-100 h-100 big_img_view_img" src="/frontend/web<?= $images[0]->path ?>"
-                                     alt="">
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <?php Pjax::begin(); ?>
-                    <div class="product_view">
-                        <div class="view_title">
-                            <span class="section_label section_label_red my-5"><?= $element->product->category['name_' . Yii::$app->language]; ?></span>
-                            <span class="font-weight-bolder pl-4">Дизайн №: <?= $element->id ?></span>
-                            <h3 class="section_title my-3 color_black text-uppercase">
-                                <?= $element['title_' . Yii::$app->language] ?>
-                            </h3>
-                        </div>
-                        <div class="view_text">
-                            <p>   <?= $element['desc_' . Yii::$app->language] ?></p>
-                        </div>
-                        <div class="options_block mt-5">
-                            <? if ($element->option) { ?>
-                                <? foreach ($element->option as $item) { ?>
-                                    <div class="options_item d-flex align-items-center my-2">
-                                        <div class="item_title">
-                                            <h4><?= $item->options['name_' . Yii::$app->language] ?> : </h4>
-                                        </div>
-                                        <div class="item_option ml-1">
-                                            <h4><?= $item->value['name_' . Yii::$app->language] ?></h4>
+                                        <div class="line_item  bg-white d-inline-flex align-items-center">
+                                            <h4 class="color_techno text-capitalize pl-3 pr-3">смотреть все</h4>
+                                            <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
+                                                 alt="">
                                         </div>
                                     </div>
-                                <? } ?>
-                            <? } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view_wrapper pb-5">
+        <div class="container">
+            <!--        <div class="category__banner_breadcrumb d-flex color_gray pt-5">-->
+            <!--            <a class="text-decoration-none color_black mr-2" href="/">Главная /</a>-->
+            <!--            <a class="text-decoration-none color_black mx-2" href="/category/all-category">Каталог /</a>-->
+            <!--            <span class="color_black">-->
+            <? //= $element['title_' . Yii::$app->language] ?><!--</span>-->
+            <!---->
+            <!--        </div>-->
+            <div class="view_block my-4">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product_card">
+                            <div class="product_card_top d-flex justify-content-start ">
+
+                                <div class="product_img_view">
+                                    <img class="w-100" src="<?= $element->image ?>" alt="">
+                                </div>
+                            </div>
+                            <div class="product_card_bottom">
+                                <ul>
+                                    <? foreach ($element->element as $item) { ?>
+                                        <!--                                    <a href=""></a>-->
+                                        <li><a href="<?= $item->slug ?> "> <?= $item->title_ru ?></a></li>
+
+                                    <? } ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 pl-5">
+                        <div class="product_title">
+                            <div class="main_title  my-4">
+                                <span><?= $element->title_ru ?></span>
+                            </div>
+                        </div>
+
+                        <div class="row element_options_list">
+                            <div class="col-md-3">
+                                <h4 class="font-weight-bold text-center">Область применения</h4>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Для передачи и распределения электрической энергии в станционарных установках на
+                                    номинальное переменное напряжение 0,66; 1 и 3 kV</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="font-weight-bold text-center">Область применения</h4>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Для передачи и распределения электрической энергии в станционарных установках на
+                                    номинальное переменное напряжение 0,66; 1 и 3 kV</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="element_desc ">
+                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white" >Указания по эксплуатации</h4>
+                        <div class="content_desc color_white ">Кабели предназначены для эксплуатации в электрических сетях
+                            переменного
+                            напряжения с заземленной или изолированной нейтралью, в которых продолжительность работы в
+                            режиме однофазного короткого замыкания на землю не превышает 8 ч, а общая продолжительность
+                            работы в режиме однофазного короткого замыкания на землю не превышает 125 ч за год.
+                            Максимальное
+                            напряжение сети, при котором допускается эксплуатация кабелей Um, равно 1,2U.
+                            Кабели могут быть использованы для эксплуатации в электрических сетях постоянного
+                            напряжения, не
+                            превышающего 2,4 U0.
+                            Кабели предназначены для эксплуатации при температуре окружающей среды от минус 50 °С до
+                            плюс 50
 
                         </div>
                     </div>
-                    <?php Pjax::end(); ?>
-                </div>
+                    <div class="construction mt-4">
+                        <div class="const_main_title text-center "><h4 class="color_white font-weight-bold ">Конструкция</h4></div>
 
-            </div>
-
-        </div>
-    </div>
-    <div class="similar_products bg_color_gray pt-3 pt-md-5">
-        <div class="container">
-
-            <!-- Swiper -->
-            <div class="swiper similar_slider about_slider slider_btn_rigth_top ">
-                <div class="text-center text-md-left    ">
-                    <!--            <span class="section_label my- text-center text-md-left5">Больше вариантов</span>-->
-                    <h3 class="section_title my-3 color_black text-uppercase ">
-                        Похожие товары
-                    </h3>
-                </div>
-                <div class="swiper-wrapper pb-5">
-
-                    <? foreach ($similar_product as $product) { ?>
-                        <div class="swiper-slide">
-                            <? echo \frontend\widgets\ElementWidget::widget([
-                                'products' => $product
-                            ]); ?>
-
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="construction_items card text-center p-2">
+                                    <div class="const_title">
+                                        <h5 class="font-weight-bold ">Токопроводяща жила</h5>
+                                    </div>
+                                    <div class="const_content mt-2">
+                                        Медная или алюминиевая, однопроволочная (ок) или многопроволочная (круглая "мк",
+                                        секторная "мс"). 1-го или 2-го класса гибкости по ГОСТ 22483. Номинальное
+                                        сечение
+                                        основных жил от 1,5 до 400 mm2.
+                                        Число жил от 1 до 5.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    <? } ?>
+                    </div>
 
                 </div>
-                <!--            <div class="swiper-button-next bg_color_yel"></div>-->
-                <!--            <div class="swiper-button-prev bg_color_yel"></div>-->
 
             </div>
         </div>
     </div>
-<? echo \frontend\widgets\RequestWidget::widget([
-    'address' => $address
-]); ?>
+<? // echo \frontend\widgets\RequestWidget::widget([
+//    'address' => $address
+//]); ?>

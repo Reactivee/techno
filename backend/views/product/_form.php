@@ -42,8 +42,6 @@ foreach ($prod_img as $image) {
                     uploaded = document.getElementById('uploaded_images') 
                      deleted = document.getElementById('deleted_images')
                     "
-
-
     ) ?>
     <?=
 
@@ -73,7 +71,7 @@ foreach ($prod_img as $image) {
             'fileuploaded' => new JsExpression('function(event, data, previewId) {
                             uploadedImages[previewId] = data.response;
                             uploaded.value = JSON.stringify(uploadedImages);
-                            console.log(uploadedImages)
+                         
                         }'),
             'filedeleted' => new JsExpression('function(event, key) {
                             deletedImages.push(key);

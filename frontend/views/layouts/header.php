@@ -92,7 +92,7 @@ $settings = Settings::find()->one();
 
                                 <div class="nav_sub bg_techno  flex-column">
                                     <a href='/media'>Фотогалерея</a>
-                                    <a href="/media">Видео галерея</a>
+                                    <a href="/media/news">Новости</a>
                                 </div>
 
                             </li>

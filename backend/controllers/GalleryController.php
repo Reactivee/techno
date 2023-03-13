@@ -108,7 +108,7 @@ class GalleryController extends Controller
     public function actionImageDelete()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
-        dd();
+
         if ($this->request->post()) {
 
             $post = $this->request->post();

@@ -49,23 +49,7 @@ $queryParams = Yii::$app->request->queryParams;
                     <div class="row column-reverse">
                         <div class="col-md-9">
                             <div class="row">
-                                <!--                                <div class="col-md-4">-->
-                                <!--                                    <div class="product_item">-->
-                                <!--                                        <div class="item_img">-->
-                                <!--                                            <img class="w-100" src="/frontend/web/uploads/cards/image%20366.png" alt="">-->
-                                <!--                                        </div>-->
-                                <!--                                        <div class="item_content">-->
-                                <!--                                            <div class="item_text py-2">-->
-                                <!--                                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis turpis blandit purus vitae convallis ac, risus vel. </span>-->
-                                <!--                                            </div>-->
-                                <!--                                            <div class="item_btn ">-->
-                                <!--                                                <a class="btn w-100  py-2 ibtn_outline_yellow font-weight-bolder text-decoration-none"-->
-                                <!--                                                   href="#">Подробнее</a>-->
-                                <!--                                            </div>-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
-                                <!--                                </div>-->
-                                <!--                          -->
+
                                 <? foreach ($products->models as $product) { ?>
                                     <div class="col-md-4 col-6 mt-4">
                                         <? echo \frontend\widgets\ProductWidget::widget([

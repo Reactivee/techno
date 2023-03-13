@@ -78,6 +78,7 @@ class CategoryController extends Controller
      */
     public function actionIndex($limit = null)
     {
+
         $limit = $limit ? $limit : 9;
         $catalog = Catalog::find()->limit($limit)->all();
         $category = Category::find()->where(['type' => 'duz'])->one();
@@ -88,7 +89,6 @@ class CategoryController extends Controller
             'limit' => $limit
         ]);
     }
-
 
 
     /**
@@ -103,9 +103,13 @@ class CategoryController extends Controller
         $dataProvider = new ActiveDataProvider([
             'query' => $products,
         ]);
+        $category = Category::find()->all();
+
         $dataProvider->pagination->pageSize = 20;
+
         return $this->render('products', [
-            'products' => $dataProvider
+            'products' => $dataProvider,
+            'category' => $category
         ]);
     }
 
@@ -158,93 +162,78 @@ class CategoryController extends Controller
 
     public function actionView($slug)
     {
-        $element = Element::find()
-            ->where(['slug' => $slug])
+        $element = Product::find()
+            ->where(['slug' => trim($slug)])
             ->one();
-
+        $category = Category::find()->all();
         $item_images = [];
-        if (!$element->fat_element_id) {
+//        if (!$element->fat_element_id) {
+//
+//            $sub_element = Element::find()
+//                ->where(['fat_element_id' => $element->id])
+//                ->all();
+//
+//            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
+//            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
+//
+//        }
 
-            $sub_element = Element::find()
-                ->where(['fat_element_id' => $element->id])
-                ->all();
+//        if ($element->fat_element_id) {
+//
+//            $sub_element = Element::find()
+//                ->where(['id' => $element->fat_element_id])
+//                ->all();
+//
+//            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
+//            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
+//
+//        }
 
-            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
-            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
-
-        }
-
-        if ($element->fat_element_id) {
-
-            $sub_element = Element::find()
-                ->where(['id' => $element->fat_element_id])
-                ->all();
-
-            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
-            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
-
-        }
-
-        $similar_product = Product::find()
-            ->where(['category_id' => $element->product->category_id])
-            ->limit(20)
-            ->all();
-
-        $prod_id = ArrayHelper::map($similar_product, 'id', 'id');
-
-        $similar_element = Element::find()
-            ->where(['product_id' => $prod_id])
-            ->all();
-
-        $options_to_cat = OptionsToCategory::find()->where(['category_id' => $element->product->category_id])->all();
-
-        $options_id = ArrayHelper::map($options_to_cat, 'option_id', 'option_id');
-
-        $address = Address::find()->one();
+//        $similar_product = Product::find()
+//            ->where(['category_id' => $element->product->category_id])
+//            ->limit(20)
+//            ->all();
+//
+//        $prod_id = ArrayHelper::map($similar_product, 'id', 'id');
+//
+//        $similar_element = Element::find()
+//            ->where(['product_id' => $prod_id])
+//            ->all();
+//
+//        $options_to_cat = OptionsToCategory::find()->where(['category_id' => $element->product->category_id])->all();
+//
+//        $options_id = ArrayHelper::map($options_to_cat, 'option_id', 'option_id');
+//
+//        $address = Address::find()->one();
 
         return $this->render('view', [
-            'item_images' => $item_images,
+//            'item_images' => $item_images,
             'element' => $element,
-            'similar_product' => $similar_element,
-            'address' => $address,
+            'category' => $category,
+//            'similar_product' => $similar_element,
+//            'address' => $address,
 
 
         ]);
     }
 
-    public function actionElement($slug)
+    public function actionFilter($slug)
     {
 
-        $query = Element::find()
-            ->where(['product_id' => $slug])
-            ->andWhere(['fat_element_id' => null]);
-//            ->andWhere(['status' => 1])
 
+        $cats = Category::findOne(['slug' => $slug]);
 
-        $product = Product::findOne($slug);
-        $cats = Category::findOne(['id' => $product->category_id]);
-
-        $sorts = Sorts::find()->where(['status' => 1])->all();
-        if (!$cats) return false;
-
-        $queryParams = Yii::$app->request->queryParams;
-
-        if ($queryParams['sorts']) {
-            $products = Product::find()->andWhere(['type' => $queryParams['sorts']])->all();
-
-            $element = ArrayHelper::map($products, 'id', 'id');
-            $query->andWhere(['product_id' => $element]);
-        }
+        $product = Product::find()->where(['category_id' => $cats->id]);
+        $allCat = Category::find()->all();
 
         $dataProvider = new ActiveDataProvider([
-            'query' => $query,
+            'query' => $product,
         ]);
 
         $dataProvider->pagination->pageSize = 20;
-        return $this->render('elements_filter', [
-            'category' => $cats,
+        return $this->render('products', [
+            'category' => $allCat,
             'products' => $dataProvider,
-            'sorts' => $sorts
         ]);
 
 

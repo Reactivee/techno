@@ -36,7 +36,7 @@ $this->title = "News";
         <div class="main_title  my-4">
             <span>новости</span>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center pb-5">
             <div class="col-md-6">
                 <div class="news_block ">
                     <img class="w-100 border_radius" src="/uploads/about_in/Bx147CCsVFLRixVjGOxgXZyVMuXkq4Lv.png" alt="">
