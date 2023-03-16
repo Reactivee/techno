@@ -46,25 +46,25 @@ $this->title = "О Нас";
         </div>
         <div class="container">
             <div class="mission_block text-center">
-                <div class="mission_block_item">
-                    <div class="mission_block_title font-weight-bold text-uppercase color_techno">
+                <div class="mission_block_item mb-3">
+                    <div class="mission_block_title font-weight-bold text-uppercase color_techno mb-3">
                         <span>📈 Движение только вперед</span>
                     </div>
                     <div class="mission_block_text">
                         <span>Предусмотрено расширение производственных площадей, увеличение складских площадей, на производстве постоянно внедряется современное высокотехнологичное оборудование</span>
                     </div>
                 </div>
-                <div class="mission_block_item ">
-                    <div class="mission_block_title font-weight-bold text-uppercase color_techno">
-                        <span>📈 Движение только вперед</span>
+                <div class="mission_block_item mb-3">
+                    <div class="mission_block_title font-weight-bold text-uppercase color_techno mb-3">
+                        <span>📈 Высокие стандарты</span>
                     </div>
                     <div class="mission_block_text">
                         <span>Предусмотрено расширение производственных площадей, увеличение складских площадей, на производстве постоянно внедряется современное высокотехнологичное оборудование</span>
                     </div>
                 </div>
-                <div class="mission_block_item">
-                    <div class="mission_block_title font-weight-bold text-uppercase color_techno">
-                        <span>📈 Движение только вперед</span>
+                <div class="mission_block_item mb-3">
+                    <div class="mission_block_title font-weight-bold text-uppercase color_techno mb-3">
+                        <span>📈 Оптимальные сроки</span>
                     </div>
                     <div class="mission_block_text">
                         <span>Предусмотрено расширение производственных площадей, увеличение складских площадей, на производстве постоянно внедряется современное высокотехнологичное оборудование</span>
@@ -135,7 +135,7 @@ $this->title = "О Нас";
 
 
 <div class="advantages">
-    <div class="container">
+    <div class="container pb-5">
 
         <div class="main_title text-center my-4">
             <span>ПРЕИМУЩЕСТВА ПРЕДПРИЯТИЯ</span>

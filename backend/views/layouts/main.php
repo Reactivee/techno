@@ -21,7 +21,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <?= Html::csrfMetaTags() ?>
-    <title>Zelal Admin</title>
+    <title>TCG</title>
     <?php $this->head() ?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/admin" class="site_title"><i class="fa fa-paw"></i> <span>Zelal Admin</span></a>
+                    <a href="/admin" class="site_title"><i class="fa fa-paw"></i> <span>TCG</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -52,10 +52,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                     <div class="profile_pic">
                         <!--                        <img src="http://placehold.it/128x128" alt="..." class="img-circle profile_img">-->
                     </div>
-                    <!--                    <div class="profile_info">-->
-                    <!--                        <span>Welcome,</span>-->
-                    <!--                        <h2>John Doe</h2>-->
-                    <!--                    </div>-->
+
                 </div>
                 <!-- /menu prile quick info -->
 
@@ -108,6 +105,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                                     ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
                                     ["label" => "Catalog", "url" => ["/catalog"], "icon" => "film"],
+                                    ["label" => "Certificate", "url" => ["/certificate"], "icon" => "film"],
 
                                     ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
                                     ["label" => "Site Settings", "url" => ["/settings"], "icon" => "gavel"],

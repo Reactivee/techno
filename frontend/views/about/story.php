@@ -79,43 +79,46 @@ $this->title = "О Нас";
     </div>
 
     <div>
-        <!--        <div class="main_title text-center my-4">-->
-        <!--            <span>Стратегии и принципы СП ООО «Techno Cable Group»</span>-->
-        <!--        </div>-->
+        <div class="main_title text-center my-4">
+            <span>Стратегии и принципы СП ООО «Techno Cable Group»</span>
+        </div>
         <!--        <span>	- Обучение персонала;-->
-        <!--	-  Командная работа;-->
-        <!--	- Удовлетворение запросов потребителей;-->
-        <!--	- Сжатые сроки производства;-->
-        <!--	- Высокое качество продукции;-->
-        <!--	- Низкие цены.-->
-        <!--</span>-->
-        <!--        <div class="container">-->
-        <!--            <div class="row">-->
-        <!---->
-        <!--                --><? // foreach ($ad_icons as $key => $advantage) { ?>
-        <!--                    <div class="col-lg-4">-->
-        <!--                        <div class="service-item wow bounceInUp" data-wow-duration="1s"-->
-        <!--                             data-wow-delay="--><? //= $key / 10 ?><!--s">-->
-        <!--                            <div class="row">-->
-        <!--                                <div class="col-lg-4">-->
-        <!--                                    <div class="icon">-->
-        <!--                                        <img src=--><? //= $advantage->img ?><!-- alt="">-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-lg-8">-->
-        <!--                                    <div class="right-content">-->
-        <!--                                        <h4>Similar Websites</h4>-->
-        <!--                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium-->
-        <!--                                            dormque-->
-        <!--                                            laudantium.</p>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                --><? // } ?>
-        <!--            </div>-->
-        <!--        </div>-->
+        <!--        	-  Командная работа;-->
+        <!--        	- Удовлетворение запросов потребителей;-->
+        <!--        	- Сжатые сроки производства;-->
+        <!--        	- Высокое качество продукции;-->
+        <!--        	- Низкие цены.-->
+        <!--        </span>-->
+        <div class="container">
+
+
+            <div class="row">
+                <? foreach ($ad_icons as $key => $advantage) { ?>
+                    <div class="col-lg-3">
+                        <div class="service-item wow bounceInUp" data-wow-duration="1s"
+                             data-wow-delay="<?= $key / 10 ?>s">
+                            <div class="row align-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="icon mb-4">
+                                        <? if (!$advantage->img) { ?>
+                                            <span><?= $key + 1 ?></span>
+                                        <? } else { ?>
+                                            <img src="<?= $advantage->img ?>" alt="">
+                                        <? } ?>
+
+                                    </div>
+                                    <div class="right-content">
+                                        <h4><?= $advantage->title_ru ?> </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <? } ?>
+
+            </div>
+
+        </div>
     </div>
 </section>
 

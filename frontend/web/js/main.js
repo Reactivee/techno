@@ -93,19 +93,19 @@ let gallery_slider = new Swiper(".gallery_slider", {
 
 });
 
-const showImg = (e) => {
-    const imgPath = e.children[0].src;
-    const img = e.children[0];
-    const allImg = document.querySelectorAll('.small_item_img');
-    for (const imgPathElement of allImg) {
-        imgPathElement.classList.remove("active");
-    }
-    img.classList.add("active");
-    const bigImg = document.querySelector('.big_img_view_img')
-    const bigImg_demo = document.querySelector('.demo_big')
-    bigImg.src = imgPath;
-    bigImg_demo.href = imgPath;
-}
+// const showImg = (e) => {
+//     const imgPath = e.children[0].src;
+//     const img = e.children[0];
+//     const allImg = document.querySelectorAll('.small_item_img');
+//     for (const imgPathElement of allImg) {
+//         imgPathElement.classList.remove("active");
+//     }
+//     img.classList.add("active");
+//     const bigImg = document.querySelector('.big_img_view_img')
+//     const bigImg_demo = document.querySelector('.demo_big')
+//     bigImg.src = imgPath;
+//     bigImg_demo.href = imgPath;
+// }
 
 const showFilfer = (e) => {
 
@@ -127,15 +127,15 @@ lightbox.option({
 })
 var mybutton = document.getElementById("myBtn");
 
-window.onscroll = () => {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > 500) {
-        mybutton.style.display = "block";
-    } else if (scrollTop < 15) {
-        mybutton.style.display = "none";
-
-    }
-}
+// window.onscroll = () => {
+//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     if (scrollTop > 500) {
+//         mybutton.style.display = "block";
+//     } else if (scrollTop < 15) {
+//         mybutton.style.display = "none";
+//
+//     }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

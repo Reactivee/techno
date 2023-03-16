@@ -52,58 +52,74 @@ $this->title = "О Нас";
                         <div class="all_content mt-4">
                             <span><?= $item->text_ru ?></span>
                         </div>
-                        <!--                        <div class="all_content mt-4">-->
-                        <!--                            <h5>Приоритетом предприятия является:</h5>-->
-                        <!--                            <ul>-->
-                        <!--                                <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-                        <!--                                <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-                        <!--                                <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-                        <!--                            </ul>-->
-                        <!--                        </div>-->
                     </div>
                 </div>
 
             <? } ?>
-            <!--            <div class="col-md-7">-->
-            <!--                <div class="content_block ">-->
-            <!--                    <div class="main_title">-->
-            <!--                        <span>Ценности предприятия</span>-->
-            <!--                    </div>-->
-            <!--                    <div class="all_content mt-4">-->
-            <!--                        <span>Основополагающий ключевой принцип СП ООО «Techno Cable Group» - это соблюдать условия партнерских отношений, действовать строго в рамках законодательства, ответственное ведение бизнеса.</span>-->
-            <!--                    </div>-->
-            <!--                    <div class="all_content mt-4">-->
-            <!--                        <h5>Приоритетом предприятия является:</h5>-->
-            <!--                        <ul>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                        </ul>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
 
-            <!--            <div class="col-md-5">-->
-            <!--                <img class="w-100" src="/uploads/banners/banner.png" alt="">-->
-            <!--            </div>-->
-            <!---->
-            <!--            <div class="col-md-12 mt-4">-->
-            <!--                <div class="content_block ">-->
-            <!--                <span>     С 2018 года в предприятии действует корпоративная Политика которая гарантирует каждому работнику-->
-            <!--                    безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой-->
-            <!--                    этики.-->
-            <!--</span>-->
-            <!--                    <div class="all_content mt-4">-->
-            <!--                        <h5>Приоритетом предприятия является:</h5>-->
-            <!--                        <ul>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                            <li>☑️ соблюдение всех качеств в сфере корпоративного управления;</li>-->
-            <!--                        </ul>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
+                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
+                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
+                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="all_content mt-4">
+                        <span>С 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этикиС 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этики</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="all_content mt-4">
+                    <span class="font-weight-bold">В основе ценностей СП ООО «Techno Cable Group» заложены следующие принципы, подходы и стандарты:</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
+                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_item_advantage d-flex flex-column text-center p-3">
+                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
+                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
+                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
+                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
+
         <div class="our_team mt-5">
             <div class="main_title">
                 <span>Наша команда</span>

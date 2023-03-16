@@ -277,7 +277,15 @@ body {
     background: linear-gradient(112deg, rgba(190, 76, 26, 1) 24%, rgba(255, 83, 83, 1) 93%);
 }
 
-/* 
+.f-40_icon {
+    font-size: 50px;
+    color: #EB632A;
+}
+.btn_link_hover:hover{
+    transition: 0.3s all;
+      color: #8c8c8c;
+}
+/*
 ---------------------------------------------
 header
 --------------------------------------------- 
@@ -1203,8 +1211,7 @@ Features Style
     color: black;
     font-weight: 600;
     text-align: center;
-
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .advan-content_items li {
@@ -1542,6 +1549,10 @@ Services Style
     line-height: 80px;
     background-color: #f7f7f7;
     border-radius: 50%;
+}.service-item span {
+     font-size: 58px;
+     color: #BF3C37;
+     font-weight: 700;
 }
 
 .service-item .icon img {
@@ -1937,10 +1948,14 @@ element Style
 
 .main_title span {
     background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
+.gr_color {
+    background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .mission {
@@ -2022,18 +2037,19 @@ element Style
 }
 
 .product_card_bottom li {
-    font-size: 20px;
+    font-size: 16px;
     color: #717171;
     text-transform: uppercase;
+    line-height: 30px;
 }
 
 /*Filter block*/
 .checkbox_block {
-    background: rgb(255,250,250);
-    background: -moz-linear-gradient(180deg, rgba(255,250,250,1) 32%, rgba(255,250,250,1) 54%, rgba(255,250,250,1) 67%, rgba(233,115,66,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(255,250,250,1) 32%, rgba(255,250,250,1) 54%, rgba(255,250,250,1) 67%, rgba(233,115,66,1) 100%);
-    background: linear-gradient(180deg, rgba(255,250,250,1) 32%, rgba(255,250,250,1) 54%, rgba(255,250,250,1) 67%, rgba(233,115,66,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffafa",endColorstr="#e97342",GradientType=1);
+    background: rgb(255, 250, 250);
+    /*background: -moz-linear-gradient(180deg, rgba(255, 250, 250, 1) 32%, rgba(255, 250, 250, 1) 54%, rgba(255, 250, 250, 1) 67%, rgba(233, 115, 66, 1) 100%);*/
+    /*background: -webkit-linear-gradient(180deg, rgba(255, 250, 250, 1) 32%, rgba(255, 250, 250, 1) 54%, rgba(255, 250, 250, 1) 67%, rgba(233, 115, 66, 1) 100%);*/
+    /*background: linear-gradient(180deg, rgba(255, 250, 250, 1) 32%, rgba(255, 250, 250, 1) 54%, rgba(255, 250, 250, 1) 67%, rgba(233, 115, 66, 1) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffafa", endColorstr="#e97342", GradientType=1);*/
     border-radius: 30px;
     padding: 30px 20px;
 }
@@ -2129,6 +2145,13 @@ element Style
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.card_item_advantage{
+    margin-top: 40px;
+    border-radius: 30px;
+    -webkit-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
 }
 
 /*

@@ -8,6 +8,8 @@ use common\models\AboutSet;
 use common\models\Address;
 use common\models\Advantages;
 use common\models\AdvantagesIcons;
+use common\models\Catalog;
+use common\models\Certificate;
 use common\models\Process;
 use common\models\ProcessImages;
 use common\models\Team;
@@ -75,12 +77,15 @@ class AboutController extends Controller
         $advantages = Advantages::find()->all();
         $about_in = AboutIn::find()->all();
         $about_in_set = AboutSet::find()->one();
+        $catalog = Certificate::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
+
         return $this->render('index', [
             'about' => $about,
             'address' => $address,
             'advantages' => $advantages,
             'about_in' => $about_in,
             'about_in_set' => $about_in_set,
+            'catalog' => $catalog,
         ]);
     }
 

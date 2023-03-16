@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use common\models\Catalog;
 use common\models\CatalogSearch;
+use common\models\Certificate;
 use common\models\Gallery;
 use Yii;
 use yii\web\Controller;
@@ -15,7 +16,7 @@ use yii\web\UploadedFile;
 /**
  * CatalogController implements the CRUD actions for Catalog model.
  */
-class CatalogController extends Controller
+class CertificateController extends Controller
 {
     /**
      * @inheritDoc
@@ -42,10 +43,10 @@ class CatalogController extends Controller
      */
     public function actionIndex()
     {
-        $model = new Catalog();
+        $model = new Certificate();
 
         if ($this->request->isPost && $model->load($this->request->post())) {
-dd($model);
+//                dd($model);
             if ($model->uploaded_images) {
                 $model->saveImages();
             }
@@ -166,6 +167,7 @@ dd($model);
                     'name' => $name,
                     'path' => Yii::getAlias('@uploadsUrl') . $folder . $generateName . ".{$ext}"
                 ];
+
             }
         }
 
@@ -177,8 +179,8 @@ dd($model);
         Yii::$app->response->format = Response::FORMAT_JSON;
         if ($this->request->post()) {
             $post = $this->request->post();
-            $imgs = Catalog::find()
-                ->where(['path' => $post['key']])
+            $imgs = Certificate::find()
+                ->where(['img' => $post['key']])
                 ->one();
 
             if ($imgs) {

@@ -49,12 +49,12 @@ use yii\helpers\Url;
 
                 <?php echo Html::beginForm(Url::to(['product', 'slug' => $queryParams['slug']]), 'get', ['data-pjax' => true, 'id' => 'filter-form']) ?>
 
-                <div class="filter_block bg_color_yel p-4 position-relative">
+                <div class="filter_block  p-4 position-relative">
                     <h4 class="font-weight-bold">Филтирь</h4>
                     <div class="checkbox_block mt-4">
                         <ul>
                             <? foreach ($category as $item) {?>
-                                <li><a href="/category/filter/<?= $item->slug ?>"><?= $item->name_ru ?></a></li>
+                                <li class="mb-2"><a href="/category/filter/<?= $item->slug ?>"><?= $item->name_ru ?></a></li>
 
                             <? } ?>
                         </ul>
@@ -78,10 +78,10 @@ use yii\helpers\Url;
                                         <img class="w-100" src="<?= $item->image ?>" alt="">
                                     </div>
                                 </div>
-                                <div class="product_card_bottom">
+                                <div class="product_card_bottom py-4">
                                     <ul>
                                         <? foreach ($item->element as $element) { ?>
-                                            <li><a href="<?= $element->slug ?> "></a> <?= $element->title_ru ?></li>
+                                            <li><a class="btn_link_hover" href="view?slug=<?= $item->slug ?> "><?= $element->title_ru ?></a> </li>
 
                                         <? } ?>
                                     </ul>

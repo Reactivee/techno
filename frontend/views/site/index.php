@@ -245,7 +245,9 @@ height: 93px;" src="/uploads/logo/line1.svg" alt="">
                         <div class="row align-content-center">
                             <div class="col-12 text-center">
                                 <div class="icon mb-4">
-                                    <img src=<?= $advantage->img ?> alt="">
+                                    <span><?= $key + 1 ?></span>
+                                    <!--                                    <img src="-->
+                                    <? //= $advantage->img ?><!--" alt="">-->
                                 </div>
                                 <div class="right-content">
                                     <h4><?= $advantage->title_ru ?> </h4>
@@ -256,96 +258,6 @@ height: 93px;" src="/uploads/logo/line1.svg" alt="">
                 </div>
             <? } ?>
 
-            <!--            <div class="col-lg-4">-->
-            <!--                <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">-->
-            <!--                    <div class="row">-->
-            <!--                        <div class="col-lg-4">-->
-            <!--                            <div class="icon">-->
-            <!--                                <img src="assets/images/service-icon-02.png" alt="">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="col-lg-8">-->
-            <!--                            <div class="right-content">-->
-            <!--                                <h4>Website Trends</h4>-->
-            <!--                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque-->
-            <!--                                    laudantium.</p>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">-->
-            <!--                    <div class="row">-->
-            <!--                        <div class="col-lg-4">-->
-            <!--                            <div class="icon">-->
-            <!--                                <img src="assets/images/service-icon-03.png" alt="">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="col-lg-8">-->
-            <!--                            <div class="right-content">-->
-            <!--                                <h4>Traffic Analysis</h4>-->
-            <!--                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque-->
-            <!--                                    laudantium.</p>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">-->
-            <!--                    <div class="row">-->
-            <!--                        <div class="col-lg-4">-->
-            <!--                            <div class="icon">-->
-            <!--                                <img src="assets/images/service-icon-03.png" alt="">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="col-lg-8">-->
-            <!--                            <div class="right-content">-->
-            <!--                                <h4>Optimizing Keywords</h4>-->
-            <!--                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque-->
-            <!--                                    laudantium.</p>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">-->
-            <!--                    <div class="row">-->
-            <!--                        <div class="col-lg-4">-->
-            <!--                            <div class="icon">-->
-            <!--                                <img src="assets/images/service-icon-01.png" alt="">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="col-lg-8">-->
-            <!--                            <div class="right-content">-->
-            <!--                                <h4>Page Optimizations</h4>-->
-            <!--                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque-->
-            <!--                                    laudantium.</p>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-lg-4">-->
-            <!--                <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">-->
-            <!--                    <div class="row">-->
-            <!--                        <div class="col-lg-4">-->
-            <!--                            <div class="icon">-->
-            <!--                                <img src="assets/images/service-icon-02.png" alt="">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="col-lg-8">-->
-            <!--                            <div class="right-content">-->
-            <!--                                <h4>Deep URL Analysis</h4>-->
-            <!--                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque-->
-            <!--                                    laudantium.</p>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
         </div>
     </div>
 </div>
@@ -371,12 +283,6 @@ height: 93px;" src="/uploads/logo/line1.svg" alt="">
                             <div class="portfolio-item align-items-center">
                                 <div class="thumb align-items-center">
                                     <img class="w-100" src=<?= $item->path ?>>
-                                    <!--                                    <div class="hover-content">-->
-                                    <!--                                        <div class="inner-content">-->
-                                    <!--                                            <a href="#"><h4>Awesome Project 101</h4></a>-->
-                                    <!--                                            <span>Marketing</span>-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
                                 </div>
                             </div>
                         </div>

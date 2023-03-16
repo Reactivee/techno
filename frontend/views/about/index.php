@@ -30,27 +30,37 @@ $this->title = "О Нас";
     </div>
 </div>
 <!--End main banner-->
-<section class="about">
+<section class="about mb-5">
     <div class="container">
-        <!--        --><? // dd($about); ?>
-        <? foreach ($about as $item) {
-         ?>
-            <div class="content_block">
+
+        <? foreach ($about as $key => $item) {
+            ?>
+            <div class="content_block mt-4">
                 <div class="main_title">
                     <span><?= $item->title_ru ?></span>
                 </div>
                 <div class="all_content mt-4">
                     <div class="row align-items-center">
-                        <? if ($item->img) { ?>
+                        <? if ($item->img && $key % 2 == 0) { ?>
                             <div class="col-md-7">
                                 <span><?= $item->text_ru ?> </span>
                             </div>
                             <div class="col-md-5">
                                 <img class="w-100" src=<?= $item->img ?> alt="">
                             </div>
-                        <? } else { ?>
-                            <span><?= $item->text_ru ?></span>
 
+                        <? }
+                        if ($item->img && $key % 2 == 1) { ?>
+                            <div class="col-md-5">
+                                <img class="w-100" src=<?= $item->img ?> alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <span><?= $item->text_ru ?> </span>
+                            </div>
+                        <? } else { ?>
+                            <div class="col-md-12">
+                                <span><?= $item->text_ru ?></span>
+                            </div>
                         <? } ?>
                     </div>
                 </div>
@@ -59,4 +69,28 @@ $this->title = "О Нас";
 
     </div>
 
+</section>
+<section>
+    <div class="sertificate">
+    </div>
+    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="loop owl-carousel">
+
+                    <? foreach ($catalog as $item) { ?>
+                        <div class="item">
+                            <div class="portfolio-item align-items-center">
+                                <div class="thumb align-items-center">
+                                    <img class="w-100" src=<?= $item->img ?>>
+                                </div>
+                            </div>
+                        </div>
+                    <? } ?>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
