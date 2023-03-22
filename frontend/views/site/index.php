@@ -1,12 +1,12 @@
 <?php
 /** @var yii\web\View $this */
 /** @var \common\models\Advantages $advantages */
-$this->title = 'My Yii Application';
+$this->title = 'Techno';
 //\Yii::$app->language = 'ru-RU';
 ?>
 
-<div style="background-image: url(  <?= $main_banner->img_path ?>)" class=" main-banner wow fadeIn
-     position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div style="background-image: url(<?= $main_banner->img_path ?>)" class=" main-banner wow fadeIn
+     position-relative container_fluid" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
         <img style="width: 93px;
 height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">

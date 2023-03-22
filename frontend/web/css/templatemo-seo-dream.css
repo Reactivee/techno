@@ -94,6 +94,7 @@ ul, li {
     list-style: none;
 }
 
+
 header, nav, section, article, aside, footer, hgroup {
     display: block;
 }
@@ -281,10 +282,12 @@ body {
     font-size: 50px;
     color: #EB632A;
 }
-.btn_link_hover:hover{
+
+.btn_link_hover:hover {
     transition: 0.3s all;
-      color: #8c8c8c;
+    color: #8c8c8c;
 }
+
 /*
 ---------------------------------------------
 header
@@ -970,6 +973,8 @@ Banner Style
     position: relative;
     overflow: hidden;
     background-image: url(/uploads/banners/banner.png);
+    max-width: 100% !important;
+    margin: 0 auto;
 }
 
 /*.main-banner:after {*/
@@ -1549,10 +1554,12 @@ Services Style
     line-height: 80px;
     background-color: #f7f7f7;
     border-radius: 50%;
-}.service-item span {
-     font-size: 58px;
-     color: #BF3C37;
-     font-weight: 700;
+}
+
+.service-item span {
+    font-size: 58px;
+    color: #BF3C37;
+    font-weight: 700;
 }
 
 .service-item .icon img {
@@ -2146,7 +2153,8 @@ element Style
     justify-content: center;
     flex-direction: column;
 }
-.card_item_advantage{
+
+.card_item_advantage {
     margin-top: 40px;
     border-radius: 30px;
     -webkit-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
