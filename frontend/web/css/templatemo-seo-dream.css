@@ -287,7 +287,11 @@ body {
     transition: 0.3s all;
     color: #8c8c8c;
 }
-
+.ribbon_main{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 /*
 ---------------------------------------------
 header
@@ -437,7 +441,7 @@ header
     display: block;
     font-weight: 600;
     font-size: 15px;
-    color: black;
+    color: white;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -456,7 +460,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-    color: #fff !important;
+    color: #ffa100 !important;
     opacity: 1;
 }
 
@@ -973,7 +977,7 @@ Banner Style
     padding: 236px 0 305px 0;
     position: relative;
     overflow: hidden;
-    background-image: url(/uploads/banners/banner.png);
+    background-image: url(/frontend/web/uploads/banners/main_banner.png);
     max-width: 100% !important;
     margin: 0 auto;
 }
@@ -1030,14 +1034,14 @@ Banner Style
     margin-bottom: 45px;
     font-size: 60px;
     font-weight: 800;
-    color: #2a2a2a;
+    /*color: #2a2a2a;*/
     line-height: 72px;
-    background: #FA9D4D;
-    background: -webkit-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-    background: -moz-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-    background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /*background: #FA9D4D;*/
+    /*background: -webkit-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*background: -moz-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
 }
 
 .main-banner .right-image {
@@ -1049,7 +1053,10 @@ Banner Style
 .main-banner .right-image img {
     max-width: 593px;
 }
-
+.banner_text{
+    color: white;
+    /*-webkit-text-fill-color:*/
+}
 
 /*
 ---------------------------------------------
@@ -2157,8 +2164,10 @@ element Style
 }
 
 .card_item_advantage {
-    margin-top: 40px;
+    height: 100%;
+    /*margin-top: 40px;*/
     border-radius: 30px;
+    padding: 20px;
     -webkit-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
@@ -2175,6 +2184,7 @@ footer {
     background: url("/uploads/banners/footer.png"),
         /*rgb(231, 138, 32),*/ linear-gradient(180deg, rgba(83, 33, 11, 1) 17%, rgba(30, 30, 30, 1) 76%);
     color: white;
+    background-repeat: no-repeat;
 }
 
 footer p {
@@ -2191,7 +2201,23 @@ footer p {
 footer p a:hover {
     /*color: #4771cb;*/
 }
+.navbar_footer{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex: 0 0 50%;*/
+    padding: 0 40px;
+}
+.navbar_footer li{
+    /*display: flex;*/
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    text-align: center;
+    line-height: 30px;
 
+}
+.navbar_footer a{
+    font-size: 13px;
+}
 /* 
 ---------------------------------------------
 responsive

@@ -57,7 +57,7 @@ $settings = Settings::find()->one();
                             <img class="w-100" src="/uploads/logo/Group_22.png" alt="asd">
                         </a>
                     </div>
-                    <ul class="col-9">
+                    <div class="col-9">
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
@@ -67,8 +67,8 @@ $settings = Settings::find()->one();
                                     <a href="/about">О Компании</a>
                                     <a href="/about/worth">Ценности предприятия </a>
                                     <a href="/about/mission">Миссия </a>
-<!--                                    <a href="#">Наши цели </a>-->
-<!--                                    <a href="#">ПРЕИМУЩЕСТВА ПРЕДПРИЯТИЯ</a>-->
+                                    <!--                                    <a href="#">Наши цели </a>-->
+                                    <!--                                    <a href="#">ПРЕИМУЩЕСТВА ПРЕДПРИЯТИЯ</a>-->
                                     <a href="/about/factory">ПРОИЗВОДСТВО</a>
                                 </div>
                             </li>
@@ -85,16 +85,11 @@ $settings = Settings::find()->one();
                                 </div>
                             </li>
                             <li class="scroll-to-section"><a href="#services">Информация для партнеров</a></li>
-
-                            <!--                            <li class="scroll-to-section"><a href="#portfolio">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ ОТДЕЛ КОНТРОЛЯ-->
-                            <!--                                    КАЧЕСТВА</a></li>-->
                             <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
-
                                 <div class="nav_sub bg_techno  flex-column">
                                     <a href='/media'>Фотогалерея</a>
                                     <a href="/media/news">Новости</a>
                                 </div>
-
                             </li>
                             <li class="scroll-to-section"><a href="/contact">Контакты</a></li>
                             <li class="scroll-to-section"><a href="/vacancy">Вакансии</a></li>
@@ -102,6 +97,7 @@ $settings = Settings::find()->one();
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
+                    </div>
             </div>
             <!-- ***** Menu End ***** -->
             </nav>

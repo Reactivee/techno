@@ -52,26 +52,19 @@ $this->title = "О Нас";
         </div>
         <div class="step_year">
             <div class="row">
-                <? foreach ($process as $process) {
+                <? foreach ($process as $proces) {
+                    ?>
 
-                } ?>
+                    <div class="step_year_block d-flex align-items-center  text-left">
+                        <div class="step_item_year font-weight-bold mr-4 position-relative color_techno col-md-2">
+                            <span><?= $proces->title_ru ?></span>
+                        </div>
+                        <div class="step_item col-md-10 text-center">
+                            <span><?= $proces->text_ru ?> </span>
+                        </div>
+                    </div>
+                <? } ?>
 
-                <div class="step_year_block d-flex align-items-center  text-center">
-                    <div class="step_item_year font-weight-bold mr-4 position-relative color_techno col-md-2">
-                        <span>2014</span>
-                    </div>
-                    <div class="step_item col-md-10">
-                        <span>Было освоено производство силовых и контрольных кабелей с номинальным напряжением до 1,0 кВ, установочных и соединительных проводов, с различными видами</span>
-                    </div>
-                </div>
-                <div class="step_year_block d-flex align-items-center text-center">
-                    <div class="step_item_year font-weight-bold mr-4  position-relative color_techno col-md-2">
-                        <span>2014-2017</span>
-                    </div>
-                    <div class="step_item col-md-10 ">
-                        <span>	2017 году предприятие внедрило международную систему менеджмента который был подтвержден международной организациией по стандартам «TÜV Thüringen E.V.» и выдан сертификат соответствия системы менеджмента Предприятия международному стандарту ISO 9001:2015 (дата выдачи и номер сертификата 07 июля 2017 года за номером TIC 15 100 179917 с ссылкой на переход к сертификату); </span>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -82,15 +75,8 @@ $this->title = "О Нас";
         <div class="main_title text-center my-4">
             <span>Стратегии и принципы СП ООО «Techno Cable Group»</span>
         </div>
-        <!--        <span>	- Обучение персонала;-->
-        <!--        	-  Командная работа;-->
-        <!--        	- Удовлетворение запросов потребителей;-->
-        <!--        	- Сжатые сроки производства;-->
-        <!--        	- Высокое качество продукции;-->
-        <!--        	- Низкие цены.-->
-        <!--        </span>-->
-        <div class="container">
 
+        <div class="container my-5">
 
             <div class="row">
                 <? foreach ($ad_icons as $key => $advantage) { ?>

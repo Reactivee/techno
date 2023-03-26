@@ -28,9 +28,6 @@ $this->title = "О Нас";
                                 <div class="col-lg-12">
                                     <h2>SEO &amp; Digital Marketing Agency</h2>
                                 </div>
-                                <div class="col-lg-12">
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -42,7 +39,7 @@ $this->title = "О Нас";
 <section class="about">
     <div class="container">
 
-        <div class="row mt-5">
+        <div class="row my-5">
             <? foreach ($worth as $item) { ?>
                 <div class="col-md-12">
                     <div class="content_block ">
@@ -58,21 +55,21 @@ $this->title = "О Нас";
             <? } ?>
 
             <div class="col-12">
-                <div class="row">
+                <div class="row my-5">
                     <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-solid fa-flag-checkered f-40_icon "></i>
                             <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-solid fa-flag-checkered f-40_icon "></i>
                             <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-solid fa-flag-checkered f-40_icon "></i>
                             <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
                         </div>
@@ -88,47 +85,44 @@ $this->title = "О Нас";
                 <div class="all_content mt-4">
                     <span class="font-weight-bold">В основе ценностей СП ООО «Techno Cable Group» заложены следующие принципы, подходы и стандарты:</span>
                 </div>
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
                             <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center p-3">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
                             <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
                             <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center p-5">
+                        <div class="card_item_advantage d-flex flex-column text-center">
                             <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
                             <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
 
         <div class="our_team mt-5">
-            <div class="main_title">
+            <div class="main_title mt-5">
                 <span>Наша команда</span>
             </div>
 
             <div class="all_content mt-4">
                 <span>Мы – команда опытных и компетентных специалистов, профессионалов своего дела! Наша команда найдет эффективное решение для реализации любой поставленной задачи и обеспечит ее исполнение на достойном уровне. Сплоченность, постоянное развитие, клиент ориентированность – это наши катализаторы, которые помогают преодолевать нам все трудности и препятствия на пути к успеху</span>
             </div>
-            <div class="our_team_cards mt-5 text-center ">
+            <div class="our_team_cards my-5 text-center ">
                 <div class="row">
                     <? foreach ($team as $item) { ?>
 

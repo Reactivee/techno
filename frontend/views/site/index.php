@@ -3,17 +3,20 @@
 /** @var \common\models\Advantages $advantages */
 $this->title = 'Techno';
 //\Yii::$app->language = 'ru-RU';
+
 ?>
 
-<div style="background-image: url(<?= $main_banner->img_path ?>)" class=" main-banner wow fadeIn
+<div style="background-image: url('<?= $main_banner->img_path ?>')" class=" main-banner wow fadeIn
      position-relative container_fluid" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
-        <img style="width: 93px;
-height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
+        <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
         <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link" href="#">каталог
                 продукции</a></h4>
     </div>
+
     <div class="container">
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
@@ -21,12 +24,12 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
-
-                                    <h2><?= $main_banner->title_uz ?></h2>
+                                    <h2 class="banner_text"><?= $main_banner->title_uz ?></h2>
+                                    <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner->text_uz ?></h4>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="main-green-button scroll-to-section">
-                                        <a href="#contact">Get Your Quote</a>
+                                    <div class="main-green-button mt-5">
+                                        <a href="#contact" class="text-capitalize">о компании</a>
                                     </div>
                                 </div>
                             </div>
@@ -37,6 +40,9 @@ height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
                 </div>
             </div>
         </div>
+    </div>
+    <div class="ribbon_main">
+        <img src="/uploads/banners/ribbon.png" alt="">
     </div>
 </div>
 
