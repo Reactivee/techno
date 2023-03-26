@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Address;
+use common\models\Suppliers;
 use yii\web\Controller;
 
 
@@ -35,9 +36,10 @@ class PartnerController extends Controller
      */
     public function actionIndex()
     {
+        $sup = Suppliers::find()->all();
 
         return $this->render('partner', [
-
+            'suppliers' => $sup
         ]);
     }
 
@@ -47,6 +49,7 @@ class PartnerController extends Controller
 
         ]);
     }
+
     public function actionInfo()
     {
         return $this->render('index', [

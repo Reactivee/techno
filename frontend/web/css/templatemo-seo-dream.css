@@ -460,7 +460,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-    color: #ffa100 !important;
+    color: white !important;
     opacity: 1;
 }
 

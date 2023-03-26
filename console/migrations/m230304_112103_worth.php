@@ -14,15 +14,15 @@ class m230304_112103_worth extends Migration
     {
         $this->createTable('worth', [
             'id' => $this->primaryKey(),
-//            'name' => $this->string(),
+            'name_uz' => $this->string(),
+            'name_ru' => $this->string(),
+            'name_en' => $this->string(),
             'title_ru' => $this->string(),
             'title_en' => $this->string(),
+            'title_uz' => $this->string(),
             'text_en' => $this->text(),
             'text_uz' => $this->text(),
             'text_ru' => $this->text(),
-//            'facebook' => $this->string(),
-//            'tg' => $this->string(),
-//            'instagram' => $this->string(),
             'img' => $this->string(),
         ]);
     }

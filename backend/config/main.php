@@ -62,7 +62,7 @@ return [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => false,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
-            'authTimeout' => 300,
+//            'authTimeout' => 300,
 //            'as afterLogin' => 'common\behaviors\LoginTimestampBehavior'
         ],
         'session' => [

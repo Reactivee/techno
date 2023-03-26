@@ -7,13 +7,20 @@ use common\models\AboutIn;
 use common\models\AboutSet;
 use common\models\Address;
 use common\models\Advantages;
+use common\models\AdvantagesFactory;
 use common\models\AdvantagesIcons;
 use common\models\Catalog;
 use common\models\Certificate;
+use common\models\Mission;
+use common\models\Principe;
 use common\models\Process;
 use common\models\ProcessImages;
+use common\models\StrategicTarget;
+use common\models\Target;
+use common\models\Tasks;
 use common\models\Team;
 use common\models\Worth;
+use common\models\WorthSub;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -125,17 +132,35 @@ class AboutController extends Controller
     {
 
         $team = Team::find()->all();
-        $worth = Worth::find()->all();
+        $worth = Worth::find()->one();
+        $worth_sub = WorthSub::find()->all();
+        $principe = Principe::find()->all();
 
         return $this->render('worth', [
             'team' => $team,
-            'worth' => $worth
+            'worth' => $worth,
+            'worth_sub' => $worth_sub,
+            'principe' => $principe
         ]);
     }
 
     public function actionMission()
     {
-        return $this->render('mission');
+
+        $mission = Mission::find()->all();
+        $target = Target::find()->one();
+        $tasks = Tasks::find()->all();
+        $st = StrategicTarget::find()->one();
+        $advantages = AdvantagesFactory::find()->all();
+
+        return $this->render('mission', [
+            'mission' => $mission,
+            'target' => $target,
+            'st' => $st,
+            'tasks' => $tasks,
+            'advantages' => $advantages,
+
+        ]);
     }
 
 }

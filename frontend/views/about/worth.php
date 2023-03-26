@@ -40,40 +40,31 @@ $this->title = "О Нас";
     <div class="container">
 
         <div class="row my-5">
-            <? foreach ($worth as $item) { ?>
-                <div class="col-md-12">
-                    <div class="content_block ">
-                        <div class="main_title">
-                            <span><?= $item->title_ru ?></span>
-                        </div>
-                        <div class="all_content mt-4">
-                            <span><?= $item->text_ru ?></span>
-                        </div>
+
+            <div class="col-md-12">
+                <div class="content_block ">
+                    <div class="main_title">
+                        <span><?= $worth->title_ru ?></span>
+                    </div>
+                    <div class="all_content mt-4">
+                        <span><?= $worth->text_ru ?></span>
                     </div>
                 </div>
-
-            <? } ?>
+            </div>
 
             <div class="col-12">
                 <div class="row my-5">
-                    <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
-                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
+                    <? foreach ($worth_sub as $item) { ?>
+
+                        <div class="col-md-4">
+                            <div class="card_item_advantage d-flex flex-column text-center">
+                                <i class="fa-solid fa-flag-checkered f-40_icon "></i>
+                                <span class="gr_color font-weight-bold mt-3"><?= $item->text_ru ?></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
-                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-solid fa-flag-checkered f-40_icon "></i>
-                            <span class="gr_color font-weight-bold mt-3">соблюдение всех качеств в сфере корпоративного управления</span>
-                        </div>
-                    </div>
+
+                    <? } ?>
+
                 </div>
                 <div class="col-12">
                     <div class="all_content mt-4">
@@ -86,30 +77,16 @@ $this->title = "О Нас";
                     <span class="font-weight-bold">В основе ценностей СП ООО «Techno Cable Group» заложены следующие принципы, подходы и стандарты:</span>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
-                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
+                    <? foreach ($principe as $item) { ?>
+
+                        <div class="col-md-3">
+                            <div class="card_item_advantage d-flex flex-column text-center">
+                                <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
+                                <span class=" font-weight-bold mt-3"><?=$item->text_ru ?></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
-                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
-                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card_item_advantage d-flex flex-column text-center">
-                            <i class="fa-sharp fa-solid fa-check f-40_icon"></i>
-                            <span class=" font-weight-bold mt-3">	Всей своей деятельностью укреплять репутацию надежности Предприятия</span>
-                        </div>
-                    </div>
+                    <? } ?>
+
                 </div>
             </div>
         </div>
