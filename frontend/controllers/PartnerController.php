@@ -3,9 +3,12 @@
 namespace frontend\controllers;
 
 use common\models\Address;
+use common\models\Catalog;
+use common\models\Certificate;
 use common\models\Clients;
 use common\models\Suppliers;
 use common\models\SuppliersImg;
+use common\models\SuppliersInfo;
 use yii\web\Controller;
 
 
@@ -49,15 +52,25 @@ class PartnerController extends Controller
     public function actionClient()
     {
         $clients = Clients::find()->all();
+        $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
+
         return $this->render('client', [
-            'clients' => $clients
+            'clients' => $clients,
+            'catalog' => $catalog
         ]);
     }
 
     public function actionInfo()
     {
-        return $this->render('index', [
 
+        $info = SuppliersInfo::find()->all();
+        $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
+        $certificate = Certificate::find()->all();
+//        dd($certificate);
+        return $this->render('index', [
+            'catalog' => $catalog,
+            'certificate' => $certificate,
+            'info' => $info
         ]);
     }
 

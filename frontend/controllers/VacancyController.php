@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Address;
+use common\models\VacancyInfo;
 use yii\web\Controller;
 
 
@@ -35,10 +36,12 @@ class VacancyController extends Controller
      */
     public function actionIndex()
     {
+        $vacancy = VacancyInfo::find()->where(['status' => 1])->all();
 
         return $this->render('index', [
-            'address' => $address
+            'vacancy' => $vacancy
         ]);
+
     }
 
 

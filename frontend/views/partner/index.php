@@ -35,91 +35,86 @@ $this->title = "Partner";
     <div class="">
 
         <div class="container">
+            <? foreach ($info as $item) { ?>
+                <div class="main_title  my-4">
+                    <span><?= $item->name_ru ?></span>
+                </div>
+                <div class="uni_text">
+                    <?= $item->text_ru ?>
+                </div>
+
+            <? } ?>
+
+            <!--            <div class="row">-->
+            <!--                <div class="col-md-8">-->
+            <!--                    <div class="block_content mb-4">-->
+            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
+            <!--                            Уважаемые партнеры!-->
+            <!--                        </div>-->
+            <!--                        <div class="uni_text">-->
+            <!--                            Наша продукция успешно конкурирует по ценам с аналогичными изделиями других производителей-->
+            <!--                            страны и ближнего зарубежья. СП ООО «Techno Cable Group» - является надежным поставщиком для-->
+            <!--                            крупных предприятий энергетики,-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="block_content mb-4">-->
+            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
+            <!--                            Мы предлагаем:-->
+            <!--                        </div>-->
+            <!--                        <div class="uni_text">-->
+            <!--                            индивидуальный подход к клиентам;-->
+            <!--                            прогрессивную систему скидок;-->
+            <!--                            гарантию качества продукции по ГОСТ.-->
+            <!---->
+            <!--                            Ждем Ваших заявок!-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="block_content mb-4">-->
+            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
+            <!--                            Ждем Ваших заявок!-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!---->
+            <!--                </div>-->
+            <!--                <div class="col-md-4"></div>-->
+            <!--            </div>-->
+
+            <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loop owl-carousel">
+                            <? foreach ($catalog as $item) { ?>
+                                <div class="item">
+                                    <div class="portfolio-item align-items-center">
+                                        <div class="thumb align-items-center">
+                                            <img class="w-100" src=<?= $item->path ?>>
+                                        </div>
+                                    </div>
+                                </div>
+                            <? } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="main_title  my-4">
-                <span>Информация для партнеров</span>
+                <span>Сертификаты</span>
             </div>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="block_content mb-4">
-                        <div class="partner_title uni_title color_techno font-weight-bold">
-                            Уважаемые партнеры!
-                        </div>
-                        <div class="uni_text">
-                            Наша продукция успешно конкурирует по ценам с аналогичными изделиями других производителей
-                            страны и ближнего зарубежья. СП ООО «Techno Cable Group» - является надежным поставщиком для
-                            крупных предприятий энергетики,
-                        </div>
+                <div class="col-lg-12">
+                    <div class="loop owl-carousel">
+                        <? foreach ($certificate as $item) { ?>
+                            <div class="item">
+                                <div class="portfolio-item align-items-center">
+                                    <div class="thumb align-items-center">
+                                        <img class="w-100" src=<?= $item->img ?>>
+                                    </div>
+                                </div>
+                            </div>
+                        <? } ?>
                     </div>
-                    <div class="block_content mb-4">
-                        <div class="partner_title uni_title color_techno font-weight-bold">
-                            Мы предлагаем:
-                        </div>
-                        <div class="uni_text">
-                            индивидуальный подход к клиентам;
-                            прогрессивную систему скидок;
-                            гарантию качества продукции по ГОСТ.
-
-                            Ждем Ваших заявок!
-                        </div>
-                    </div>
-                    <div class="block_content mb-4">
-                        <div class="partner_title uni_title color_techno font-weight-bold">
-                            Ждем Ваших заявок!
-                        </div>
-                    </div>
-
                 </div>
-                <div class="col-md-4"></div>
-            </div>
-            <div class="main_title  font-weight-bold my-4">
-                <h4 class=" font-weight-bold">наши партнеры</h4>
-            </div>
-            <div class="uni_text">
-                Для достижения высокого качества выпускаемой продукции предприятие имеет долгосрочные партнерские
-                отношения с ведущими местными и зарубежными производителями и поставщиками технологических материалов,
-                такими как АО «АГМК», ОА «УЗМЕТКОМБИНАТ», ОАО «ОК РУСАЛ ТД», ООО «БАШПЛАСТ», ОАО «ХЕМКОР», ОАО «КВИН»,
-                ОАО «Магнитогорск», ЗАО «Каустик», ОАО «Владимирский химический завод», «Метаклей» и другие. Вся
-                продукция поставщиков сертифицирована.
-
-                СП ООО «Techno Cable Group» - является надежным поставщиком для крупных предприятий энергетики,
-                нефтегазовой, нефтехимической, строительной отраслей, предприятий сфер обслуживания и строительства
-                железнодорожных путей, метро и социальных объектов Республики.
-            </div>
-            <div class="row align-items-center ">
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-
             </div>
 
-            <div class="main_title  font-weight-bold my-4">
-                <h4 class=" font-weight-bold">Сертификаты</h4>
-            </div>
-
-            <div class="row align-items-center ">
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/images/portfolio-06.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-
-            </div>
         </div>
     </div>
 </section>

@@ -84,13 +84,16 @@ $settings = Settings::find()->one();
                                     <a href="/partner/client">Клиенты</a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section"><a href="#services">Информация для партнеров</a></li>
+
+                            <li class="scroll-to-section"><a href="/partner/info">Информация для партнеров</a></li>
+
                             <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
                                 <div class="nav_sub bg_techno  flex-column">
                                     <a href='/media'>Фотогалерея</a>
                                     <a href="/media/news">Новости</a>
                                 </div>
                             </li>
+
                             <li class="scroll-to-section"><a href="/contact">Контакты</a></li>
                             <li class="scroll-to-section"><a href="/vacancy">Вакансии</a></li>
                         </ul>
