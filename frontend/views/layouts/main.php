@@ -10,6 +10,7 @@ use frontend\assets\AppAsset;
 use yii\bootstrap4\Breadcrumbs;
 
 $settings = Settings::find()->one();
+
 AppAsset::register($this);
 
 ?>
@@ -23,7 +24,7 @@ AppAsset::register($this);
         <meta name="Description"
               content="ZELAL TEXTILE PRODUCTS OF WORLD QUALITY">
         <?php $this->registerCsrfMetaTags() ?>
-        <title><?= $settings->site_name ?></title>
+        <title>Techno Cable Group</title>
         <?php $this->head() ?>
         <link rel="shortcut icon" href="<?= $settings->logo ?>" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="180x180" href="<?= $settings->logo ?>">
