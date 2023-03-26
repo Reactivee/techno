@@ -39,16 +39,18 @@ $this->title = "Partner";
                 <span>Клиенты</span>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="block_content mb-4">
-
-                        <div class="uni_text">
-                            СП ООО «Techno Cable Group» - является надежным поставщиком для крупных предприятий
-                            энергетики, нефтегазовой, нефтехимической, строительной отраслей, предприятий сфер
-                            обслуживания и строительства железнодорожных путей, метро и социальных объектов Республики
+                <? foreach ($clients as $client) { ?>
+                    <div class="col-md-12">
+                        <div class="block_content mb-4">
+                            <div class="main_title  my-4">
+                                <span><?= $client->title_ru ?></span>
+                            </div>
+                            <div class="uni_text">
+                                <?= $client->text_ru ?>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <? } ?>
 
             </div>
 

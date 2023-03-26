@@ -50,22 +50,42 @@ $this->title = "Partner";
                 <? } ?>
             </div>
 
+            <div class="container-fluid wow fadeIn my-5" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loop owl-carousel">
 
-            <div class="row align-items-center ">
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
-                <div class="col-md-3">
-                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">
-                </div>
+                            <? foreach ($images as $item) { ?>
+                                <div class="item">
+                                    <div class="portfolio-item align-items-center">
+                                        <div class="thumb align-items-center">
+                                            <img class="w-100" src=<?= $item->img ?>>
+                                        </div>
+                                    </div>
+                                </div>
+                            <? } ?>
 
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+<!--            <div class="row align-items-center ">-->
+<!--                <div class="col-md-3">-->
+<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
+<!--                </div>-->
+<!--                <div class="col-md-3">-->
+<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
+<!--                </div>-->
+<!--                <div class="col-md-3">-->
+<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
+<!--                </div>-->
+<!--                <div class="col-md-3">-->
+<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
         </div>
     </div>
 </section>

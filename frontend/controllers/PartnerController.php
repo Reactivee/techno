@@ -3,7 +3,9 @@
 namespace frontend\controllers;
 
 use common\models\Address;
+use common\models\Clients;
 use common\models\Suppliers;
+use common\models\SuppliersImg;
 use yii\web\Controller;
 
 
@@ -37,16 +39,18 @@ class PartnerController extends Controller
     public function actionIndex()
     {
         $sup = Suppliers::find()->all();
-
+        $images = SuppliersImg::find()->all();
         return $this->render('partner', [
-            'suppliers' => $sup
+            'suppliers' => $sup,
+            'images' => $images
         ]);
     }
 
     public function actionClient()
     {
+        $clients = Clients::find()->all();
         return $this->render('client', [
-
+            'clients' => $clients
         ]);
     }
 
