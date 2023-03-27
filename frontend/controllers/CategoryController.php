@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\models\Address;
 use common\models\Catalog;
 use common\models\Category;
+use common\models\ConstructionProduct;
 use common\models\Element;
 use common\models\ElementImages;
 use common\models\Materials;
@@ -16,7 +17,9 @@ use common\models\Sorts;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
+use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 
 /**
@@ -165,6 +168,10 @@ class CategoryController extends Controller
         $element = Product::find()
             ->where(['slug' => trim($slug)])
             ->one();
+        if (!$element)
+            throw new NotFoundHttpException();
+
+        $cont = ConstructionProduct::find()->where(['product_id' => $element->id])->all();
         $category = Category::find()->all();
         $item_images = [];
 //        if (!$element->fat_element_id) {
@@ -210,6 +217,7 @@ class CategoryController extends Controller
 //            'item_images' => $item_images,
             'element' => $element,
             'category' => $category,
+            'cont' => $cont
 //            'similar_product' => $similar_element,
 //            'address' => $address,
 

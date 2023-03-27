@@ -33,32 +33,28 @@ $this->title = "News";
 
 
     <div class="container">
-        <div class="main_title  my-4">
-            <span>новости</span>
-        </div>
+<!--        <div class="main_title  my-4">-->
+<!--            <span>новости</span>-->
+<!--        </div>-->
         <div class="row align-items-center pb-5">
-            <? foreach ($dataProvider->models as $item) { ?>
-                <div class="col-md-6 mb-4">
-                    <div class="news_block ">
-                        <img class="w-100 border_radius" src="<?= $item->img ?>"
-                             alt="">
-                    </div>
 
+            <div class="news_text_title my-4 text-center">
+                <h2 class="font-weight-bold">  <?= $news->title_ru?></h2>
+            </div>
+
+            <div class="col-md-5">
+                <div class="news_block ">
+                    <img class="w-100 border_radius" src="<?= $news->img?>" alt="">
                 </div>
-                <div class="col-md-6 text-center">
-                    <div class="news_text ">
-                        <div class="news_text_title">
-                            <?= $item->title_ru ?>
-                        </div>
-                        <div class="news_text_btn mt-4">
-                            <a href="full/<?= $item->id ?>" class="btn btn-primary bg_techno">
-                                Подробнее</a>
-                        </div>
+            </div>
+            <div class="col-md-7 text-center mt-5" >
+                <div class="news_text ">
+
+                    <div class="news_text_btn mt-4">
+                        <?= $news->text_ru?>
                     </div>
                 </div>
-
-            <? } ?>
-
+            </div>
         </div>
     </div>
 </section>

@@ -50,9 +50,12 @@ use yii\widgets\Pjax;
             <? //= $element['title_' . Yii::$app->language] ?><!--</span>-->
             <!---->
             <!--        </div>-->
-            <div class="view_block my-4">
-
+            <div class="view_block">
+                <div class="main_title mb-5">
+                    <span>   <?= $element->category->name_ru ?></span>
+                </div>
                 <div class="row">
+
                     <div class="col-md-4">
                         <div class="product_card">
                             <div class="product_card_top d-flex justify-content-start ">
@@ -80,59 +83,46 @@ use yii\widgets\Pjax;
                         </div>
 
                         <div class="row element_options_list">
-                            <div class="col-md-3">
-                                <h4 class="font-weight-bold text-center">Область применения</h4>
-                            </div>
-                            <div class="col-md-8">
-                                <p>Для передачи и распределения электрической энергии в станционарных установках на
-                                    номинальное переменное напряжение 0,66; 1 и 3 kV</p>
-                            </div>
-                            <div class="col-md-3">
-                                <h4 class="font-weight-bold text-center">Область применения</h4>
-                            </div>
-                            <div class="col-md-8">
-                                <p>Для передачи и распределения электрической энергии в станционарных установках на
-                                    номинальное переменное напряжение 0,66; 1 и 3 kV</p>
-                            </div>
+                            <?
+                            foreach ($element->option as $option) { ?>
+
+                                <div class="col-md-3">
+                                    <h4 class="font-weight-bold text-center"><?= $option->options->name_ru ?></h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <p><?= $option->value->name_ru ?></p>
+                                </div>
+                            <? } ?>
 
                         </div>
 
                     </div>
                     <div class="element_desc ">
-                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white" >Указания по эксплуатации</h4>
-                        <div class="content_desc color_white ">Кабели предназначены для эксплуатации в электрических сетях
-                            переменного
-                            напряжения с заземленной или изолированной нейтралью, в которых продолжительность работы в
-                            режиме однофазного короткого замыкания на землю не превышает 8 ч, а общая продолжительность
-                            работы в режиме однофазного короткого замыкания на землю не превышает 125 ч за год.
-                            Максимальное
-                            напряжение сети, при котором допускается эксплуатация кабелей Um, равно 1,2U.
-                            Кабели могут быть использованы для эксплуатации в электрических сетях постоянного
-                            напряжения, не
-                            превышающего 2,4 U0.
-                            Кабели предназначены для эксплуатации при температуре окружающей среды от минус 50 °С до
-                            плюс 50
-
+                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white">Указания по
+                            эксплуатации</h4>
+                        <div class="content_desc color_white ">
+                            <?= $element->desc?>
                         </div>
                     </div>
                     <div class="construction mt-4">
-                        <div class="const_main_title text-center "><h4 class="color_white font-weight-bold ">Конструкция</h4></div>
-
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="construction_items card text-center p-2">
-                                    <div class="const_title">
-                                        <h5 class="font-weight-bold ">Токопроводяща жила</h5>
-                                    </div>
-                                    <div class="const_content mt-2">
-                                        Медная или алюминиевая, однопроволочная (ок) или многопроволочная (круглая "мк",
-                                        секторная "мс"). 1-го или 2-го класса гибкости по ГОСТ 22483. Номинальное
-                                        сечение
-                                        основных жил от 1,5 до 400 mm2.
-                                        Число жил от 1 до 5.
+                        <div class="const_main_title text-center mb-4">
+                            <h4 class="color_white font-weight-bold ">
+                                Конструкция</h4>
+                        </div>
+                        <div class="row ">
+                            <? foreach ($cont as $item) { ?>
+                                <div class="col-md-2 ">
+                                    <div class="construction_items h-100 card text-center p-2">
+                                        <div class="const_title">
+                                            <h5 class="font-weight-bold ">     <?= $item->title_ru ?></h5>
+                                        </div>
+                                        <div class="const_content mt-2">
+                                            <?= $item->text_ru ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            <? } ?>
+
                         </div>
                     </div>
 

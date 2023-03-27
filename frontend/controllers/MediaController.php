@@ -59,13 +59,24 @@ class MediaController extends Controller
 
     }
 
-    public function actionNews($id = null)
+    public function actionNews()
     {
-//        $news = Posts::findOne($id);
-//        if (!$news)
-//            throw new NotFoundHttpException();
 
+        $searchModel = new PostsSearch();
+        $dataProvider = $searchModel->search($this->request->queryParams);
         return $this->render('news', [
+            'dataProvider' => $dataProvider,
+
+        ]);
+    }
+    public function actionFull($id = null)
+    {
+        $news = Posts::findOne($id);
+
+        if (!$news)
+            throw new NotFoundHttpException();
+
+        return $this->render('full', [
             'news' => $news,
         ]);
     }

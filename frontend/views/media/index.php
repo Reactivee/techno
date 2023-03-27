@@ -64,9 +64,13 @@ $this->title = "Галерея";
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="row">
-                        <? foreach ($dataProvider->models as $item) { ?>
-                            <div class="col-md-3">
-                                <img class="w-100" src="<?= $item->img ?>" alt="">
+                        <? foreach ($dataProviderVideos->models as $item) { ?>
+                            <div class="col-md-4">
+                                <iframe width="100%" height="315" src="<?= $item->path ?>"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                <!--                                <img class="w-100" src="" alt="">-->
                             </div>
                         <? } ?>
                     </div>
