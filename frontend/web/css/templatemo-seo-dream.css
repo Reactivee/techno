@@ -287,11 +287,13 @@ body {
     transition: 0.3s all;
     color: #8c8c8c;
 }
-.ribbon_main{
+
+.ribbon_main {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 /*
 ---------------------------------------------
 header
@@ -981,6 +983,20 @@ Banner Style
     max-width: 100% !important;
     margin: 0 auto;
 }
+/*.main_banner_ {*/
+/*    height: 100vh;*/
+/*    !*background: url("/uploads/banners/1banner.png");*!*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*}*/
+.worth_banner {
+    background: url("/frontend/web/uploads/banners/partners.png");
+
+}
+.main_product_banner{
+    background: url("/frontend/web/uploads/banners/50.png");
+    padding: 336px 0 280px 0;
+}
 
 
 /*.main-banner:after {*/
@@ -1044,6 +1060,24 @@ Banner Style
     /*-webkit-text-fill-color: transparent;*/
 }
 
+.main_header_text {
+    color: white;
+    /*border-top: 1px solid #eee;*/
+    /*margin-top: 30px;*/
+    /*padding-top: 20px;*/
+    /*margin-bottom: 45px;*/
+    /*font-size: 60px;*/
+    /*font-weight: 800;*/
+    /*color: #2a2a2a;*/
+    /*line-height: 72px;*/
+    /*background: #FA9D4D;*/
+    /*background: -webkit-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*background: -moz-linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
 .main-banner .right-image {
     text-align: right;
     position: relative;
@@ -1053,7 +1087,8 @@ Banner Style
 .main-banner .right-image img {
     max-width: 593px;
 }
-.banner_text{
+
+.banner_text {
     color: white;
     /*-webkit-text-fill-color:*/
 }
@@ -1817,7 +1852,7 @@ form#contact button {
     padding: 12px 25px;
     border-radius: 23px;
     letter-spacing: 0.25px;
-    border-bottom: 2px solid #4771cb !important;
+    /*border-bottom: 2px solid #4771cb !important;*/
     transition: all .3s;
     outline: none;
     border: none;
@@ -1830,7 +1865,7 @@ form#contact button:hover {
 }
 
 /*Product page*/
- .line_item {
+.line_item {
     border-radius: 50px;
     /*padding: 0 0 0 15px ;*/
 }
@@ -1843,7 +1878,6 @@ element Style
 .item_img {
     height: 400px;
 }
-
 
 .products_owl .owl-item {
     /*bottom: -200px;*/
@@ -2202,13 +2236,15 @@ footer p {
 footer p a:hover {
     /*color: #4771cb;*/
 }
-.navbar_footer{
+
+.navbar_footer {
     display: flex;
     flex-wrap: wrap;
     /*flex: 0 0 50%;*/
     padding: 0 40px;
 }
-.navbar_footer li{
+
+.navbar_footer li {
     /*display: flex;*/
     flex-wrap: wrap;
     flex: 0 0 50%;
@@ -2216,10 +2252,12 @@ footer p a:hover {
     line-height: 30px;
 
 }
-.navbar_footer a{
+
+.navbar_footer a {
     font-size: 13px;
 }
-/* 
+
+/*
 ---------------------------------------------
 responsive
 --------------------------------------------- 

@@ -329,6 +329,23 @@ html {
     background-size: cover;
 }
 
+/*.main_banner_ {*/
+/*    height: 100vh;*/
+/*    !*background: url("/uploads/banners/1banner.png");*!*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*}*/
+.worth_banner {
+    background: url("/frontend/web/uploads/banners/partners.png");
+
+}
+
+.about_banner {
+    background: url("/uploads/banners/");
+    background-position: center;
+    background-size: cover;
+}
+
 .top__content_title {
     font-size: 48px;
     line-height: 150%;
@@ -354,9 +371,11 @@ html {
     padding: 10px 40px;
     margin-right: 30px;
 }
-.top__content_buttons{
+
+.top__content_buttons {
     margin-top: 40px;
 }
+
 .about_mini_card {
     position: absolute;
     top: -47px;

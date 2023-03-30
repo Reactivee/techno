@@ -5,7 +5,7 @@ use yii\helpers\Url;
 
 ?>
 <section id="products" class="category_product">
-    <div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div  class="main-banner  main_product_banner  wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
 
         <div class="container">
             <div class="row">
@@ -16,7 +16,7 @@ use yii\helpers\Url;
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2>SEO &amp; Digital Marketing Agency</h2>
+<!--                                        <h2>SEO &amp; Digital Marketing Agency</h2>-->
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="line_item d-flex align-items-center">
