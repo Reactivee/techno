@@ -456,7 +456,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-    color: #fff !important;
+    color: black !important;
 }
 
 .background-header .main-nav .nav li:hover a,
