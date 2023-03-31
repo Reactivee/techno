@@ -15,7 +15,7 @@ $this->title = 'Techno';
 
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
         <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
-        <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link" href="/about">каталог
+        <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link" href="/category/all-category">каталог
                 продукции</a></h4>
     </div>
 
@@ -33,7 +33,7 @@ $this->title = 'Techno';
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="main-green-button mt-5">
-                                        <a href="#contact" class="text-capitalize">о компании</a>
+                                        <a href="/about" class="text-capitalize">о компании</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@ $this->title = 'Techno';
     <div class="middle_line bg-light py-4 w-100">
         <div class="d-flex middle_line_block justify-content-between">
             <div class="line_item line_item_left bg-white d-flex align-items-center ">
-                <h4 class="pl-5 pr-4 color_techno text-capitalize">смотреть все</h4>
+                <h4 class="pl-5 pr-4 color_techno text-capitalize"><a class="text-decoration-none" href="/category/all-category"> смотреть все</a></h4>
                 <img class="" style="width: 93px; height: 93px;" src="/uploads/logo/line1.svg" alt="">
             </div>
             <div class="line_item d-flex align-items-center">
@@ -183,7 +183,7 @@ $this->title = 'Techno';
             <div class="line_item line_item_right bg-white d-flex align-items-center">
                 <img style="width: 93px;
 height: 93px;" src="/uploads/logo/line1.svg" alt="">
-                <h4 class="color_techno text-capitalize pr-5 pl-4">смотреть все</h4>
+                <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none" href="/category/all-category"> смотреть все</a></h4>
             </div>
         </div>
     </div>
