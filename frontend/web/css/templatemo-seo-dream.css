@@ -315,9 +315,6 @@ header
     color: #fff;
 }
 
-.background-header .main-nav .nav li:hover a {
-    color: #33ccc5;
-}
 
 .background-header .nav li a.active {
     position: relative;
@@ -454,13 +451,13 @@ header
     letter-spacing: 0;
 }
 
-.header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
-    color: black !important;
+
+.scroll-to-section a:hover {
+    color: #2877ff !important;
 }
 
-.background-header .main-nav .nav li:hover a,
-.background-header .main-nav .nav li a.active {
+
+.nav_sub  a {
     color: black !important;
     opacity: 1;
 }
