@@ -15,7 +15,7 @@ $this->title = 'Techno';
 
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
         <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
-        <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link" href="#">каталог
+        <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link" href="/about">каталог
                 продукции</a></h4>
     </div>
 
