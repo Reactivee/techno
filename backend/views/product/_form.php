@@ -1,6 +1,7 @@
 <?php
 
 use kartik\file\FileInput;
+use mihaildev\ckeditor\CKEditor;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\JsExpression;
@@ -27,11 +28,11 @@ foreach ($prod_img as $image) {
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
+<!--    --><?//= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+<!--    --><?//= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'category_id')->dropDownList($model->getCategoryAll()) ?>
 
@@ -83,13 +84,28 @@ foreach ($prod_img as $image) {
 
     ?>
 
-    <?= $form->field($model, 'type')->dropDownList($model->getSortsAll()) ?>
+<!--    --><?//= $form->field($model, 'type')->dropDownList($model->getSortsAll()) ?>
 <!--    --><?//= $form->field($model, 'options')->dropDownList($model->getSortsAll()) ?>
 
 <!--    --><?//= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'desc')->textarea(['maxlength' => true]) ?>
-
+<!--    --><?//= $form->field($model, 'desc')->textarea(['maxlength' => true]) ?>
+    <?php echo $form->field($model, 'desc')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

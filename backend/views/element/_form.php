@@ -32,7 +32,7 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'product_id')->dropDownList($model->getProducts())->label('Product Name') ?>
 
-        <?= $form->field($model, 'fat_element_id')->dropDownList($model->getElements(), ['prompt' => 'Select Element'])->label('Element Name (NOT MUST IF THIS FATHER)') ?>
+<!--        --><?//= $form->field($model, 'fat_element_id')->dropDownList($model->getElements(), ['prompt' => 'Select Element'])->label('Element Name (NOT MUST IF THIS FATHER)') ?>
 
 <!--    --><?// } ?>
 
@@ -42,11 +42,11 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'desc_en')->textarea(['rows' => 6]) ?>
+<!--    --><?//= $form->field($model, 'desc_en')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'desc_uz')->textarea(['rows' => 6]) ?>
+<!--    --><?//= $form->field($model, 'desc_uz')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'desc_ru')->textarea(['rows' => 6]) ?>
+<!--    --><?//= $form->field($model, 'desc_ru')->textarea(['rows' => 6]) ?>
 
     <?php echo $form->field($model, 'uploaded_images')->hiddenInput(['id' => 'uploaded_images'])->label(false) ?>
     <?php $this->registerJs(
@@ -95,7 +95,7 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     ?>
 
-    <?= $form->field($model, 'slug')->textInput(['maxlength' => true, 'disabled' => 'disabled']) ?>
+<!--    --><?//= $form->field($model, 'slug')->textInput(['maxlength' => true, 'disabled' => 'disabled']) ?>
 
 
     <div class="form-group">

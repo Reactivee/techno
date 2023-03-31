@@ -17,8 +17,8 @@ $prod_img = \common\models\LaboratoryImages::find()
     ->asArray()
     ->all();
 foreach ($prod_img as $image) {
-    array_push($initialPreview, '/frontend/web' . $image['path']);
-    array_push($initialPreviewConfig, ['key' => $image['path']]);
+    array_push($initialPreview, '/frontend/web' . $image['img']);
+    array_push($initialPreviewConfig, ['key' => $image['img']]);
 
 }
 ?>
