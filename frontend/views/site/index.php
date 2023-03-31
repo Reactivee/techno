@@ -173,7 +173,7 @@ $this->title = 'Techno';
     <div class="middle_line bg-light py-4 w-100">
         <div class="d-flex middle_line_block justify-content-between">
             <div class="line_item line_item_left bg-white d-flex align-items-center ">
-                <h4 class="pl-5 pr-4 color_techno text-capitalize"><a class="text-decoration-none" href="/category/all-category"> смотреть все</a></h4>
+                <h4 class="pl-5 pr-4 color_techno text-capitalize"><a class="text-decoration-none color_techno" href="/category/all-category"> смотреть все</a></h4>
                 <img class="" style="width: 93px; height: 93px;" src="/uploads/logo/line1.svg" alt="">
             </div>
             <div class="line_item d-flex align-items-center">
@@ -183,7 +183,7 @@ $this->title = 'Techno';
             <div class="line_item line_item_right bg-white d-flex align-items-center">
                 <img style="width: 93px;
 height: 93px;" src="/uploads/logo/line1.svg" alt="">
-                <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none" href="/category/all-category"> смотреть все</a></h4>
+                <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none color_techno" href="/category/all-category"> смотреть все</a></h4>
             </div>
         </div>
     </div>
