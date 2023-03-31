@@ -2010,7 +2010,9 @@ element Style
 /*About*/
 .main_title {
     font-weight: 800;
-    font-size: 31px;
+    /*font-size: 31px;*/
+    font-size: calc(25px + (31 - 25) * ((100vw - 300px) / (1600 - 300)));
+
     line-height: 55px;
     text-transform: uppercase;
     color: #EB632A;
@@ -2241,7 +2243,7 @@ footer {
     padding: 40px 0;
     /*background-color: red;*/
     background: url("/uploads/banners/footer.png"),
-        /*rgb(231, 138, 32),*/ linear-gradient(180deg, rgba(83, 33, 11, 1) 17%, rgba(30, 30, 30, 1) 76%);
+        linear-gradient(180deg, rgba(83, 33, 11, 1) 17%, rgba(30, 30, 30, 1) 76%);
     color: white;
     background-repeat: no-repeat;
 }
@@ -2413,5 +2415,28 @@ responsive
 
     form#contact {
         padding: 30px;
+    }
+    .skills-content{
+        margin-top: 20px;
+    }
+    .middle_line_block{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-services{
+        padding-top: 10px;
+    }
+    .our-services .container-fluid {
+        padding: 0px 41px;
+    }
+    .step_year_block{
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+    .step_item_year{
+        text-align: center;
     }
 }

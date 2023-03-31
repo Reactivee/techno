@@ -45,7 +45,7 @@ $this->title = "Галерея";
             <div class="row">
                 <?
                 foreach ($process as $item) { ?>
-                    <div class="col-md-4 col-6 my-2">
+                    <div class="col-md-4 col-12 my-2">
                         <a data-lightbox="example-set"
                            class="demo"
                            href="/frontend/web<?= $item->path ?>">

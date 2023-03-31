@@ -41,14 +41,14 @@ $this->title = "News";
         </div>
         <div class="row align-items-center pb-5">
             <? foreach ($dataProvider->models as $item) { ?>
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 mt-4 mt-md-0">
                     <div class="news_block ">
                         <img class="w-100 border_radius" src="<?= $item->img ?>"
                              alt="">
                     </div>
 
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center mt-4 mt-md-0">
                     <div class="news_text ">
                         <div class="news_text_title">
                             <?= $item->title_ru ?>

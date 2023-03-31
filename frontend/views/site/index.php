@@ -167,11 +167,10 @@ $this->title = 'Techno';
 
 <div id="formline" class="mb-3">
     <div class="middle_line bg-light py-4 w-100">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex middle_line_block justify-content-between">
             <div class="line_item line_item_left bg-white d-flex align-items-center ">
                 <h4 class="pl-5 pr-4 color_techno text-capitalize">смотреть все</h4>
-                <img class="" style="width: 93px;
-height: 93px;" src="/uploads/logo/line1.svg" alt="">
+                <img class="" style="width: 93px; height: 93px;" src="/uploads/logo/line1.svg" alt="">
             </div>
             <div class="line_item d-flex align-items-center">
                 <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border"><h3>оставить
