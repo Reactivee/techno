@@ -3,8 +3,9 @@
 namespace backend\controllers;
 
 use common\models\Catalog;
-use common\models\CatalogSearch;
-use common\models\Gallery;
+use common\models\Laboratory;
+use common\models\LaboratoryImages;
+use common\models\LaboratorySearch;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -13,9 +14,9 @@ use yii\web\Response;
 use yii\web\UploadedFile;
 
 /**
- * CatalogController implements the CRUD actions for Catalog model.
+ * LaboratoryController implements the CRUD actions for Laboratory model.
  */
-class CatalogController extends Controller
+class LaboratoryController extends Controller
 {
     /**
      * @inheritDoc
@@ -36,28 +37,23 @@ class CatalogController extends Controller
     }
 
     /**
-     * Lists all Catalog models.
+     * Lists all Laboratory models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $model = new Catalog();
+        $searchModel = new LaboratorySearch();
+        $dataProvider = $searchModel->search($this->request->queryParams);
 
-        if ($this->request->isPost && $model->load($this->request->post())) {
-
-            if ($model->uploaded_images) {
-                $model->saveImages();
-            }
-        }
-
-        return $this->render('update', [
-            'model' => $model,
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Catalog model.
+     * Displays a single Laboratory model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -70,17 +66,21 @@ class CatalogController extends Controller
     }
 
     /**
-     * Creates a new Catalog model.
+     * Creates a new Laboratory model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Catalog();
+        $model = new Laboratory();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+            if ($model->load($this->request->post())) {
+                if ($model->uploaded_images) {
+                    $model->saveImages();
+                }
+                $model->save();
+                return $this->redirect(['update', 'id' => $model->id]);
             }
         } else {
             $model->loadDefaultValues();
@@ -92,7 +92,7 @@ class CatalogController extends Controller
     }
 
     /**
-     * Updates an existing Catalog model.
+     * Updates an existing Laboratory model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -102,8 +102,12 @@ class CatalogController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($this->request->isPost && $model->load($this->request->post())) {
+            if ($model->uploaded_images) {
+                $model->saveImages();
+            }
+            $model->save();
+            return $this->redirect(['update', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -112,7 +116,7 @@ class CatalogController extends Controller
     }
 
     /**
-     * Deletes an existing Catalog model.
+     * Deletes an existing Laboratory model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -126,15 +130,15 @@ class CatalogController extends Controller
     }
 
     /**
-     * Finds the Catalog model based on its primary key value.
+     * Finds the Laboratory model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Catalog the loaded model
+     * @return Laboratory the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Catalog::findOne(['id' => $id])) !== null) {
+        if (($model = Laboratory::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
@@ -146,7 +150,7 @@ class CatalogController extends Controller
         Yii::$app->response->format = Response::FORMAT_JSON;
         $file_image = UploadedFile::getInstancesByName('img');
 
-        $folder_full = Yii::getAlias('@frontend') . '/web/uploads/catalog';
+        $folder_full = Yii::getAlias('@frontend') . '/web/uploads/laboratory';
 
         if (!file_exists($folder_full)) {
             mkdir($folder_full, 0777, true);
@@ -177,8 +181,8 @@ class CatalogController extends Controller
         Yii::$app->response->format = Response::FORMAT_JSON;
         if ($this->request->post()) {
             $post = $this->request->post();
-            $imgs = Catalog::find()
-                ->where(['path' => $post['key']])
+            $imgs = LaboratoryImages::find()
+                ->where(['img' => $post['key']])
                 ->one();
 
             if ($imgs) {

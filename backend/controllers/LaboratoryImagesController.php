@@ -2,20 +2,16 @@
 
 namespace backend\controllers;
 
-use common\models\Catalog;
-use common\models\CatalogSearch;
-use common\models\Gallery;
-use Yii;
+use common\models\LaboratoryImages;
+use common\models\LaboratoryImagesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\Response;
-use yii\web\UploadedFile;
 
 /**
- * CatalogController implements the CRUD actions for Catalog model.
+ * LaboratoryImagesController implements the CRUD actions for LaboratoryImages model.
  */
-class CatalogController extends Controller
+class LaboratoryImagesController extends Controller
 {
     /**
      * @inheritDoc
@@ -36,28 +32,23 @@ class CatalogController extends Controller
     }
 
     /**
-     * Lists all Catalog models.
+     * Lists all LaboratoryImages models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $model = new Catalog();
+        $searchModel = new LaboratoryImagesSearch();
+        $dataProvider = $searchModel->search($this->request->queryParams);
 
-        if ($this->request->isPost && $model->load($this->request->post())) {
-
-            if ($model->uploaded_images) {
-                $model->saveImages();
-            }
-        }
-
-        return $this->render('update', [
-            'model' => $model,
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Catalog model.
+     * Displays a single LaboratoryImages model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -70,13 +61,13 @@ class CatalogController extends Controller
     }
 
     /**
-     * Creates a new Catalog model.
+     * Creates a new LaboratoryImages model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Catalog();
+        $model = new LaboratoryImages();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -92,7 +83,7 @@ class CatalogController extends Controller
     }
 
     /**
-     * Updates an existing Catalog model.
+     * Updates an existing LaboratoryImages model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -112,7 +103,7 @@ class CatalogController extends Controller
     }
 
     /**
-     * Deletes an existing Catalog model.
+     * Deletes an existing LaboratoryImages model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -126,65 +117,18 @@ class CatalogController extends Controller
     }
 
     /**
-     * Finds the Catalog model based on its primary key value.
+     * Finds the LaboratoryImages model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Catalog the loaded model
+     * @return LaboratoryImages the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Catalog::findOne(['id' => $id])) !== null) {
+        if (($model = LaboratoryImages::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
-
-    public function actionImageUpload()
-    {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-        $file_image = UploadedFile::getInstancesByName('img');
-
-        $folder_full = Yii::getAlias('@frontend') . '/web/uploads/catalog';
-
-        if (!file_exists($folder_full)) {
-            mkdir($folder_full, 0777, true);
-        }
-
-        if ($file_image) {
-            $folder = '/catalog/';
-            foreach ($file_image as $file) {
-
-                $ext = pathinfo($file->name, PATHINFO_EXTENSION);
-                $name = pathinfo($file->name, PATHINFO_FILENAME);
-                $generateName = Yii::$app->security->generateRandomString();
-                $path = Yii::getAlias('@frontend') . '/web/uploads/' . $folder . $generateName . ".{$ext}";
-                $file->saveAs($path);
-                $data = [
-                    'generate_name' => $generateName,
-                    'name' => $name,
-                    'path' => Yii::getAlias('@uploadsUrl') . $folder . $generateName . ".{$ext}"
-                ];
-            }
-        }
-
-        return $data;
-    }
-
-    public function actionImageDelete()
-    {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-        if ($this->request->post()) {
-            $post = $this->request->post();
-            $imgs = Catalog::find()
-                ->where(['path' => $post['key']])
-                ->one();
-
-            if ($imgs) {
-                $imgs->delete();
-            }
-        }
-
     }
 }

@@ -1,24 +1,24 @@
 <?php
 
+use common\models\Laboratory;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+/** @var yii\web\View $this */
+/** @var common\models\LaboratorySearch $searchModel */
+/** @var yii\data\ActiveDataProvider $dataProvider */
 
-/* @var $this yii\web\View */
-/* @var $searchModel common\models\SortsSearch */
-/* @var $dataProvider yii\data\ActiveDataProvider */
-
-$this->title = 'Sorts';
+$this->title = 'Laboratories';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="sorts-index">
+<div class="laboratory-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Sorts', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Laboratory', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -31,17 +31,18 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'title_uz',
             'title_ru',
             'title_en',
-            'desc',
-            'type',
-            'status',
+            'title_uz',
+            'text_en:ntext',
+            //'text_uz:ntext',
+            //'text_ru:ntext',
+            //'img',
             [
                 'class' => ActionColumn::className(),
-//                'urlCreator' => function ($action, Sorts $model, $key, $index, $column) {
-//                    return Url::toRoute([$action, 'id' => $model->id]);
-//                 }
+                'urlCreator' => function ($action, Laboratory $model, $key, $index, $column) {
+                    return Url::toRoute([$action, 'id' => $model->id]);
+                 }
             ],
         ],
     ]); ?>

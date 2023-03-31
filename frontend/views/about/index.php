@@ -6,14 +6,16 @@ $this->title = "О Нас";
 
 ?>
 <!--Main banner-->
-<div class="main-banner about_banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="main-banner about_banner wow fadeIn position-relative" id="top" data-wow-duration="1s"
+     data-wow-delay="0.5s">
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
-                        <div class="left-content  header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="left-content  header-text wow fadeInLeft" data-wow-duration="1s"
+                             data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h2 class="main_header_text">О НАС</h2>
@@ -30,7 +32,7 @@ $this->title = "О Нас";
     </div>
 </div>
 <!--End main banner-->
-<section class="about mb-5">
+<section class="about mt-5 view_wrapper">
     <div class="container">
 
         <? foreach ($about as $key => $item) {
@@ -69,29 +71,29 @@ $this->title = "О Нас";
 
     </div>
 
-</section>
 
-<section>
-    <div class="sertificate my-5">
-        <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="loop owl-carousel">
+    <section>
+        <div class="sertificate mt-5">
+            <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loop owl-carousel">
 
-                        <? foreach ($catalog as $item) { ?>
-                            <div class="item">
-                                <div class="portfolio-item align-items-center">
-                                    <div class="thumb align-items-center">
-                                        <img class="w-100" src=<?= $item->img ?>>
+                            <? foreach ($catalog as $item) { ?>
+                                <div class="item">
+                                    <div class="portfolio-item align-items-center">
+                                        <div class="thumb align-items-center">
+                                            <img class="w-100" src=<?= $item->img ?>>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        <? } ?>
+                            <? } ?>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </section>
 </section>

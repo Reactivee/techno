@@ -17,7 +17,6 @@ $this->title = "О Нас";
 
 ?>
 <div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -28,9 +27,6 @@ $this->title = "О Нас";
                                 <div class="col-lg-12">
                                     <h2 class="main_header_text">ИСТОРИЯ И ПЛАНЫ РАЗВИТИЯ</h2>
                                 </div>
-                                <div class="col-lg-12">
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -40,7 +36,7 @@ $this->title = "О Нас";
     </div>
 </div>
 
-<section class="about">
+<section class="about view_wrapper">
     <div class="container">
         <div class="main_title text-center my-4">
             <span>История и планы развития </span>
@@ -76,7 +72,7 @@ $this->title = "О Нас";
             <span>Стратегии и принципы СП ООО «Techno Cable Group»</span>
         </div>
 
-        <div class="container my-5">
+        <div class="container mt-5">
 
             <div class="row">
                 <? foreach ($ad_icons as $key => $advantage) { ?>

@@ -31,7 +31,7 @@ $this->title = "Галерея";
     </div>
 </div>
 
-<section>
+<section class="view_wrapper">
     <div class="container">
         <div class="main_title">
             <span>ПРОИЗВОДСТВО</span>

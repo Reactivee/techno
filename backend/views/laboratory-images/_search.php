@@ -3,12 +3,12 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $model common\models\SortTypessSearch */
-/* @var $form yii\widgets\ActiveForm */
+/** @var yii\web\View $this */
+/** @var common\models\LaboratoryImagesSearch $model */
+/** @var yii\widgets\ActiveForm $form */
 ?>
 
-<div class="sort-types-search">
+<div class="laboratory-images-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -20,7 +20,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'name') ?>
+    <?= $form->field($model, 'title_ru') ?>
+
+    <?= $form->field($model, 'title_en') ?>
+
+    <?= $form->field($model, 'title_uz') ?>
+
+    <?= $form->field($model, 'img') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

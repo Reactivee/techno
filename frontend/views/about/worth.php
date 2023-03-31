@@ -36,10 +36,10 @@ $this->title = "О Нас";
         </div>
     </div>
 </div>
-<section class="about">
+<section class="about ">
     <div class="container">
 
-        <div class="row my-5">
+        <div class="row mt-5">
 
             <div class="col-md-12">
                 <div class="content_block ">
@@ -53,7 +53,7 @@ $this->title = "О Нас";
             </div>
 
             <div class="col-12">
-                <div class="row my-5">
+                <div class="row mt-5">
                     <? foreach ($worth_sub as $item) { ?>
 
                         <div class="col-md-4">
@@ -99,7 +99,7 @@ $this->title = "О Нас";
             <div class="all_content mt-4">
                 <span>Мы – команда опытных и компетентных специалистов, профессионалов своего дела! Наша команда найдет эффективное решение для реализации любой поставленной задачи и обеспечит ее исполнение на достойном уровне. Сплоченность, постоянное развитие, клиент ориентированность – это наши катализаторы, которые помогают преодолевать нам все трудности и препятствия на пути к успеху</span>
             </div>
-            <div class="our_team_cards my-5 text-center ">
+            <div class="our_team_cards py-5 text-center ">
                 <div class="row">
                     <? foreach ($team as $item) { ?>
 

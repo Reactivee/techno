@@ -3,15 +3,15 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
-/* @var $this yii\web\View */
-/* @var $model common\models\Sorts */
+/** @var yii\web\View $this */
+/** @var common\models\LaboratoryImages $model */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Sorts', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Laboratory Images', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="sorts-view">
+<div class="laboratory-images-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -30,11 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'title_uz',
             'title_ru',
             'title_en',
-            'desc',
-            'type',
+            'title_uz',
+            'img',
         ],
     ]) ?>
 

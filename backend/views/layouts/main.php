@@ -71,14 +71,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                     ["label" => "Advantages", "url" => ["/advantages"], "icon" => "th-large"],
                                     ["label" => "Advantages Icons", "url" => ["/advantages-icons"], "icon" => "th"],
                                     ["label" => "Category", "url" => ["/category"], "icon" => "folder"],
-                                    ["label" => "Kumans", "url" => "#", "icon" => "folder",
-                                        "items" => [
-                                            ["label" => "Kumans", "url" => ["/materials"]],
-                                            ["label" => "Options", "url" => ["/materials-options"]],
-                                        ],
-                                    ],
-                                    ["label" => "Sorts", "url" => ["/sorts"], "icon" => "sort-alpha-desc"],
-                                    ["label" => "Application", "url" => ["/application"], "icon" => "comment-o"],
+                                    ["label" => "laboratory", "url" => ["/laboratory"], "icon" => "sort-alpha-desc"],
+//                                    ["label" => "Application", "url" => ["/application"], "icon" => "comment-o"],
                                     ["label" => "News", "url" => ["/posts"], "icon" => "comment-o"],
                                     ["label" => "Products", "url" => '#', "icon" => "shopping-cart",
 

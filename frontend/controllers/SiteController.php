@@ -10,6 +10,8 @@ use common\models\Application;
 use common\models\Catalog;
 use common\models\Element;
 use common\models\Gallery;
+use common\models\Laboratory;
+use common\models\LaboratoryImages;
 use common\models\Posts;
 use common\models\Settings;
 use common\models\TopBanner;
@@ -97,7 +99,7 @@ class SiteController extends Controller
         $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
         $element = Element::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
 
-        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery','catalog','element'));
+        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery', 'catalog', 'element'));
     }
 
     /**
@@ -148,8 +150,13 @@ class SiteController extends Controller
 
     public function actionLabaratory()
     {
+        $laboratory = Laboratory::find()->one();
+        $images = LaboratoryImages::find()->all();
 
-        return $this->render('labaratory');
+        return $this->render('labaratory', [
+            'laboratory' => $laboratory,
+            'images' => $images
+        ]);
     }
 
     /**

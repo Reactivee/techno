@@ -442,7 +442,7 @@ header
 .header-area .main-nav .nav li a {
     display: block;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 11px;
     color: white;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
@@ -452,7 +452,7 @@ header
     /*height: 40px;*/
     line-height: 15px;
     border: transparent;
-    letter-spacing: 1px;
+    letter-spacing: 0;
 }
 
 .header-area .main-nav .nav li:hover a,
@@ -542,9 +542,9 @@ header
 
 .header-area .main-nav .menu-trigger {
     cursor: pointer;
-    display: block;
+    /*display: block;*/
     position: absolute;
-    top: 33px;
+    top: -11px;
     width: 32px;
     height: 40px;
     text-indent: -9999em;
@@ -554,7 +554,7 @@ header
 }
 
 .background-header .main-nav .menu-trigger {
-    top: 23px;
+    top: -16px;
 }
 
 .header-area .main-nav .menu-trigger span,
@@ -711,8 +711,8 @@ header
 
 @media (max-width: 1200px) {
     .header-area .main-nav .nav li {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .header-area .main-nav:before {
@@ -752,7 +752,7 @@ header
     }
 
     .header-area {
-        background-color: #33ccc5;
+        background-color: #EB632A !important;
         padding: 0px 15px;
         height: 100px;
         box-shadow: none;
@@ -776,14 +776,18 @@ header
     }
 
     .header-area .main-nav .nav {
-        float: none;
-        width: 100%;
+        /*float: none;*/
+        /*width: 100%;*/
         display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
         -webkit-transition: all 0s ease 0s;
         -moz-transition: all 0s ease 0s;
         -o-transition: all 0s ease 0s;
         transition: all 0s ease 0s;
-        margin-left: 0px;
+        /*margin-left: 0px;*/
     }
 
     .background-header .nav {
@@ -991,8 +995,8 @@ Banner Style
 /*}*/
 .worth_banner {
     background: url("/frontend/web/uploads/banners/partners.png");
-
 }
+
 .main_product_banner{
     background: url("/frontend/web/uploads/banners/50.png");
     padding: 336px 0 280px 0;
@@ -1048,7 +1052,9 @@ Banner Style
     margin-top: 30px;
     padding-top: 20px;
     margin-bottom: 45px;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+
     font-weight: 800;
     /*color: #2a2a2a;*/
     line-height: 72px;
@@ -2128,7 +2134,9 @@ element Style
 
 .view_wrapper {
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 17%, rgba(66, 66, 66, 1) 76%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 17%, rgb(134 131 131) 76%);
+    position: relative;
+    z-index: 0;
 }
 
 .const_title {
@@ -2206,6 +2214,8 @@ element Style
     -webkit-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 7px 2px 25px 0px rgba(34, 60, 80, 0.2);
+    position: relative;
+    z-index: 10;
 }
 
 /*

@@ -50,18 +50,19 @@ $settings = Settings::find()->one();
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav row align-items-center">
+                <nav class="main-nav row align-items-center position-relative">
                     <!-- ***** Logo Start ***** -->
-                    <div class="col-3">
+                    <div class="col-md-3 col-6">
                         <a href="/" class="logo">
                             <img class="w-100" src="/uploads/logo/Group_22.png" alt="asd">
                         </a>
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-9 col-6">
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
-                            <li class="scroll-to-section position-relative"><a href="#top" class="">О Нас </a>
+                            <li class="scroll-to-section position-relative">
+                                <a href="#top" class="">О Нас </a>
                                 <div class="nav_sub bg_techno  flex-column">
                                     <a href='/about/story'>История и планы развития</a>
                                     <a href="/about">О Компании</a>
@@ -86,6 +87,7 @@ $settings = Settings::find()->one();
                             </li>
 
                             <li class="scroll-to-section"><a href="/partner/info">Информация для партнеров</a></li>
+                            <li class="scroll-to-section"><a href="/site/labaratory">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</a></li>
 
                             <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
                                 <div class="nav_sub bg_techno  flex-column">
@@ -101,11 +103,11 @@ $settings = Settings::find()->one();
                             <span>Menu</span>
                         </a>
                     </div>
+                </nav>
+
             </div>
             <!-- ***** Menu End ***** -->
-            </nav>
         </div>
-    </div>
     </div>
 </header>
 <!-- ***** Header Area End ***** -->
