@@ -2093,6 +2093,7 @@ element Style
 
 .product_img {
     width: 100px;
+    max-height: 150px;
 }
 
 .product_img_view {
@@ -2115,7 +2116,10 @@ element Style
     text-transform: uppercase;
     line-height: 30px;
 }
-
+.product_category_list:hover a{
+    color: #EB632A;
+    transition: .4s all;
+}
 /*Filter block*/
 .checkbox_block {
     background: rgb(255, 250, 250);

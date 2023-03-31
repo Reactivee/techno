@@ -59,7 +59,7 @@ use yii\helpers\Url;
                         <div class="checkbox_block mt-4">
                             <ul>
                                 <? foreach ($category as $item) { ?>
-                                    <li class="mb-2">
+                                    <li class="mb-2 product_category_list">
                                         <a href="/category/filter/<?= $item->slug ?>"><?= $item->name_ru ?></a>
                                     </li>
 
@@ -78,7 +78,7 @@ use yii\helpers\Url;
                                     <div class="product_card_top d-flex justify-content-between align-items-center">
                                         <div class="product_title">
                                             <h4 class="font-weight-bold">
-                                                <a href="view?slug= <?= $item->slug ?>"> <?= $item->title_ru ?> </a>
+                                                <a href="/category/view?slug= <?= $item->slug ?>"> <?= $item->title_ru ?> </a>
                                             </h4>
                                         </div>
                                         <div class="product_img">
@@ -89,7 +89,7 @@ use yii\helpers\Url;
                                         <ul>
                                             <? foreach ($item->element as $element) { ?>
                                                 <li><a class="btn_link_hover"
-                                                       href="view?slug=<?= $item->slug ?> "><?= $element->title_ru ?></a>
+                                                       href="/category/view?slug=<?= $item->slug ?> "><?= $element->title_ru ?></a>
                                                 </li>
 
                                             <? } ?>

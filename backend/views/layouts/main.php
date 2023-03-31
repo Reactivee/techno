@@ -72,10 +72,8 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                     ["label" => "Advantages Icons", "url" => ["/advantages-icons"], "icon" => "th"],
                                     ["label" => "Category", "url" => ["/category"], "icon" => "folder"],
                                     ["label" => "laboratory", "url" => ["/laboratory"], "icon" => "sort-alpha-desc"],
-//                                    ["label" => "Application", "url" => ["/application"], "icon" => "comment-o"],
                                     ["label" => "News", "url" => ["/posts"], "icon" => "comment-o"],
                                     ["label" => "Products", "url" => '#', "icon" => "shopping-cart",
-
                                         "items" => [
                                             ["label" => "Products", "url" => ["/product"]],
                                             ["label" => "Elements", "url" => ["/element"]],
@@ -97,11 +95,9 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                         ],
                                     ],
                                     ["label" => "Process", "url" => ["/process"], "icon" => "files-o",],
-
                                     ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
                                     ["label" => "Catalog", "url" => ["/catalog"], "icon" => "film"],
                                     ["label" => "Certificate", "url" => ["/certificate"], "icon" => "film"],
-
                                     ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
                                     ["label" => "Site Settings", "url" => ["/settings"], "icon" => "gavel"],
                                 ],

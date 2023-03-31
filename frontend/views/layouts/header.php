@@ -95,7 +95,6 @@ $settings = Settings::find()->one();
                                     <a href="/media/news">Новости</a>
                                 </div>
                             </li>
-
                             <li class="scroll-to-section"><a href="/contact">Контакты</a></li>
                             <li class="scroll-to-section"><a href="/vacancy">Вакансии</a></li>
                         </ul>
