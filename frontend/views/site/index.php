@@ -5,7 +5,11 @@ $this->title = 'Techno';
 //\Yii::$app->language = 'ru-RU';
 
 ?>
-
+<style>
+    .header-area .main-nav .nav li a{
+        color: white;
+    }
+</style>
 <div style="background-image: url('<?= $main_banner->img_path ?>')" class=" main-banner wow fadeIn
      position-relative container_fluid" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
 

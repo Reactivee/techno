@@ -63,7 +63,7 @@ $settings = Settings::find()->one();
                         <ul class="nav align-items-center">
                             <li class="scroll-to-section position-relative">
                                 <a href="#top" class="">О Нас </a>
-                                <div class="nav_sub bg_techno  flex-column">
+                                <div class="nav_sub   flex-column">
                                     <a href='/about/story'>История и планы развития</a>
                                     <a href="/about">О Компании</a>
                                     <a href="/about/worth">Ценности предприятия </a>
@@ -74,13 +74,13 @@ $settings = Settings::find()->one();
                                 </div>
                             </li>
                             <li class="scroll-to-section position-relative"><a href="#features">ПРОДУКЦИЯ</a>
-                                <div class="nav_sub bg_techno  flex-column">
+                                <div class="nav_sub   flex-column">
                                     <a href='#'>Наши услуги</a>
                                     <a href='/category/all-category'>ПРОДУКЦИЯ</a>
                                 </div>
                             </li>
                             <li class="scroll-to-section position-relative"><a href="#about">Партнеры</a>
-                                <div class="nav_sub bg_techno  flex-column">
+                                <div class="nav_sub   flex-column">
                                     <a href='/partner'>Поставщики</a>
                                     <a href="/partner/client">Клиенты</a>
                                 </div>
@@ -90,7 +90,7 @@ $settings = Settings::find()->one();
                             <li class="scroll-to-section"><a href="/site/labaratory">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</a></li>
 
                             <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
-                                <div class="nav_sub bg_techno  flex-column">
+                                <div class="nav_sub   flex-column">
                                     <a href='/media'>Фотогалерея</a>
                                     <a href="/media/news">Новости</a>
                                 </div>
