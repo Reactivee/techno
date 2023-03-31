@@ -62,7 +62,7 @@ $settings = Settings::find()->one();
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
                             <li class="scroll-to-section position-relative">
-                                <a href="#top" class="">О Нас </a>
+                                <a href="#" class="">О Нас </a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/about/story'>История и планы развития</a>
                                     <a href="/about">О Компании</a>
