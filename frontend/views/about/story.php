@@ -34,6 +34,9 @@ $this->title = "О Нас";
             </div>
         </div>
     </div>
+    <div class="ribbon_main">
+        <img src="/uploads/banners/ribbon.png" alt="">
+    </div>
 </div>
 
 <section class="about view_wrapper">

@@ -30,6 +30,9 @@ $this->title = "О Нас";
             </div>
         </div>
     </div>
+    <div class="ribbon_main">
+        <img src="/uploads/banners/ribbon.png" alt="">
+    </div>
 </div>
 <!--End main banner-->
 <section class="about mt-5 view_wrapper">

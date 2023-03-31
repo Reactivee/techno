@@ -5,7 +5,7 @@ $this->title = "Галерея";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'gallery');
 ?>
 
-<div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="main-banner media_banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
 
     <div class="container">
         <div class="row">
@@ -26,6 +26,9 @@ $this->title = "Галерея";
                 </div>
             </div>
         </div>
+    </div>
+    <div class="ribbon_main">
+        <img src="/uploads/banners/ribbon.png" alt="">
     </div>
 </div>
 <section>

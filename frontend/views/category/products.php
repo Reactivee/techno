@@ -38,6 +38,9 @@ use yii\helpers\Url;
                 </div>
             </div>
         </div>
+        <div class="ribbon_main">
+            <img src="/uploads/banners/ribbon.png" alt="">
+        </div>
     </div>
 
     <section class="">

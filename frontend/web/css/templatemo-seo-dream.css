@@ -443,7 +443,7 @@ header
     display: block;
     font-weight: 600;
     font-size: 11px;
-    color: white;
+    color: black;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -987,6 +987,7 @@ Banner Style
     max-width: 100% !important;
     margin: 0 auto;
 }
+
 /*.main_banner_ {*/
 /*    height: 100vh;*/
 /*    !*background: url("/uploads/banners/1banner.png");*!*/
@@ -997,15 +998,24 @@ Banner Style
     background: url("/frontend/web/uploads/banners/partners.png");
 }
 
-.main_product_banner{
+.main_product_banner {
     background: url("/frontend/web/uploads/banners/50.png");
     padding: 336px 0 280px 0;
 }
-.contact_banner{
+
+.contact_banner {
     background: url("/frontend/web/uploads/banners/contacts.png");
     padding: 336px 0 280px 0;
 }
 
+.media_banner {
+    background: url("/frontend/web/uploads/banners/media.png");
+    padding: 336px 0 280px 0;
+}
+.partner_banner {
+    background: url("/frontend/web/uploads/banners/partners.png");
+    padding: 336px 0 280px 0;
+}
 
 /*.main-banner:after {*/
 /*  content: '';*/

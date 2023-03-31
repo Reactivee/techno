@@ -37,9 +37,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $model->option->name_ru;
                 }
             ],
-            'name_uz',
+//            'name_uz',
             'name_ru',
-            'name_en',
+//            'name_en',
 
             [
                 'class' => ActionColumn::className(),

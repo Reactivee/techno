@@ -82,6 +82,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "Options", "url" => ["/options"]],
                                             ["label" => "Options value", "url" => ["/options-value"]],
                                             ["label" => "Option value product", "url" => ["/options-product"]],
+                                            ["label" => "Construction product", "url" => ["/construction-product"]],
                                         ],
 
                                     ],
