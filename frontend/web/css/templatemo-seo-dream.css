@@ -1001,6 +1001,10 @@ Banner Style
     background: url("/frontend/web/uploads/banners/50.png");
     padding: 336px 0 280px 0;
 }
+.contact_banner{
+    background: url("/frontend/web/uploads/banners/contacts.png");
+    padding: 336px 0 280px 0;
+}
 
 
 /*.main-banner:after {*/
