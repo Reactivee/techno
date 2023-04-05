@@ -28,11 +28,11 @@ foreach ($prod_img as $image) {
 
     <?php $form = ActiveForm::begin(); ?>
 
-<!--    --><?//= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
-<!--    --><?//= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'category_id')->dropDownList($model->getCategoryAll()) ?>
 
@@ -90,6 +90,7 @@ foreach ($prod_img as $image) {
 <!--    --><?//= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
 
 <!--    --><?//= $form->field($model, 'desc')->textarea(['maxlength' => true]) ?>
+
     <?php echo $form->field($model, 'desc')->widget(CKEditor::className(), [
         'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
             ['elfinder', 'path' => '/'],
@@ -106,6 +107,7 @@ foreach ($prod_img as $image) {
             ]
         ),
     ]) ?>
+
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

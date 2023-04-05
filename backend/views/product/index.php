@@ -42,13 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
 
             ],
-            [
-                'attribute' => 'type',
-                'value' => function ($model) {
-                    return $model->sort->title_ru;
-                }
 
-            ],
             'desc',
             [
                 'class' => ActionColumn::className(),

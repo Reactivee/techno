@@ -66,7 +66,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                         \yiister\gentelella\widgets\Menu::widget(
                             [
                                 "items" => [
-                                    ["label" => "о нас", "url" => '#', "icon" => "",
+                                    ["label" => "О нас", "url" => '#', "icon" => "key",
                                         "items" => [
                                             ["label" => "О компании", "url" => ["/about"]],
                                             ["label" => "ИСТОРИЯ И ПЛАНЫ РАЗВИТИЯ", "url" => ["/process"]],
@@ -82,29 +82,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                         ],
 
                                     ],
-                                    ["label" => "Партнеры", "url" => '#', "icon" => "",
-                                        "items" => [
-                                            ["label" => "ПОСТАВЩИКИ", "url" => ["/suppliers"]],
-                                            ["label" => "КЛИЕНТЫ", "url" => ["/clients"]],
-                                            ["label" => "Info", "url" => ["/suppliers-info"]],
-                                            ["label" => "Images", "url" => ["/suppliers-img/update?id=1"]],
-                                            ["label" => "Catalog", "url" => ["/catalog"]],
-                                        ],
-
-                                    ],
-                                    ["label" => "ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ", "url" => ["/suppliers-info"], "icon" => "file-image-o"],
-                                    ["label" => "laboratory", "url" => ["/laboratory"], "icon" => "file-image-o"],
-                                    ["label" => "Media", "url" => '#', "icon" => "film",
-                                        "items" => [
-                                            ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
-                                            ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
-                                        ],
-                                    ],
-
-                                    ["label" => "Top Banner", "url" => ["/top-banner"], "icon" => "file-image-o"],
-                                    ["label" => "Advantages", "url" => ["/advantages"], "icon" => "th-large"],
-                                    ["label" => "Advantages Icons", "url" => ["/advantages-icons"], "icon" => "th"],
-                                    ["label" => "News", "url" => ["/posts"], "icon" => "comment-o"],
                                     ["label" => "Products", "url" => '#', "icon" => "shopping-cart",
                                         "items" => [
                                             ["label" => "Products", "url" => ["/product"]],
@@ -117,6 +94,30 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "Наши услуги", "url" => ["/service"], "icon" => "folder"],
                                         ],
                                     ],
+                                    ["label" => "Партнеры", "url" => '#', "icon" => "user",
+                                        "items" => [
+                                            ["label" => "ПОСТАВЩИКИ", "url" => ["/suppliers"]],
+                                            ["label" => "КЛИЕНТЫ", "url" => ["/clients"]],
+                                            ["label" => "Info", "url" => ["/suppliers-info"]],
+                                            ["label" => "Images", "url" => ["/suppliers-img/update?id=1"]],
+                                            ["label" => "Catalog", "url" => ["/catalog"]],
+                                        ],
+
+                                    ],
+                                    ["label" => "ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ", "url" => ["/suppliers-info"], "icon" => "file"],
+                                    ["label" => "Laboratory", "url" => ["/laboratory"], "icon" => "key"],
+                                    ["label" => "Media", "url" => '#', "icon" => "film",
+                                        "items" => [
+                                            ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
+                                            ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
+                                        ],
+                                    ],
+
+                                    ["label" => "Top Banner", "url" => ["/top-banner"], "icon" => "file-image-o"],
+                                    ["label" => "Advantages", "url" => ["/advantages"], "icon" => "th-large"],
+                                    ["label" => "Advantages Icons", "url" => ["/advantages-icons"], "icon" => "th"],
+                                    ["label" => "News", "url" => ["/posts"], "icon" => "comment-o"],
+
                                     ["label" => "Contacts", "url" => '#', "icon" => "film",
                                         "items" => [
                                             ["label" => "Address", "url" => ["/address"], "icon" => "building"],

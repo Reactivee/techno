@@ -34,34 +34,26 @@ $this->params['breadcrumbs'][] = $this->title;
             'name_uz',
             'name_ru',
             'name_en',
-            'type',
-//            'sort',
-            'desc',
-            'text_en',
-            'text_uz',
-            'text_ru',
-            'title_ru',
-            'title_uz',
-            'title_en',
 
-            [
-                'attribute' => 'options',
-                'value' => function ($model) {
-                    $opt = '';
-                    $opt_Cats = \common\models\OptionsToCategory::find()
-                        ->where(['category_id' => $model->id])->all();
-                    if ($opt_Cats) {
 
-                        $opt_Cats = \yii\helpers\ArrayHelper::map($opt_Cats, 'option_id', 'option_id');
-                        $options = \common\models\Options::find()->where(['id' => $opt_Cats])->all();
-                        foreach ($options as $option) {
-
-                            $opt .= $option->name_ru . ",";
-                        }
-                    }
-                    return $opt;
-                }
-            ],
+//            [
+//                'attribute' => 'options',
+//                'value' => function ($model) {
+//                    $opt = '';
+//                    $opt_Cats = \common\models\OptionsToCategory::find()
+//                        ->where(['category_id' => $model->id])->all();
+//                    if ($opt_Cats) {
+//
+//                        $opt_Cats = \yii\helpers\ArrayHelper::map($opt_Cats, 'option_id', 'option_id');
+//                        $options = \common\models\Options::find()->where(['id' => $opt_Cats])->all();
+//                        foreach ($options as $option) {
+//
+//                            $opt .= $option->name_ru . ",";
+//                        }
+//                    }
+//                    return $opt;
+//                }
+//            ],
             [
                 'attribute' => 'status',
                 'value' => function ($model) {
