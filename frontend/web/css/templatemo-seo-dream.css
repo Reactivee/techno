@@ -541,7 +541,7 @@ header
     cursor: pointer;
     /*display: block;*/
     position: absolute;
-    top: -11px;
+    top: -17px;
     width: 32px;
     height: 40px;
     text-indent: -9999em;
@@ -676,6 +676,7 @@ header
     padding: 8px;
     color: white;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .nav_sub a {
@@ -730,6 +731,10 @@ header
 }
 
 @media (max-width: 767px) {
+    .nav_sub {
+        background: white;
+    }
+
     .background-header .main-nav .nav {
         margin-top: 80px !important;
     }
@@ -738,11 +743,6 @@ header
         color: #1e1e1e;
     }
 
-    .header-area.header-sticky .nav li a:hover,
-    .header-area.header-sticky .nav li a.active {
-        color: #33ccc5 !important;
-        opacity: 1;
-    }
 
     .header-area.header-sticky .nav li.search-icon a {
         width: 100%;
@@ -769,7 +769,7 @@ header
     }
 
     .header-area .main-nav {
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .header-area .main-nav .nav {
@@ -777,7 +777,7 @@ header
         /*width: 100%;*/
         display: none;
         position: absolute;
-        top: 0;
+        top: -40px;
         right: 0;
         z-index: 999;
         -webkit-transition: all 0s ease 0s;
@@ -808,17 +808,17 @@ header
     }
 
     .header-area .main-nav .nav li a {
-        height: 50px !important;
-        line-height: 50px !important;
+        /*height: 50px !important;*/
+        /*line-height: 50px !important;*/
         padding: 0px !important;
         border: none !important;
-        background: #f7f7f7 !important;
+        /*background: #f7f7f7 !important;*/
         color: #191a20 !important;
     }
 
     .header-area .main-nav .nav li a:hover {
         background: #eee !important;
-        color: #33ccc5 !important;
+        color: #2278f5 !important;
     }
 
     .header-area .main-nav .nav li.submenu ul {
@@ -2018,7 +2018,8 @@ element Style
     color: #EB632A;
 
 }
-.title_product_filter{
+
+.title_product_filter {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -2026,6 +2027,7 @@ element Style
     -webkit-line-clamp: 2;
     font-size: 18px;
 }
+
 .main_title span {
     background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
     -webkit-background-clip: text;
@@ -2471,7 +2473,7 @@ responsive
 
     }
 
-    .logo img {
+    footer  .logo img {
         max-width: 200px;
     }
 }
