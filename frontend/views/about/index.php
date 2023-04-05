@@ -85,9 +85,14 @@ $this->title = "О Нас";
                             <? foreach ($catalog as $item) { ?>
                                 <div class="item">
                                     <div class="portfolio-item align-items-center">
-                                        <div class="thumb align-items-center">
-                                            <img class="w-100" src=<?= $item->img ?>>
-                                        </div>
+                                        <a class="demo stretched-link"
+                                           href="<?= $item->img ?>"
+                                           data-lightbox="example-2">
+                                            <img class="example-image w-100"
+                                                 src="<?= $item->img ?>"
+                                                 alt="">
+                                        </a>
+
                                     </div>
                                 </div>
                             <? } ?>

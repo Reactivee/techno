@@ -107,25 +107,6 @@ let gallery_slider = new Swiper(".gallery_slider", {
 //     bigImg_demo.href = imgPath;
 // }
 
-const showFilfer = (e) => {
-
-    let block = document.querySelector('.filter_block');
-    block.classList.toggle("filter_block_show");
-
-}
-lightbox.option({
-    alwaysShowNavOnTouchDevices: true,
-    fadeDuration: 600,
-    fitImagesInViewport: true,
-    imageFadeDuration: 600,
-    positionFromTop: 150,
-    resizeDuration: 700,
-    showImageNumberLabel: false,
-    wrapAround: true, // If true, when a user reaches the last image in a set, the right navigation arrow will appear and they will be to continue moving forward which will take them back to the first image in the set.
-
-
-})
-var mybutton = document.getElementById("myBtn");
 
 // window.onscroll = () => {
 //     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
