@@ -75,7 +75,7 @@ $settings = Settings::find()->one();
                             </li>
                             <li class="scroll-to-section position-relative"><a href="#features">ПРОДУКЦИЯ</a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='#'>Наши услуги</a>
+                                    <a href='/category/service'>Наши услуги</a>
                                     <a href='/category/all-category'>ПРОДУКЦИЯ</a>
                                 </div>
                             </li>

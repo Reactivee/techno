@@ -114,6 +114,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "Option value product", "url" => ["/options-product"]],
                                             ["label" => "Construction product", "url" => ["/construction-product"]],
                                             ["label" => "Category", "url" => ["/category"], "icon" => "folder"],
+                                            ["label" => "Наши услуги", "url" => ["/service"], "icon" => "folder"],
                                         ],
                                     ],
                                     ["label" => "Contacts", "url" => '#', "icon" => "film",

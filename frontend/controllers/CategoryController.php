@@ -13,6 +13,7 @@ use common\models\Options;
 use common\models\OptionsProduct;
 use common\models\OptionsToCategory;
 use common\models\Product;
+use common\models\Service;
 use common\models\Sorts;
 use Yii;
 use yii\data\ActiveDataProvider;
@@ -245,6 +246,14 @@ class CategoryController extends Controller
         ]);
 
 
+    }
+
+    public function actionService()
+    {
+        $service = Service::find()->one();
+        return $this->render('service', [
+            'service' => $service,
+        ]);
     }
 
 
