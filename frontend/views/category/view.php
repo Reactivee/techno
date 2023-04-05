@@ -19,20 +19,20 @@ use yii\widgets\Pjax;
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">МЕДНАЯ КАТАНКА</h2>
+                                        <h2 class="main_header_text text-uppercase"> <?= $element->category['name_' . Yii::$app->language] ?></h2>
                                     </div>
-<!--                                    <div class="col-lg-12">-->
-<!--                                        <div class="line_item d-flex align-items-center">-->
-<!--                                            <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">-->
-<!--                                                <h3>оставить-->
-<!--                                                    заявку</h3></button>-->
-<!--                                        </div>-->
-<!--                                        <div class="line_item  bg-white d-inline-flex align-items-center">-->
-<!--                                            <h4 class="color_techno text-capitalize pl-3 pr-3">смотреть все</h4>-->
-<!--                                            <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"-->
-<!--                                                 alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
+                                    <!--                                    <div class="col-lg-12">-->
+                                    <!--                                        <div class="line_item d-flex align-items-center">-->
+                                    <!--                                            <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">-->
+                                    <!--                                                <h3>оставить-->
+                                    <!--                                                    заявку</h3></button>-->
+                                    <!--                                        </div>-->
+                                    <!--                                        <div class="line_item  bg-white d-inline-flex align-items-center">-->
+                                    <!--                                            <h4 class="color_techno text-capitalize pl-3 pr-3">смотреть все</h4>-->
+                                    <!--                                            <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"-->
+                                    <!--                                                 alt="">-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -67,14 +67,13 @@ use yii\widgets\Pjax;
                             <div class="product_card_bottom">
                                 <ul>
                                     <? foreach ($element->element as $item) { ?>
-                                        <!--                                    <a href=""></a>-->
-                                        <li><a href="<?= $item->slug ?> "> <?= $item->title_ru ?></a></li>
-
+                                        <li><a href="#"> <?= $item->title_ru ?></a></li>
                                     <? } ?>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-8 pl-5">
                         <div class="product_title">
                             <div class="main_title  my-4">
@@ -85,46 +84,51 @@ use yii\widgets\Pjax;
                         <div class="row element_options_list">
                             <?
                             foreach ($element->option as $option) { ?>
-
-                                <div class="col-md-3">
-                                    <h4 class="font-weight-bold text-center"><?= $option->options->name_ru ?></h4>
-                                </div>
-                                <div class="col-md-8">
-                                    <p><?= $option->value->name_ru ?></p>
-                                </div>
-                            <? } ?>
-
-                        </div>
-
-                    </div>
-                    <div class="element_desc ">
-                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white">Указания по
-                            эксплуатации</h4>
-                        <div class="content_desc color_white ">
-                            <?= $element->desc?>
-                        </div>
-                    </div>
-                    <div class="construction mt-4">
-                        <div class="const_main_title text-center mb-4">
-                            <h4 class="color_white font-weight-bold ">
-                                Конструкция</h4>
-                        </div>
-                        <div class="row ">
-                            <? foreach ($cont as $item) { ?>
-                                <div class="col-md-2 ">
-                                    <div class="construction_items h-100 card text-center p-2">
-                                        <div class="const_title">
-                                            <h5 class="font-weight-bold ">     <?= $item->title_ru ?></h5>
-                                        </div>
-                                        <div class="const_content mt-2">
-                                            <?= $item->text_ru ?>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h4 class="font-weight-bold text-center"><?= $option->options->name_ru ?></h4>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p><?= $option->value->name_ru ?></p>
                                     </div>
                                 </div>
                             <? } ?>
 
                         </div>
+
                     </div>
+                    <? if ($element->desc) { ?>
+                        <div class="element_desc ">
+                            <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white">Указания по
+                                эксплуатации</h4>
+                            <div class="content_desc color_white ">
+                                <?= $element->desc ?>
+                            </div>
+                        </div>
+                    <? } ?>
+                    <? if ($cont) { ?>
+                        <div class="construction mt-4">
+                            <div class="const_main_title text-center mb-4">
+                                <h4 class="color_white font-weight-bold ">
+                                    Конструкция</h4>
+                            </div>
+                            <div class="row ">
+                                <? foreach ($cont as $item) { ?>
+                                    <div class="col-md-2 ">
+                                        <div class="construction_items h-100 card text-center p-2">
+                                            <div class="const_title">
+                                                <h5 class="font-weight-bold ">     <?= $item->title_ru ?></h5>
+                                            </div>
+                                            <div class="const_content mt-2">
+                                                <?= $item->text_ru ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <? } ?>
+
+                            </div>
+                        </div>
+                    <? } ?>
 
                 </div>
 

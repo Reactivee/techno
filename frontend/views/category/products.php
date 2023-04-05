@@ -78,7 +78,7 @@ use yii\helpers\Url;
                                     <div class="product_card_top d-flex justify-content-between align-items-center">
                                         <div class="product_title">
                                             <h4 class="font-weight-bold">
-                                                <a href="/category/view?slug= <?= $item->slug ?>"> <?= $item->title_ru ?> </a>
+                                                <a class="title_product_filter" href="/category/view?slug= <?= $item->slug ?>"> <?= $item->title_ru ?> </a>
                                             </h4>
                                         </div>
                                         <div class="product_img">

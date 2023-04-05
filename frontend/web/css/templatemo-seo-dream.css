@@ -998,6 +998,8 @@ Banner Style
 .main_product_banner {
     background: url("/frontend/web/uploads/banners/50.png");
     padding: 336px 0 280px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact_banner {
@@ -2016,7 +2018,14 @@ element Style
     color: #EB632A;
 
 }
-
+.title_product_filter{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    font-size: 18px;
+}
 .main_title span {
     background: linear-gradient(to right, #FA9D4D 0%, #FF4F6B 100%);
     -webkit-background-clip: text;
@@ -2106,7 +2115,7 @@ element Style
 }
 
 .product_card, .product_card_bottom {
-    height: 100%
+    /*height: 100%*/
 }
 
 .product_card_bottom li {
@@ -2251,6 +2260,7 @@ footer {
     linear-gradient(180deg, rgba(83, 33, 11, 1) 17%, rgba(30, 30, 30, 1) 76%);
     color: white;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer p {
@@ -2375,8 +2385,9 @@ responsive
 @media (max-width: 767px) {
     .container, .container-sm, .container-md, .container-lg, .container-xl {
         /*max-width: 1420px !important;*/
-        padding:0 40px;
+        padding: 0 40px;
     }
+
     .header-area .main-nav .logo h4 {
         font-size: 30px;
     }
