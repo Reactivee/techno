@@ -50,32 +50,32 @@ use yii\helpers\Url;
                 <span>наша продукция</span>
             </div>
             <div class="row">
-                <div class="col-md-4">
+<!--                <div class="col-md-4">-->
+<!---->
+<!--                    --><?php //echo Html::beginForm(Url::to(['product', 'slug' => $queryParams['slug']]), 'get', ['data-pjax' => true, 'id' => 'filter-form']) ?>
+<!---->
+<!--                    <div class="filter_block  p-4 position-relative">-->
+<!--                        <h4 class="font-weight-bold">Филтирь</h4>-->
+<!--                        <div class="checkbox_block mt-4">-->
+<!--                            <ul>-->
+<!--                                --><?// foreach ($category as $item) { ?>
+<!--                                    <li class="mb-2 product_category_list">-->
+<!--                                        <a href="/category/filter/--><?//= $item->slug ?><!--">--><?//= $item->name_ru ?><!--</a>-->
+<!--                                    </li>-->
+<!---->
+<!--                                --><?// } ?>
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    --><?php //echo Html::endForm() ?>
+<!---->
+<!--                </div>-->
 
-                    <?php echo Html::beginForm(Url::to(['product', 'slug' => $queryParams['slug']]), 'get', ['data-pjax' => true, 'id' => 'filter-form']) ?>
-
-                    <div class="filter_block  p-4 position-relative">
-                        <h4 class="font-weight-bold">Филтирь</h4>
-                        <div class="checkbox_block mt-4">
-                            <ul>
-                                <? foreach ($category as $item) { ?>
-                                    <li class="mb-2 product_category_list">
-                                        <a href="/category/filter/<?= $item->slug ?>"><?= $item->name_ru ?></a>
-                                    </li>
-
-                                <? } ?>
-                            </ul>
-                        </div>
-                    </div>
-                    <?php echo Html::endForm() ?>
-
-                </div>
-                <div class="col-md-8">
                     <div class="row">
                         <? foreach ($products as $item) { ?>
                             <div class="col-md-4 mt-4 mt-md-0">
                                 <div class="product_card">
-                                    <div class="product_card_top d-flex justify-content-between align-items-center">
+                                    <div class="product_card_top d-flex justify-content-between align-items-center overflow-hidden">
                                         <div class="product_title">
                                             <h4 class="font-weight-bold">
                                                 <a class="title_product_filter" href="/category/view?slug= <?= $item->slug ?>"> <?= $item->title_ru ?> </a>
@@ -91,7 +91,6 @@ use yii\helpers\Url;
                                                 <li><a class="btn_link_hover"
                                                        href="/category/view?slug=<?= $item->slug ?> "><?= $element->title_ru ?></a>
                                                 </li>
-
                                             <? } ?>
                                         </ul>
                                     </div>
@@ -101,7 +100,6 @@ use yii\helpers\Url;
                     </div>
                 </div>
 
-            </div>
         </div>
 
     </section>

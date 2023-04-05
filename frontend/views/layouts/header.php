@@ -68,18 +68,16 @@ $settings = Settings::find()->one();
                                     <a href="/about">О Компании</a>
                                     <a href="/about/worth">Ценности предприятия </a>
                                     <a href="/about/mission">Миссия </a>
-                                    <!--                                    <a href="#">Наши цели </a>-->
-                                    <!--                                    <a href="#">ПРЕИМУЩЕСТВА ПРЕДПРИЯТИЯ</a>-->
                                     <a href="/about/factory">ПРОИЗВОДСТВО</a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a href="#features">ПРОДУКЦИЯ</a>
+                            <li class="scroll-to-section position-relative"><a href="#">ПРОДУКЦИЯ</a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/category/service'>Наши услуги</a>
                                     <a href='/category/all-category'>ПРОДУКЦИЯ</a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a href="#about">Партнеры</a>
+                            <li class="scroll-to-section position-relative"><a href="#">Партнеры</a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/partner'>Поставщики</a>
                                     <a href="/partner/client">Клиенты</a>
@@ -89,7 +87,7 @@ $settings = Settings::find()->one();
                             <li class="scroll-to-section"><a href="/partner/info">Информация для партнеров</a></li>
                             <li class="scroll-to-section"><a href="/site/labaratory">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</a></li>
 
-                            <li class="scroll-to-section position-relative"><a href="#contact">Медиа</a>
+                            <li class="scroll-to-section position-relative"><a href="#">Медиа</a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/media'>Фотогалерея</a>
                                     <a href="/media/news">Новости</a>

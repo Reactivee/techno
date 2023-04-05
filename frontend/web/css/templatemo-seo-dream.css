@@ -761,7 +761,7 @@ header
     }
 
     .header-area .logo {
-        margin-left: 30px;
+        /*margin-left: 30px;*/
     }
 
     .header-area .menu-trigger {
@@ -817,7 +817,7 @@ header
     }
 
     .header-area .main-nav .nav li a:hover {
-        background: #eee !important;
+        /*background: #eee !important;*/
         color: #2278f5 !important;
     }
 
