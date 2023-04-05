@@ -33,26 +33,20 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => ActionColumn::className(),
 
             ],
-            [
-                'attribute' => 'images',
-                'format' => "raw",
-                'value' => function ($model) {
-                    return Html::a('<b class="bg-danger mx-2">' . 'Images' . '<b>', ['images', 'id' => $model->id]);
-                }
-            ],
+
             'title_uz',
             'title_ru',
             'title_en',
             'text_en:ntext',
             'text_ru:ntext',
             'text_uz:ntext',
-            [
-                'attribute' => 'img',
-                'format' => "raw",
-                'value' => function ($model) {
-                    return Html::img($model->img, ['width' => '100px']);
-                }
-            ],
+//            [
+//                'attribute' => 'img',
+//                'format' => "raw",
+//                'value' => function ($model) {
+//                    return Html::img($model->img, ['width' => '100px']);
+//                }
+//            ],
 
         ],
     ]); ?>

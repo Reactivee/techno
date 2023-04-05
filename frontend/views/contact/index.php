@@ -7,7 +7,8 @@ $this->title = "Vacancy";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
 
 ?>
-<div class="main-banner contact_banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="main-banner contact_banner wow fadeIn position-relative" id="top" data-wow-duration="1s"
+     data-wow-delay="0.5s">
 
     <div class="container">
         <div class="row">
@@ -29,6 +30,9 @@ $this->title = "Vacancy";
             </div>
         </div>
     </div>
+    <div class="ribbon_main">
+        <img src="/uploads/banners/ribbon.png" alt="">
+    </div>
 </div>
 
 <section class="about">
@@ -41,37 +45,34 @@ $this->title = "Vacancy";
             <div class="row block_vacancy flex-column py-4">
                 <div class="address_text">
                     <span class="address_title color_techno font-weight-bold">Адрес:</span>
-                    <span class="address_content">СП ООО "Techno Cable Group" Республика Узбекистан, 111805, Ташкентская область, Зангиатинский район, Катортол К.Ф.Й.,Токзор М.Ф.Й., 3-й проезд Янги Жамият, д.24.</span>
+                    <span class="address_content font-weight-bold"><?= $address['address_' . Yii::$app->language] ?></span>
                 </div>
                 <div class="address_text mt-4">
                     <span class="address_phone color_techno font-weight-bold">Телефон:</span>
-                    <span class="address_phone_text font-weight-bold">+998(71) 209-80-00 | +998(71) 287-42-42</span>
+                    <span class="address_phone_text font-weight-bold"><?= $address->phone ?></span>
                 </div>
                 <div class="address_text mt-2 mb-2">
                     <span class="address_phone color_techno font-weight-bold">E-mail:</span>
-                    <span class="address_phone_text font-weight-bold">info@tcg.uz</span>
+                    <span class="address_phone_text font-weight-bold"><?= $address->email ?></span>
                 </div>
                 <div class="map">
-                    <iframe style="width: 100%; height: 400px" src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=Techno+Cabel+Group@41.26652482973896,69.13118162610023"
+                    <iframe style="width: 100%; height: 400px"
+                            src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=Techno+Cabel+Group@41.26652482973896,69.13118162610023"
                             frameborder="0"></iframe>
                 </div>
                 <div class="main_title  my-4">
                     <span>отделы </span>
                 </div>
-                <div class="address_text mt-1">
-                    <span class="address_phone color_techno font-weight-bold">Отдел продаж:</span>
-                    <span class="address_phone  ">Тел</span>
-                    <span class="address_phone_text font-weight-bold">+998(71) 209-80-00</span>
-                    <span class="address_phone ">e-mail</span>
-                    <span class="address_phone_text font-weight-bold">sales@tcg.uz</span>
-                </div>
-                <div class="address_text mt-1">
-                    <span class="address_phone color_techno font-weight-bold">Отдел маркетинга: </span>
-                    <span class="address_phone  ">Тел</span>
-                    <span class="address_phone_text font-weight-bold">+99897 407 19 99</span>
-                    <span class="address_phone ">e-mail</span>
-                    <span class="address_phone_text font-weight-bold">marketing@tcg.uz</span>
-                </div>
+                <? foreach ($departs as $depart) { ?>
+                    <div class="address_text mt-1">
+                        <span class="address_phone color_techno font-weight-bold"> <?= $depart['title_' . Yii::$app->language] ?>:</span>
+                        <span class="address_phone  ">Тел</span>
+                        <span class="address_phone_text font-weight-bold"><?= $depart['phone'] ?></span>
+                        <span class="address_phone ">e-mail</span>
+                        <span class="address_phone_text font-weight-bold"><?= $depart['email'] ?></span>
+                    </div>
+                <? } ?>
+
             </div>
         </div>
     </div>

@@ -20,9 +20,11 @@ class ProcessImages extends \yii\db\ActiveRecord
     {
         return 'process_images';
     }
+
     public $uploaded_images;
     public $deleted_images;
     public $sorted_images;
+
     /**
      * {@inheritdoc}
      */
@@ -31,6 +33,7 @@ class ProcessImages extends \yii\db\ActiveRecord
         return [
             [['process_id'], 'integer'],
             [['path'], 'string', 'max' => 255],
+            [['uploaded_images', 'deleted_images',], 'safe']
         ];
     }
 
@@ -45,4 +48,24 @@ class ProcessImages extends \yii\db\ActiveRecord
             'path' => 'Path',
         ];
     }
+
+    public function saveImages()
+    {
+        $images = $this['uploaded_images'];
+        $re_images = json_decode($images);
+        if ($images) {
+
+            foreach ($re_images as $file) {
+                if ($file->path) {
+                    $pr_iMagEs = new ProcessImages();
+                    $pr_iMagEs->path = $file->path;
+
+                    $pr_iMagEs->save();
+                }
+
+
+            }
+        }
+    }
 }
+

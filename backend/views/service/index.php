@@ -1,24 +1,24 @@
 <?php
 
-use common\models\WorthSub;
+use common\models\Service;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /** @var yii\web\View $this */
-/** @var common\models\WorthSubSearch $searchModel */
+/** @var common\models\ServiceSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Worth Subs';
+$this->title = 'Services';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="worth-sub-index">
+<div class="service-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Worth Sub', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Service', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -31,19 +31,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-//            'name_uz',
-//            'name_ru',
-//            'name_en',
-//            'title_ru',
-//            'title_en',
-//            'title_uz',
+            'title_ru',
+            'title_en',
+            'title_uz',
             'text_en:ntext',
-            'text_uz:ntext',
-            'text_ru:ntext',
+            //'text_uz:ntext',
+            //'text_ru:ntext',
             //'img',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, WorthSub $model, $key, $index, $column) {
+                'urlCreator' => function ($action, Service $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
             ],

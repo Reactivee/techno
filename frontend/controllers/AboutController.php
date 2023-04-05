@@ -148,7 +148,7 @@ class AboutController extends Controller
     {
 
         $mission = Mission::find()->all();
-        $target = Target::find()->one();
+        $target = Target::find()->all();
         $tasks = Tasks::find()->all();
         $st = StrategicTarget::find()->one();
         $advantages = AdvantagesFactory::find()->all();

@@ -46,7 +46,8 @@ AppAsset::register($this);
     <style>
 
             .container, .container-sm, .container-md, .container-lg, .container-xl {
-                max-width: 1320px !important;
+                max-width: 1420px !important;
+                /*padding:0 40px;*/
             }
     </style>
     <body class="">

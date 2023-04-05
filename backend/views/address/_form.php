@@ -23,20 +23,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'fax')->textInput(['maxlength' => true]) ?>
 
-    <?=
-    $form->field($model, 'phone')->widget(Summernote::class, [
-        'useKrajeePresets' => true,
-        // other widget settings
-    ]);
-    ?>
+    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'text')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'img')->widget(FileInput::classname(), [
-        'options' => ['accept' => 'image/*'],
-    ]); ?>
+
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

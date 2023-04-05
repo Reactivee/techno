@@ -38,13 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'phone',
             'email:email',
             'text',
-            [
-                'attribute' => 'img',
-                'format' => "raw",
-                'value' => function ($model) {
-                    return Html::img($model->img, ['width' => '100px']);
-                }
-            ],
+
             [
                 'class' => ActionColumn::className(),
 

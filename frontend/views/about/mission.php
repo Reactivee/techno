@@ -70,24 +70,19 @@ $this->title = "О Нас";
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="main_title text-center my-4">
-                    <span><?= $target->title_ru ?></span>
-                </div>
-                <div class="target_text">
+            <? foreach ($target as $item) { ?>
+                <div class="col-md-6">
+                    <div class="main_title text-center my-4">
+                        <span><?= $item->title_ru ?></span>
+                    </div>
+                    <div class="target_text">
                 <span>
-                   <?= $target->text_ru ?>
+                   <?= $item->text_ru ?>
                 </span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="main_title text-center my-4">
-                    <span><?= $st->title_ru ?></span>
-                </div>
-                <div class="target_text">
-                    <span><?= $st->text_ru ?></span>
-                </div>
-            </div>
+            <? } ?>
+
             <div class="col-md-12">
                 <div class="main_title text-center my-4">
                     <span><?= $tasks[0]->title_ru ?></span>
@@ -108,7 +103,7 @@ $this->title = "О Нас";
     <div class="container pb-5">
 
         <div class="main_title text-center my-4">
-            <span><?=$advantages[0]->title_ru?></span>
+            <span><?= $advantages[0]->title_ru ?></span>
         </div>
         <? foreach ($advantages as $item) { ?>
             <div class="advantages_text">

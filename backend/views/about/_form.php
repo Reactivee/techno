@@ -47,7 +47,7 @@ $initialPreview = [];
     ]);
     ?>
 
-    <?= $form->field($model, 'number')->textInput(['maxlength' => true]) ?>
+<!--    --><?//= $form->field($model, 'number')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'img')->widget(FileInput::classname(), [
         'model' => $model,
@@ -77,7 +77,7 @@ $initialPreview = [];
     ]);
     ?>
 
-    <?= $form->field($model, 'link')->textInput(['maxlength' => true]) ?>
+<!--    --><?//= $form->field($model, 'link')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

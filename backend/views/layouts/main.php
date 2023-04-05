@@ -66,12 +66,44 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                         \yiister\gentelella\widgets\Menu::widget(
                             [
                                 "items" => [
-//                                    ["label" => "Home", "url" => "/admin", "icon" => "home"],
+                                    ["label" => "о нас", "url" => '#', "icon" => "",
+                                        "items" => [
+                                            ["label" => "О компании", "url" => ["/about"]],
+                                            ["label" => "ИСТОРИЯ И ПЛАНЫ РАЗВИТИЯ", "url" => ["/process"]],
+                                            ["label" => "Ценности ", "url" => ["/worth"]],
+                                            ["label" => "ПРЕДПРИЯТИЯ ", "url" => ["/worth-sub/index"]],
+                                            ["label" => "принципы ", "url" => ["/principe"]],
+                                            ["label" => "МИССИЯ ", "url" => ["/mission"]],
+                                            ["label" => "НАШИ ЦЕЛИ ", "url" => ["/target"]],
+//                                            ["label" => "Strategic ", "url" => ["/strategic-target"]],
+                                            ["label" => "ДЛЯ ДОСТИЖЕНИЯ ", "url" => ["/tasks"]],
+                                            ["label" => "ПРЕИМУЩЕСТВА ", "url" => ["/advantages-factory"]],
+                                            ["label" => "ПРОИЗВОДСТВО ", "url" => ["/process-images/index"]],
+                                        ],
+
+                                    ],
+                                    ["label" => "Партнеры", "url" => '#', "icon" => "",
+                                        "items" => [
+                                            ["label" => "ПОСТАВЩИКИ", "url" => ["/suppliers"]],
+                                            ["label" => "КЛИЕНТЫ", "url" => ["/clients"]],
+                                            ["label" => "Info", "url" => ["/suppliers-info"]],
+                                            ["label" => "Images", "url" => ["/suppliers-img/update?id=1"]],
+                                            ["label" => "Catalog", "url" => ["/catalog"]],
+                                        ],
+
+                                    ],
+                                    ["label" => "ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ", "url" => ["/suppliers-info"], "icon" => "file-image-o"],
+                                    ["label" => "laboratory", "url" => ["/laboratory"], "icon" => "file-image-o"],
+                                    ["label" => "Media", "url" => '#', "icon" => "film",
+                                        "items" => [
+                                            ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
+                                            ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
+                                        ],
+                                    ],
+
                                     ["label" => "Top Banner", "url" => ["/top-banner"], "icon" => "file-image-o"],
                                     ["label" => "Advantages", "url" => ["/advantages"], "icon" => "th-large"],
                                     ["label" => "Advantages Icons", "url" => ["/advantages-icons"], "icon" => "th"],
-                                    ["label" => "Category", "url" => ["/category"], "icon" => "folder"],
-                                    ["label" => "laboratory", "url" => ["/laboratory"], "icon" => "sort-alpha-desc"],
                                     ["label" => "News", "url" => ["/posts"], "icon" => "comment-o"],
                                     ["label" => "Products", "url" => '#', "icon" => "shopping-cart",
                                         "items" => [
@@ -81,24 +113,18 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "Options value", "url" => ["/options-value"]],
                                             ["label" => "Option value product", "url" => ["/options-product"]],
                                             ["label" => "Construction product", "url" => ["/construction-product"]],
+                                            ["label" => "Category", "url" => ["/category"], "icon" => "folder"],
                                         ],
-
                                     ],
-                                    ["label" => "Address", "url" => ["/address"], "icon" => "building"],
-                                    ["label" => "About", "url" => "#", "icon" => "files-o",
-
+                                    ["label" => "Contacts", "url" => '#', "icon" => "film",
                                         "items" => [
-                                            ["label" => "About", "url" => ["/about"]],
-                                            ["label" => "About in page", "url" => ["/about-in"]],
-                                            ["label" => "About in set", "url" => ["about-in/about-settings"]],
-
+                                            ["label" => "Address", "url" => ["/address"], "icon" => "building"],
+                                            ["label" => "Отдел", "url" => ["/departments"], "icon" => "youtube-play"],
                                         ],
                                     ],
-                                    ["label" => "Process", "url" => ["/process"], "icon" => "files-o",],
-                                    ["label" => "Gallery", "url" => ["/gallery"], "icon" => "film"],
-                                    ["label" => "Catalog", "url" => ["/catalog"], "icon" => "film"],
+
+                                    ["label" => "Вакансии", "url" => ["/vacancy-info/"], "icon" => "building"],
                                     ["label" => "Certificate", "url" => ["/certificate"], "icon" => "film"],
-                                    ["label" => "Videos", "url" => ["/videos"], "icon" => "youtube-play"],
                                     ["label" => "Site Settings", "url" => ["/settings"], "icon" => "gavel"],
                                 ],
                             ]
@@ -185,9 +211,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                 </div>
             <?php endif; ?>
             <div class="clearfix"></div>
-            <?php echo Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
+            <?php echo Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
             <?= $content ?>
         </div>
         <!-- /page content -->

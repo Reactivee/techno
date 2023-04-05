@@ -438,7 +438,7 @@ header
 .header-area .main-nav .nav li a {
     display: block;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 13px;
     color: black;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
@@ -457,7 +457,7 @@ header
 }
 
 
-.nav_sub  a {
+.nav_sub a {
     color: black !important;
     opacity: 1;
 }
@@ -2373,6 +2373,10 @@ responsive
 }
 
 @media (max-width: 767px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        /*max-width: 1420px !important;*/
+        padding:0 40px;
+    }
     .header-area .main-nav .logo h4 {
         font-size: 30px;
     }
@@ -2449,5 +2453,14 @@ responsive
 
     .step_item_year {
         text-align: center;
+    }
+
+    footer {
+        text-align: center;
+
+    }
+
+    .logo img {
+        max-width: 200px;
     }
 }
