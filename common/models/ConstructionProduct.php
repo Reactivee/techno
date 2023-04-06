@@ -62,7 +62,13 @@ class ConstructionProduct extends \yii\db\ActiveRecord
 
     public function allProduct()
     {
-        $product = Product::find()->all();
+        $product = Element::find()->all();
         return ArrayHelper::map($product, 'id', 'title_ru');
+    }
+
+    public function getElement()
+    {
+        return $this->hasOne(Element::className(), ['id' => 'product_id']);
+
     }
 }

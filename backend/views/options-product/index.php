@@ -30,7 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
+            [
+                'attribute' => 'product_id',
+                'value' => function ($model) {
+//                    dd($model->element);
+//                            dd($model->product);
+                    return $model->product->product->title_ru;
+                }
+            ],
             [
                 'attribute' => 'product_id',
                 'value' => function ($model) {
@@ -38,6 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $model->product->title_ru;
                 }
             ],
+
 
             [
                 'attribute' => 'option_id',

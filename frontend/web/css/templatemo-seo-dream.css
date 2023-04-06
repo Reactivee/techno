@@ -156,7 +156,7 @@ global styles
 }
 
 .color_techno {
-    color: #EB632A;
+    color: #EB632A !important;
     font-weight: 600;
 }
 

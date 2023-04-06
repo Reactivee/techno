@@ -22,12 +22,11 @@ use yii\helpers\Url;
                                     <div class="col-lg-12">
                                         <div class="line_item d-flex align-items-center">
                                             <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">
-                                                <h3>оставить
-                                                    заявку</h3></button>
+                                                <h3><?= Yii::t('main', 'application') ?></h3></button>
                                         </div>
                                         <div class="line_item  bg-white d-inline-flex align-items-center">
                                             <a href="/frontend/web/catalog.pdf"><h4
-                                                        class="color_techno text-capitalize pl-3 pr-3">скачать pdf</h4>
+                                                        class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
                                             </a>
                                             <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
                                                  alt="">
@@ -52,27 +51,6 @@ use yii\helpers\Url;
                 <span>наша продукция</span>
             </div>
             <div class="row">
-                <!--                <div class="col-md-4">-->
-                <!---->
-                <!--                    --><?php //echo Html::beginForm(Url::to(['product', 'slug' => $queryParams['slug']]), 'get', ['data-pjax' => true, 'id' => 'filter-form']) ?>
-                <!---->
-                <!--                    <div class="filter_block  p-4 position-relative">-->
-                <!--                        <h4 class="font-weight-bold">Филтирь</h4>-->
-                <!--                        <div class="checkbox_block mt-4">-->
-                <!--                            <ul>-->
-                <!--                                --><? // foreach ($category as $item) { ?>
-                <!--                                    <li class="mb-2 product_category_list">-->
-                <!--                                        <a href="/category/filter/--><? //= $item->slug ?><!--">-->
-                <? //= $item->name_ru ?><!--</a>-->
-                <!--                                    </li>-->
-                <!---->
-                <!--                                --><? // } ?>
-                <!--                            </ul>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                    --><?php //echo Html::endForm() ?>
-                <!---->
-                <!--                </div>-->
 
                 <div class="row">
                     <? foreach ($products as $item) { ?>
@@ -82,7 +60,7 @@ use yii\helpers\Url;
                                     <div class="product_title">
                                         <h4 class="font-weight-bold">
                                             <a class="title_product_filter"
-                                               href="/category/view?slug= <?= $item->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
+                                               href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
                                         </h4>
                                     </div>
                                     <div class="product_img">
@@ -93,7 +71,7 @@ use yii\helpers\Url;
                                     <ul>
                                         <? foreach ($item->element as $element) { ?>
                                             <li><a class="btn_link_hover"
-                                                   href="/category/view?slug=<?= $item->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
+                                                   href="/category/view?slug=<?= $element->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
                                             </li>
                                         <? } ?>
                                     </ul>

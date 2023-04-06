@@ -6,6 +6,7 @@ use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+
 /** @var yii\web\View $this */
 /** @var common\models\ConstructionProductSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
@@ -31,20 +32,35 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
 //            'id',
+            [
+                'attribute' => 'product_id',
+                'value' => function ($model) {
+//        dd();
+                    return $model->element->product->title_ru;
+                }
+            ],
+            [
+                'attribute' => 'element_id',
+                'value' => function ($model) {
+                    return $model->element->title_ru;
+                }
+            ],
+
             'title_ru',
             'title_en',
             'title_uz',
             'text_en:ntext',
             //'text_uz:ntext',
             //'text_ru:ntext',
-            //'product_id',
-            //'element_id',
+//            'product_id',
+
+//            'element_id',
             //'created_at',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, ConstructionProduct $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
-                 }
+                }
             ],
         ],
     ]); ?>

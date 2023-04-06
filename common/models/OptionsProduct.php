@@ -60,12 +60,12 @@ class OptionsProduct extends \yii\db\ActiveRecord
 
     public function getProducts()
     {
-        $elements = Product::find()->all();
+        $elements = Element::find()->all();
         $ids = [];
 
         foreach ($elements as $item) {
 
-            $ids[$item->id] = $item->id . " - " . $item->title_ru;
+            $ids[$item->id] = $item->product->title_ru . " / ". $item->id . " - " . $item->title_ru;
 
         }
 
@@ -74,7 +74,7 @@ class OptionsProduct extends \yii\db\ActiveRecord
 
     public function getProduct()
     {
-        return $this->hasOne(Product::className(), ['id' => 'product_id']);
+        return $this->hasOne(Element::className(), ['id' => 'product_id']);
     }
 
     public function getOptions()

@@ -166,7 +166,8 @@ class CategoryController extends Controller
 
     public function actionView($slug)
     {
-        $element = Product::find()
+
+        $element = Element::find()
             ->where(['slug' => trim($slug)])
             ->one();
         if (!$element)
@@ -175,44 +176,7 @@ class CategoryController extends Controller
         $cont = ConstructionProduct::find()->where(['product_id' => $element->id])->all();
         $category = Category::find()->all();
         $item_images = [];
-//        if (!$element->fat_element_id) {
-//
-//            $sub_element = Element::find()
-//                ->where(['fat_element_id' => $element->id])
-//                ->all();
-//
-//            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
-//            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
-//
-//        }
 
-//        if ($element->fat_element_id) {
-//
-//            $sub_element = Element::find()
-//                ->where(['id' => $element->fat_element_id])
-//                ->all();
-//
-//            $sub_element_id = ArrayHelper::map($sub_element, 'id', 'id');
-//            $item_images = ElementImages::find()->where(['element_id' => $sub_element_id])->all();
-//
-//        }
-
-//        $similar_product = Product::find()
-//            ->where(['category_id' => $element->product->category_id])
-//            ->limit(20)
-//            ->all();
-//
-//        $prod_id = ArrayHelper::map($similar_product, 'id', 'id');
-//
-//        $similar_element = Element::find()
-//            ->where(['product_id' => $prod_id])
-//            ->all();
-//
-//        $options_to_cat = OptionsToCategory::find()->where(['category_id' => $element->product->category_id])->all();
-//
-//        $options_id = ArrayHelper::map($options_to_cat, 'option_id', 'option_id');
-//
-//        $address = Address::find()->one();
 
         return $this->render('view', [
 //            'item_images' => $item_images,
