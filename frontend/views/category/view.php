@@ -36,7 +36,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
 
             <div class="view_block">
                 <div class="main_title mb-5">
-                    <span>   <?= $element->product->category['name_' . Yii::$app->language] ?></span>
+                    <span>   <?= $element->product['title_' . Yii::$app->language] ?></span>
                 </div>
                 <div class="row">
 
