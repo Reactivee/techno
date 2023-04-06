@@ -94,11 +94,6 @@ ul {
     margin-bottom: 0px;
 }
 
-p {
-    font-size: 15px;
-    line-height: 30px;
-    color: #2a2a2a;
-}
 
 img {
     width: 100%;
@@ -1986,6 +1981,16 @@ element Style
     padding-bottom: 30px;
 }
 
+.product_title {
+    /*font-weight: 800;*/
+    /*font-size: 31px;*/
+    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+.element_title{
+    font-weight: 500;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.5);
+}
 /*About*/
 .main_title {
     font-weight: 800;
@@ -2140,7 +2145,7 @@ element Style
 }
 
 .element_options_list div {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .view_wrapper {
