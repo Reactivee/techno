@@ -44,37 +44,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
     outline: 0;
 }
 
-/* clear fix */
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}
 
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-    width: 50%;
-}
-
-.grid-item {
-    float: left;
-}
-
-.grid-item img {
-    display: block;
-    max-width: 100%;
-}
-
-.clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
 
 .clearfix {
     display: inline-block;
@@ -141,39 +111,11 @@ img {
 global styles
 --------------------------------------------- 
 */
-html,
-body {
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
 
-::selection {
-    background: #03a4ed;
-    color: #fff;
-}
-
-::-moz-selection {
-    background: #03a4ed;
-    color: #fff;
-}
-
-@media (max-width: 991px) {
-    html, body {
-        overflow-x: hidden;
-    }
-
-    .mobile-top-fix {
-        margin-top: 30px;
-        margin-bottom: 0px;
-    }
-
-    .mobile-bottom-fix {
-        margin-bottom: 30px;
-    }
-
-    .mobile-bottom-fix-big {
-        margin-bottom: 60px;
-    }
+.lang{
+    /*position: absolute!important;*/
+    /*right: 0!important;*/
+    /*top: 0;*/
 }
 
 .color_techno {
@@ -2101,7 +2043,7 @@ element Style
 }
 
 .product_img {
-    width: 300px;
+    width: 175px;
     max-height: 150px;
 }
 
