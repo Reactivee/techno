@@ -53,32 +53,37 @@ use yii\helpers\Url;
             <div class="row">
 
                 <div class="row">
-                    <? foreach ($products as $item) { ?>
-                        <div class="col-md-4 mt-4 mt-md-0">
-                            <div class="product_card">
-                                <div class="product_card_top d-flex justify-content-between align-items-center overflow-hidden">
-                                    <div class="product_title">
-                                        <h4 class="font-weight-bold">
-                                            <a class="title_product_filter"
-                                               href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
-                                        </h4>
+                    <? foreach ($products as $item) {
+                        if ($item->element) {
+
+                            ?>
+                            <div class="col-md-4 mt-4 mt-md-4">
+                                <div class="product_card">
+                                    <div class="product_card_top d-flex justify-content-between align-items-center overflow-hidden">
+                                        <div class="product_title">
+                                            <h4 class="font-weight-bold">
+                                                <a class="title_product_filter"
+                                                   href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
+                                            </h4>
+                                        </div>
+                                        <div class="product_img">
+                                            <img class="w-100" src="<?= $item->image ?>" alt="">
+                                        </div>
                                     </div>
-                                    <div class="product_img">
-                                        <img class="w-100" src="<?= $item->image ?>" alt="">
+                                    <div class="product_card_bottom py-4">
+                                        <ul>
+                                            <? foreach ($item->element as $element) { ?>
+                                                <li><a class="btn_link_hover"
+                                                       href="/category/view?slug=<?= $element->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
+                                                </li>
+                                            <? } ?>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="product_card_bottom py-4">
-                                    <ul>
-                                        <? foreach ($item->element as $element) { ?>
-                                            <li><a class="btn_link_hover"
-                                                   href="/category/view?slug=<?= $element->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
-                                            </li>
-                                        <? } ?>
-                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    <? } ?>
+                        <? }
+                    }
+                    ?>
                 </div>
             </div>
 
