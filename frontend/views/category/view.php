@@ -30,6 +30,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
         </div>
     </div>
 
+<?php Pjax::begin(['id' => 'countries']) ?>
     <div class="view_wrapper pb-5">
         <div class="container">
 
@@ -121,6 +122,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
             </div>
         </div>
     </div>
+<?php Pjax::end() ?>
 <? // echo \frontend\widgets\RequestWidget::widget([
 //    'address' => $address
 //]); ?>
