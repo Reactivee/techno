@@ -21,5 +21,14 @@ return [
     'news' => 'yangiliklar',
     'contact' => 'Kontakt',
     'vacancy' => 'Vakansiyalar',
+    'our_advan' => 'Bizning afzalliklarimiz',
+    'we_number' => 'Biz raqamlarda',
+    'work' => 'Ko\'p yillik ish tajribasi',
+    'worker' => 'Ishchilar',
+    'partner_comp' => 'Kompaniyalar biz bilan hamkorlik qiladi',
+    'application' => 'arizangizni yuboring',
+    'catalog' => 'hammasini ko\'rish',
+    'how_work' => 'Biz qanday ishlaymiz',
+    'projects' => 'Как Мы работаем',
 
 ];

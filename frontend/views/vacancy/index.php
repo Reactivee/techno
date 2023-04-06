@@ -97,30 +97,3 @@ $this->title = "Vacancy";
 </section>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="">
-
-                <div class="modal-body">
-                    <input class="form-control mb-2" type="text" placeholder="Имя">
-                    <input class="form-control mb-2" type="text" placeholder="Телефон">
-                    <input class="form-control" type="text" placeholder="Сообщение">
-
-                </div>
-                <div class="modal-footer text-left">
-                    <button class="btn btn_gradient">Отправить</button>
-                </div>
-            </form>
-
-        </div>
-    </div>
-</div>

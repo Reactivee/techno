@@ -21,12 +21,12 @@ $settings = Settings::find()->one();
             </div>
             <div class="col-md-6">
                 <ul class="navbar_footer">
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">ГЛАВНАЯ </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">ПРОДУКЦИЯ </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">О КОМПАНИИ </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">новости </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">портфолио </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">лаборатория </a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'about') ?> </a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'product') ?> </a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'company') ?></a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'news') ?> </a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'clients') ?> </a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white" href="#"><?= Yii::t('main', 'laboratory') ?> </a></li>
                 </ul>
             </div>
             <div class="col-md-3">

@@ -20,6 +20,13 @@ return [
     'news' => 'News',
     'contact' => 'Contacts',
     'vacancy' => 'Jobs',
-
-
+    'our_advan' => 'Наши преимущества',
+    'we_number' => 'Мы в цифрах',
+    'work' => 'Лет опыта работ',
+    'worker' => 'Работников',
+    'partner_comp' => 'Компаний с нами сотруднияют',
+    'application' => 'оставить заявку',
+    'catalog' => 'смотреть все',
+    'how_work' => 'Как Мы работаем',
+    'projects' => 'Как Мы работаем',
 ];

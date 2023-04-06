@@ -26,8 +26,9 @@ use yii\helpers\Url;
                                                     заявку</h3></button>
                                         </div>
                                         <div class="line_item  bg-white d-inline-flex align-items-center">
-                                            <a href="#"><h4 class="color_techno text-capitalize pl-3 pr-3">смотреть
-                                                    все</h4></a>
+                                            <a href="/frontend/web/catalog.pdf"><h4
+                                                        class="color_techno text-capitalize pl-3 pr-3">скачать pdf</h4>
+                                            </a>
                                             <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
                                                  alt="">
                                         </div>
@@ -92,7 +93,7 @@ use yii\helpers\Url;
                                     <ul>
                                         <? foreach ($item->element as $element) { ?>
                                             <li><a class="btn_link_hover"
-                                                   href="/category/view?slug=<?= $item->slug ?> "><?= $element['title_'. Yii::$app->language] ?></a>
+                                                   href="/category/view?slug=<?= $item->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
                                             </li>
                                         <? } ?>
                                     </ul>
