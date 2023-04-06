@@ -1,6 +1,7 @@
 <?php
 
 use kartik\file\FileInput;
+use mihaildev\ckeditor\CKEditor;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\JsExpression;
@@ -32,9 +33,9 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'product_id')->dropDownList($model->getProducts())->label('Product Name') ?>
 
-<!--        --><?//= $form->field($model, 'fat_element_id')->dropDownList($model->getElements(), ['prompt' => 'Select Element'])->label('Element Name (NOT MUST IF THIS FATHER)') ?>
+    <!--        --><? //= $form->field($model, 'fat_element_id')->dropDownList($model->getElements(), ['prompt' => 'Select Element'])->label('Element Name (NOT MUST IF THIS FATHER)') ?>
 
-<!--    --><?// } ?>
+    <!--    --><? // } ?>
 
     <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
@@ -42,11 +43,55 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
-<!--    --><?//= $form->field($model, 'desc_en')->textarea(['rows' => 6]) ?>
+    <?php echo $form->field($model, 'desc_en')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
+    <?php echo $form->field($model, 'desc_uz')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
 
-<!--    --><?//= $form->field($model, 'desc_uz')->textarea(['rows' => 6]) ?>
-
-<!--    --><?//= $form->field($model, 'desc_ru')->textarea(['rows' => 6]) ?>
+    <?php echo $form->field($model, 'desc_ru')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
 
     <?php echo $form->field($model, 'uploaded_images')->hiddenInput(['id' => 'uploaded_images'])->label(false) ?>
     <?php $this->registerJs(
@@ -95,7 +140,7 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     ?>
 
-<!--    --><?//= $form->field($model, 'slug')->textInput(['maxlength' => true, 'disabled' => 'disabled']) ?>
+    <!--    --><? //= $form->field($model, 'slug')->textInput(['maxlength' => true, 'disabled' => 'disabled']) ?>
 
 
     <div class="form-group">

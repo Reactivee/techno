@@ -118,9 +118,10 @@ class ElementController extends Controller
 
             $model->save();
             $model->saveImages();
+            Yii::$app->session->addFlash('success','success');
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
-        Yii::$app->session->addFlash('success','success');
         return $this->render('update', [
             'model' => $model,
         ]);
