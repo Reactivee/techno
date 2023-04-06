@@ -53,10 +53,10 @@ $this->title = "О Нас";
                     <div class="mission_block_item mb-3">
                         <div class="mission_block_title font-weight-bold text-uppercase color_techno mb-3">
                             <?= $item->icon ?>
-                            <span><?= $item->title_ru ?></span>
+                            <span><?= $item['title_' . Yii::$app->language] ?></span>
                         </div>
                         <div class="mission_block_text">
-                            <span><?= $item->text_ru ?></span>
+                            <span><?= $item['text_' . Yii::$app->language] ?></span>
                         </div>
                     </div>
                 <? } ?>
@@ -73,11 +73,11 @@ $this->title = "О Нас";
             <? foreach ($target as $item) { ?>
                 <div class="col-md-6">
                     <div class="main_title text-center my-4">
-                        <span><?= $item->title_ru ?></span>
+                        <span><?= $item['title_' . Yii::$app->language] ?></span>
                     </div>
                     <div class="target_text">
                 <span>
-                   <?= $item->text_ru ?>
+                   <?= $item['text_' . Yii::$app->language] ?>
                 </span>
                     </div>
                 </div>
@@ -85,12 +85,12 @@ $this->title = "О Нас";
 
             <div class="col-md-12">
                 <div class="main_title text-center my-4">
-                    <span><?= $tasks[0]->title_ru ?></span>
+                    <span><?= $tasks[0]['title_' . Yii::$app->language] ?></span>
                 </div>
             </div>
             <? foreach ($tasks as $task) { ?>
                 <div class="col-md-6">
-                    <span><?= $task->text_ru ?></span>
+                    <span><?= $task['text_' . Yii::$app->language] ?></span>
                 </div>
             <? } ?>
 
@@ -103,11 +103,11 @@ $this->title = "О Нас";
     <div class="container pb-5">
 
         <div class="main_title text-center my-4">
-            <span><?= $advantages[0]->title_ru ?></span>
+            <span><?= $advantages[0]['title_' . Yii::$app->language] ?></span>
         </div>
         <? foreach ($advantages as $item) { ?>
             <div class="advantages_text">
-                <?= $item->text_ru ?>
+                <?= $item['text_' . Yii::$app->language] ?>
             </div>
         <? } ?>
 

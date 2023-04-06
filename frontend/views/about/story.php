@@ -56,10 +56,10 @@ $this->title = "О Нас";
 
                     <div class="step_year_block d-flex align-items-center  text-left">
                         <div class="step_item_year font-weight-bold mr-4 position-relative color_techno col-md-2">
-                            <span><?= $proces->title_ru ?></span>
+                            <span><?= $proces['title_' . Yii::$app->language] ?></span>
                         </div>
                         <div class="step_item col-md-10 text-center">
-                            <span><?= $proces->text_ru ?> </span>
+                            <span><?= $proces['text_'.Yii::$app->language] ?> </span>
                         </div>
                     </div>
                 <? } ?>
@@ -93,7 +93,7 @@ $this->title = "О Нас";
 
                                     </div>
                                     <div class="right-content">
-                                        <h4><?= $advantage->title_ru ?> </h4>
+                                        <h4><?= $advantage['title_'.Yii::$app->language] ?> </h4>
                                     </div>
                                 </div>
                             </div>

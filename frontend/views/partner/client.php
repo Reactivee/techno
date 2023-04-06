@@ -46,10 +46,10 @@ $this->title = "Partner";
                     <div class="col-md-12">
                         <div class="block_content mb-4">
                             <div class="main_title  my-4">
-                                <span><?= $client->title_ru ?></span>
+                                <span><?= $client['title_'. Yii::$app->language] ?></span>
                             </div>
                             <div class="uni_text">
-                                <?= $client->text_ru ?>
+                                <?= $client['text_'. Yii::$app->language] ?>
                             </div>
                         </div>
                     </div>
@@ -76,21 +76,7 @@ $this->title = "Partner";
                 </div>
             </div>
 
-<!--            <div class="row align-items-center ">-->
-<!--                <div class="col-md-3">-->
-<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-<!--                </div>-->
-<!--                <div class="col-md-3">-->
-<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-<!--                </div>-->
-<!--                <div class="col-md-3">-->
-<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-<!--                </div>-->
-<!--                <div class="col-md-3">-->
-<!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-<!--                </div>-->
-<!---->
-<!--            </div>-->
+
         </div>
     </div>
 </section>

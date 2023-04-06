@@ -38,10 +38,10 @@ $this->title = "Partner";
         <div class="container">
             <? foreach ($info as $item) { ?>
                 <div class="main_title  my-4">
-                    <span><?= $item->name_ru ?></span>
+                    <span><?= $item['name_'. Yii::$app->language] ?></span>
                 </div>
                 <div class="uni_text">
-                    <?= $item->text_ru ?>
+                    <?= $item['text_'. Yii::$app->language] ?>
                 </div>
 
             <? } ?>

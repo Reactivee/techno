@@ -15,7 +15,7 @@ $this->title = "News";
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h2 class="main_header_text"> <?= $news->title_ru?></h2>
+                                    <h2 class="main_header_text"> <?= $news['title_'. Yii::$app->language]?></h2>
                                 </div>
                                 <div class="col-lg-12">
 
@@ -42,7 +42,7 @@ $this->title = "News";
         <div class="row align-items-center pb-5">
 
             <div class="news_text_title my-4 text-center">
-                <h2 class="font-weight-bold">  <?= $news->title_ru?></h2>
+                <h2 class="font-weight-bold">  <?= $news['title_'. Yii::$app->language]?></h2>
             </div>
 
             <div class="col-md-5">
@@ -54,7 +54,7 @@ $this->title = "News";
                 <div class="news_text ">
 
                     <div class="news_text_btn mt-4">
-                        <?= $news->text_ru?>
+                        <?= $news['text_'. Yii::$app->language]?>
                     </div>
                 </div>
             </div>

@@ -44,7 +44,7 @@ $this->title = "Partner";
                     <div class="col-md-12">
                         <div class="block_content mb-4">
                             <div class="uni_text">
-                                <?= $item->text_ru?>
+                                <?= $item['text_'. Yii::$app->language]?>
                             </div>
                         </div>
                     </div>

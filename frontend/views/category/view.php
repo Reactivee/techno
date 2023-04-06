@@ -21,18 +21,6 @@ use yii\widgets\Pjax;
                                     <div class="col-lg-12">
                                         <h2 class="main_header_text text-uppercase"> <?= $element->category['name_' . Yii::$app->language] ?></h2>
                                     </div>
-                                    <!--                                    <div class="col-lg-12">-->
-                                    <!--                                        <div class="line_item d-flex align-items-center">-->
-                                    <!--                                            <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">-->
-                                    <!--                                                <h3>оставить-->
-                                    <!--                                                    заявку</h3></button>-->
-                                    <!--                                        </div>-->
-                                    <!--                                        <div class="line_item  bg-white d-inline-flex align-items-center">-->
-                                    <!--                                            <h4 class="color_techno text-capitalize pl-3 pr-3">смотреть все</h4>-->
-                                    <!--                                            <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"-->
-                                    <!--                                                 alt="">-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -43,16 +31,10 @@ use yii\widgets\Pjax;
     </div>
     <div class="view_wrapper pb-5">
         <div class="container">
-            <!--        <div class="category__banner_breadcrumb d-flex color_gray pt-5">-->
-            <!--            <a class="text-decoration-none color_black mr-2" href="/">Главная /</a>-->
-            <!--            <a class="text-decoration-none color_black mx-2" href="/category/all-category">Каталог /</a>-->
-            <!--            <span class="color_black">-->
-            <? //= $element['title_' . Yii::$app->language] ?><!--</span>-->
-            <!---->
-            <!--        </div>-->
+
             <div class="view_block">
                 <div class="main_title mb-5">
-                    <span>   <?= $element->category->name_ru ?></span>
+                    <span>   <?= $element->category['name_' . Yii::$app->language] ?></span>
                 </div>
                 <div class="row">
 
@@ -67,7 +49,7 @@ use yii\widgets\Pjax;
                             <div class="product_card_bottom">
                                 <ul>
                                     <? foreach ($element->element as $item) { ?>
-                                        <li><a href="#"> <?= $item->title_ru ?></a></li>
+                                        <li><a href="#"> <?= $item['title_' . Yii::$app->language] ?></a></li>
                                     <? } ?>
                                 </ul>
                             </div>
@@ -77,7 +59,7 @@ use yii\widgets\Pjax;
                     <div class="col-md-8 pl-5">
                         <div class="product_title">
                             <div class="main_title  my-4">
-                                <span><?= $element->title_ru ?></span>
+                                <span><?= $element['title_' . Yii::$app->language] ?></span>
                             </div>
                         </div>
 
@@ -86,10 +68,10 @@ use yii\widgets\Pjax;
                             foreach ($element->option as $option) { ?>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h4 class="font-weight-bold text-center"><?= $option->options->name_ru ?></h4>
+                                        <h4 class="font-weight-bold text-center"><?= $option->options['name_' . Yii::$app->language] ?></h4>
                                     </div>
                                     <div class="col-md-8">
-                                        <p><?= $option->value->name_ru ?></p>
+                                        <p><?= $option->value['name_' . Yii::$app->language] ?></p>
                                     </div>
                                 </div>
                             <? } ?>
@@ -117,10 +99,10 @@ use yii\widgets\Pjax;
                                     <div class="col-md-2 ">
                                         <div class="construction_items h-100 card text-center p-2">
                                             <div class="const_title">
-                                                <h5 class="font-weight-bold ">     <?= $item->title_ru ?></h5>
+                                                <h5 class="font-weight-bold ">     <?= $item['title_' . Yii::$app->language] ?></h5>
                                             </div>
                                             <div class="const_content mt-2">
-                                                <?= $item->text_ru ?>
+                                                <?= $item['text_' . Yii::$app->language] ?>
                                             </div>
                                         </div>
                                     </div>

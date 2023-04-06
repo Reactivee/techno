@@ -28,8 +28,8 @@ $this->title = 'Techno';
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h2 class="banner_text"><?= $main_banner->title_uz ?></h2>
-                                    <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner->text_uz ?></h4>
+                                    <h2 class="banner_text"><?= $main_banner['title_'. Yii::$app->language] ?></h2>
+                                    <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner['text_'. Yii::$app->language] ?></h4>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="main-green-button mt-5">
@@ -61,7 +61,7 @@ $this->title = 'Techno';
                         <ul class="p-0 m-0 advan-content_items">
                             <? foreach ($advantages as $item) { ?>
                                 <li>
-                                    <?= $item->title_ru ?>
+                                    <?= $item['title_'. Yii::$app->language] ?>
                                 </li>
                             <? } ?>
 
@@ -329,9 +329,9 @@ height: 93px;" src="/uploads/logo/line1.svg" alt="">
                                     </div>
                                     <img src=<?= $item->img ?>>
                                     <!--                                    <div class="icon "></div>-->
-                                    <h4 class="section_text"><?= $item->title_ru ?></h4>
+                                    <h4 class="section_text"><?= $item['title_'. Yii::$app->language] ?></h4>
                                     <div class="line-dec"></div>
-                                    <p class="section_text"><?= $item->title_ru ?></p>
+                                    <p class="section_text"><?= $item['title_'. Yii::$app->language] ?></p>
                                 </div>
                             </div>
                         <? } ?>

@@ -40,27 +40,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ],
 
-            [
-                'attribute' => 'fat_element_id',
-                'value' => function ($model) {
-                    if ($model->fat_element_id) {
-                        $elements = \common\models\Element::findOne(['id' => $model->fat_element_id]);
-                        return $elements->title_en;
-                    }
-                    return '';
-                }
-
-            ],
-
             'title_ru',
             'title_uz',
             'title_en',
             'desc_en:ntext',
-            'desc_uz:ntext',
-            'desc_ru:ntext',
-            'img',
-            'created_at:datetime',
-            'updated_at:datetime',
+
+
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Element $model, $key, $index, $column) {

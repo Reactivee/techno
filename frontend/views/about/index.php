@@ -48,7 +48,7 @@ $this->title = "О Нас";
                     <div class="row align-items-center">
                         <? if ($item->img && $key % 2 == 0) { ?>
                             <div class="col-md-7">
-                                <span><?= $item->text_ru ?> </span>
+                                <span><?= $item['text_' . Yii::$app->language] ?> </span>
                             </div>
                             <div class="col-md-5">
                                 <img class="w-100" src="<?= $item->img ?>" alt="">
@@ -60,11 +60,11 @@ $this->title = "О Нас";
                                 <img class="w-100" src="<?= $item->img ?>" alt="">
                             </div>
                             <div class="col-md-7">
-                                <span><?= $item->text_ru ?> </span>
+                                <span><?= $item['text_' . Yii::$app->language] ?> </span>
                             </div>
                         <? } else { ?>
                             <div class="col-md-12 mt-4">
-                                <span><?= $item->text_ru ?></span>
+                                <span><?= $item['text_' . Yii::$app->language] ?></span>
                             </div>
                         <? } ?>
                     </div>

@@ -21,7 +21,7 @@ $this->title = 'Labaratory';
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h2 class="main_header_text"><?= $laboratory->title_ru ?></h2>
+                                    <h2 class="main_header_text"><?= $laboratory['title_'. Yii::$app->language] ?></h2>
                                 </div>
                             </div>
                         </div>
@@ -36,11 +36,11 @@ $this->title = 'Labaratory';
 
         <div class="container">
             <div class="main_title  my-4">
-                <span>  <?= $laboratory->title_ru ?></span>
+                <span>  <?= $laboratory['title_'. Yii::$app->language] ?></span>
             </div>
             <div class="labar_content">
                 <span>
-                        <?= $laboratory->text_ru ?>
+                        <?= $laboratory['text_'. Yii::$app->language] ?>
                 </span>
             </div>
             <div class="row mt-4">

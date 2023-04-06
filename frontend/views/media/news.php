@@ -51,7 +51,7 @@ $this->title = "News";
                 <div class="col-md-6 text-center mt-4 mt-md-0">
                     <div class="news_text ">
                         <div class="news_text_title">
-                            <?= $item->title_ru ?>
+                            <?= $item['title_'. Yii::$app->language] ?>
                         </div>
                         <div class="news_text_btn mt-4">
                             <a href="full/<?= $item->id ?>" class="btn btn-primary bg_techno">
