@@ -45,7 +45,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
 }
 
 
-
 .clearfix {
     display: inline-block;
 }
@@ -112,10 +111,48 @@ global styles
 --------------------------------------------- 
 */
 
-.lang{
+.lang {
     /*position: absolute!important;*/
     /*right: 0!important;*/
     /*top: 0;*/
+}
+
+.background-header .lang {
+    display: none;
+}
+
+.language-picker {
+    padding-bottom: 0 !important;
+}
+
+.dropdown-menu {
+    background: transparent !important;
+    border: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background: transparent !important;
+
+}
+
+.language-picker .dropdown-item {
+    padding: 0 !important;
+    text-align: center;
+    color: black !important;
+}
+
+.language-picker > div {
+    display: flex;
+
+}
+
+.language-picker i {
+    display: none !important;
+
+}
+
+.dropdown-toggle::after {
+    display: none !important;
 }
 
 .color_techno {
@@ -2415,7 +2452,7 @@ responsive
 
     }
 
-    footer  .logo img {
+    footer .logo img {
         max-width: 200px;
     }
 }

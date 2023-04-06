@@ -56,7 +56,7 @@ return [
     'components' => [
         'languagepicker' => [
             'class' => 'lajax\languagepicker\Component',        // List of available languages (icons and text)
-            'languages' => ['en' => 'English', 'uz' => 'Uzbek', 'ru' => 'Русский'],
+            'languages' => ['en' => 'En', 'uz' => 'Uz', 'ru' => 'Рус'],
             'cookieName' => 'language',                         // Name of the cookie.
             'expireDays' => 64,                                 // The expiration time of the cookie is 64 days.
             'callback' => function () {

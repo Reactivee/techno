@@ -47,8 +47,19 @@ $settings = Settings::find()->one();
 <!--</header>-->
 <!-- ***** Header Area Start ***** -->
 <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
+    <div class="container position-relative">
+        <div class="d-flex justify-content-end">
+            <div class="lang">
+                <div class="dropdown text-right d-flex flex-row">
+                    <?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+                        'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_BUTTON,
+                        'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_SMALL
+                    ]); ?>
+                </div>
+            </div>
+        </div>
         <div class="row">
+
             <div class="col-12">
                 <nav class="main-nav row align-items-center position-relative">
                     <!-- ***** Logo Start ***** -->
@@ -103,8 +114,10 @@ $settings = Settings::find()->one();
                 </nav>
 
             </div>
+
             <!-- ***** Menu End ***** -->
         </div>
+
     </div>
 </header>
 <!-- ***** Header Area End ***** -->
