@@ -63,49 +63,53 @@ $settings = Settings::find()->one();
             <div class="col-12">
                 <nav class="main-nav row align-items-center position-relative">
                     <!-- ***** Logo Start ***** -->
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-2 col-6">
                         <a href="/" class="logo">
                             <img class="w-100" src="/uploads/logo/Group_22.png" alt="asd">
                         </a>
                     </div>
-                    <div class="col-md-9 col-6">
+                    <div class="col-md-10 col-6">
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
                             <li class="scroll-to-section position-relative">
-                                <a href="#" class="">О Нас </a>
+                                <a href="#" class=""><?= Yii::t('main', 'about') ?> </a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/about/story'>История и планы развития</a>
-                                    <a href="/about">О Компании</a>
-                                    <a href="/about/worth">Ценности предприятия </a>
-                                    <a href="/about/mission">Миссия </a>
-                                    <a href="/about/factory">ПРОИЗВОДСТВО</a>
+                                    <a href='/about/story'><?= Yii::t('main', 'story') ?></a>
+                                    <a href="/about"><?= Yii::t('main', 'company') ?></a>
+                                    <a href="/about/worth"><?= Yii::t('main', 'advantage') ?> </a>
+                                    <a href="/about/mission"><?= Yii::t('main', 'mission') ?> </a>
+                                    <a href="/about/factory"><?= Yii::t('main', 'factory') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a href="#">ПРОДУКЦИЯ</a>
+                            <li class="scroll-to-section position-relative"><a
+                                        href="#"><?= Yii::t('main', 'product') ?></a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/category/service'>Наши услуги</a>
-                                    <a href='/category/all-category'>ПРОДУКЦИЯ</a>
+                                    <a href='/category/service'><?= Yii::t('main', 'service') ?></a>
+                                    <a href='/category/all-category'><?= Yii::t('main', 'product') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a href="#">Партнеры</a>
+                            <li class="scroll-to-section position-relative"><a
+                                        href="#"><?= Yii::t('main', 'partner') ?></a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/partner'>Поставщики</a>
-                                    <a href="/partner/client">Клиенты</a>
+                                    <a href='/partner'> <?= Yii::t('main', 'supply') ?> </a>
+                                    <a href="/partner/client"><?= Yii::t('main', 'clients') ?></a>
                                 </div>
                             </li>
 
-                            <li class="scroll-to-section"><a href="/partner/info">Информация для партнеров</a></li>
-                            <li class="scroll-to-section"><a href="/site/labaratory">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</a></li>
+                            <li class="scroll-to-section"><a href="/partner/info"><?= Yii::t('main', 'info') ?></a></li>
+                            <li class="scroll-to-section"><a
+                                        href="/site/labaratory"><?= Yii::t('main', 'laboratory') ?></a></li>
 
-                            <li class="scroll-to-section position-relative"><a href="#">Медиа</a>
+                            <li class="scroll-to-section position-relative"><a
+                                        href="#"><?= Yii::t('main', 'media') ?></a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/media'>Фотогалерея</a>
-                                    <a href="/media/news">Новости</a>
+                                    <a href='/media'><?= Yii::t('main', 'photo') ?></a>
+                                    <a href="/media/news"><?= Yii::t('main', 'news') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section"><a href="/contact">Контакты</a></li>
-                            <li class="scroll-to-section"><a href="/vacancy">Вакансии</a></li>
+                            <li class="scroll-to-section"><a href="/contact"><?= Yii::t('main', 'contact') ?></a></li>
+                            <li class="scroll-to-section"><a href="/vacancy"><?= Yii::t('main', 'vacancy') ?></a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
