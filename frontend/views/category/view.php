@@ -106,7 +106,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                         </div>
                         <div class="row ">
                             <? foreach ($cont as $item) { ?>
-                                <div class="col-md-2 ">
+                                <div class="col-md-2 mb-4">
                                     <div class="construction_items h-100 card text-center p-2">
                                         <div class="const_title">
                                             <h5 class="font-weight-bold ">     <?= $item['title_' . Yii::$app->language] ?></h5>
