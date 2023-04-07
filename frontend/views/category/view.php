@@ -74,10 +74,10 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                             foreach ($element->option as $option) { ?>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h4 class="font-weight-bold text-center"><?= $option->options['name_' . Yii::$app->language] ?></h4>
+                                        <h4 class="font-weight-bold text-center option_name"><?= $option->options['name_' . Yii::$app->language] ?></h4>
                                     </div>
                                     <div class="col-md-8">
-                                        <p><?= $option->value['name_' . Yii::$app->language] ?></p>
+                                        <p class="option_value"><?= $option->value['name_' . Yii::$app->language] ?></p>
                                     </div>
                                 </div>
                             <? } ?>

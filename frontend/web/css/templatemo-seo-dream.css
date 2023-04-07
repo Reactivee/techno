@@ -1864,7 +1864,15 @@ form#contact button:hover {
     /*padding: 0 0 0 15px ;*/
 }
 
-/* 
+.option_name {
+    font-size: 18px;
+}
+
+.option_value {
+    font-size: 17px;
+}
+
+/*
 ---------------------------------------------
 element Style
 ---------------------------------------------
@@ -1986,11 +1994,13 @@ element Style
     /*font-size: 31px;*/
     font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-.element_title{
+
+.element_title {
     font-weight: 500;
     font-size: 23px;
     color: rgba(0, 0, 0, 0.5);
 }
+
 /*About*/
 .main_title {
     font-weight: 800;
