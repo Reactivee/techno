@@ -60,15 +60,15 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                         </div>
                     </div>
 
-                    <div class=" col-md-8 pl-5">
+                    <div class=" col-md-8 pl-0 pl-md-5">
                         <div class="product_title">
                             <div class="main_title  my-4">
                                 <span>   <?= $element->product['title_' . Yii::$app->language] ?></span>
                             </div>
                         </div>
-                          <div class="element_title">
-                              <span class=""><?= $element['title_' . Yii::$app->language] ?></span>
-                          </div>
+                        <div class="element_title">
+                            <span class=""><?= $element['title_' . Yii::$app->language] ?></span>
+                        </div>
                         <div class="row element_options_list">
                             <?
                             foreach ($element->option as $option) { ?>
