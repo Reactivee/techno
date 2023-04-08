@@ -61,8 +61,8 @@ use yii\helpers\Url;
                             ?>
                             <div class="col-md-4 mt-4 mt-md-4">
                                 <div class="product_card">
-                                    <div class="product_card_top d-flex justify-content-between align-items-center overflow-hidden">
-                                        <div class="product_title">
+                                    <div class="product_card_top d-flex justify-content-between align-items-end overflow-hidden">
+                                        <div class="product_title mb-3 col-8">
                                             <h4 class="font-weight-bold">
                                                 <a class="title_product_filter"
                                                    href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>

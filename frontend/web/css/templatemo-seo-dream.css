@@ -2030,8 +2030,8 @@ element Style
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 2;
-    font-size: 18px;
+    -webkit-line-clamp: 3;
+    font-size: 25px;
 }
 
 .main_title span {
@@ -2108,7 +2108,7 @@ element Style
 
 .product_img {
     width: 175px;
-    height: 175px;
+    height: 130px;
 }
 
 
