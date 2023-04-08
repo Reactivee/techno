@@ -20,9 +20,9 @@ AppAsset::register($this);
     <head>
         <meta charset="<?= Yii::$app->charset ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="title" content="<?= $settings->site_name ?>">
+        <meta name="title" content="Techno Cable Group">
         <meta name="Description"
-              content="ZELAL TEXTILE PRODUCTS OF WORLD QUALITY">
+              content="Techno Cable Group">
         <?php $this->registerCsrfMetaTags() ?>
         <title>Techno Cable Group</title>
         <?php $this->head() ?>

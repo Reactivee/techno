@@ -146,12 +146,7 @@ $this->title = 'Techno';
 
     <div class="container-fluid">
         <div class="row">
-            <!--            <div class="col-lg-5">-->
-            <!--                <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">-->
-            <!--                 -->
-            <!--                    <h2>Продукти</h2>-->
-            <!--                </div>-->
-            <!--            </div>-->
+
         </div>
     </div>
     <div class="container wow  fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
@@ -159,11 +154,13 @@ $this->title = 'Techno';
             <div class="col-lg-12">
                 <div class="loop owl-carousel products_owl">
 
-                    <? foreach ($element as $item) {
-                        echo \frontend\widgets\ElementWidget::widget(['products' => $item])
-                        ?>
-                    <? } ?>
+                    <? foreach ($element as $item) { ?>
+                        <a class="text-decoration-none color_techno" href="category/view?slug=<?= $item->slug ?>">
+                            <? echo \frontend\widgets\ElementWidget::widget(['products' => $item])
+                            ?>
+                        </a>
 
+                    <? } ?>
                 </div>
             </div>
         </div>

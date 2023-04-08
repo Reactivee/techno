@@ -44,7 +44,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'title_uz',
             'title_en',
             'desc_en:ntext',
-
+            [
+                'attribute' => 'image',
+                'format' => 'html',
+                'value' => function ($model) {
+                    $url = Html::img($model->image->path,['style'=>'width:100px']);
+                    return $url;
+                }
+            ],
 
             [
                 'class' => ActionColumn::className(),

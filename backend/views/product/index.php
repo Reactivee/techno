@@ -43,7 +43,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ],
 
+
             'desc',
+            [
+                'attribute' => 'image',
+                'format' => 'html',
+                'value' => function ($model) {
+//                        dd($model);
+                    $url = Html::img($model->image,['style'=>'width:100px']);
+                    return $url;
+                }
+            ],
             [
                 'class' => ActionColumn::className(),
 //                'urlCreator' => function ($action, Product $model, $key, $index, $column) {
