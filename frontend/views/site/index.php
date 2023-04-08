@@ -10,38 +10,38 @@ $this->title = 'Techno';
         color: white;
     }
 </style>
-<div style="background-image: url('<?= $main_banner->img_path ?>')" class=" main-banner wow fadeIn
-     position-relative container_fluid" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-
+<div class="wow fadeIn position-relative container_fluid" id="top" data-wow-duration="1s"
+     data-wow-delay="0.5s">
+    <img class="w-100 top_banner" src="uploads/banners/main_banner.png" alt="">
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
-        <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">
-        <h4 class="color_techno text-capitalize pr-5 pl-4"><a class="text-decoration-none stretched-link"
-                                                              href="/category/all-category">каталог
-                продукции</a></h4>
+
+        <!--        <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">-->
+        <!--        <h4 class="color_techno text-capitalize pr-5 pl-4">-->
+        <!--            <a class="text-decoration-none stretched-link" href="/category/all-category">каталог-->
+        <!--                продукции</a>-->
+        <!--        </h4>-->
     </div>
 
-    <div class="container">
+    <div class="content_top_banner">
+        <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-8 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="banner_text"><?= $main_banner['title_' . Yii::$app->language] ?></h2>
-                                    <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner['text_' . Yii::$app->language] ?></h4>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="main-green-button mt-5">
-                                        <a href="/about" class="text-capitalize"><?= Yii::t('main', 'company') ?></a>
-                                    </div>
+            <div class="row">
+                <div class="col-lg-8 align-self-center">
+                    <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                         data-wow-delay="1s">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="banner_text"><?= $main_banner['title_' . Yii::$app->language] ?></h2>
+                                <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner['text_' . Yii::$app->language] ?></h4>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="main-green-button mt-5">
+                                    <a href="/about"
+                                       class="text-capitalize"><?= Yii::t('main', 'company') ?></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@ $this->title = 'Techno';
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            8<br>
+                                            <p class="p-0 m-0" >8</p><br>
                                             <span><?= Yii::t('main', 'work') ?> </span>
                                         </div>
                                     </div>

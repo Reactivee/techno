@@ -16,20 +16,23 @@ $this->title = "О Нас";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
 
 ?>
-<div class="main-banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class=" wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <img class="top_banner w-100" src="/uploads/banners/main_banner.png" alt="">
+    <div class="content_top_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-9 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="main_header_text">МИССИЯ</h2>
+                                    </div>
+                                    <div class="col-lg-12">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-9 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="main_header_text">МИССИЯ</h2>
-                                </div>
-                                <div class="col-lg-12">
-
+                                    </div>
                                 </div>
                             </div>
                         </div>

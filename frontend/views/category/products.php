@@ -5,31 +5,33 @@ use yii\helpers\Url;
 
 ?>
 <section id="products" class="category_product ">
-    <div class="main-banner  main_product_banner  wow fadeIn position-relative" id="top" data-wow-duration="1s"
+    <div class="wow fadeIn position-relative" id="top" data-wow-duration="1s"
          data-wow-delay="0.5s">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6 align-self-center">
-                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
-                                 data-wow-delay="1s">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <!--                                        <h2>SEO &amp; Digital Marketing Agency</h2>-->
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="line_item d-flex align-items-center">
-                                            <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">
-                                                <h3><?= Yii::t('main', 'application') ?></h3></button>
+        <img class="w-100 top_banner" src="/uploads/banners/50.png" alt="">
+        <div class="content_top_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                     data-wow-delay="1s">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <!--                                        <h2>SEO &amp; Digital Marketing Agency</h2>-->
                                         </div>
-                                        <div class="line_item  bg-white d-inline-flex align-items-center">
-                                            <a href="/frontend/web/catalog.pdf"><h4
-                                                        class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
-                                            </a>
-                                            <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
-                                                 alt="">
+                                        <div class="col-lg-12">
+                                            <div class="line_item d-flex align-items-center">
+                                                <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">
+                                                    <h3><?= Yii::t('main', 'application') ?></h3></button>
+                                            </div>
+                                            <div class="line_item  bg-white d-inline-flex align-items-center">
+                                                <a href="/frontend/web/catalog.pdf"><h4
+                                                            class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
+                                                </a>
+                                                <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
+                                                     alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
