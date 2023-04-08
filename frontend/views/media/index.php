@@ -5,20 +5,23 @@ $this->title = "Галерея";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'gallery');
 ?>
 
-<div class="main-banner media_banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <img class="top_banner w-100" src="/uploads/banners/media.png" alt="">
+    <div class="content_top_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-9 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="main_header_text color_techno text-uppercase">медиа галерея</h2>
+                                    </div>
+                                    <div class="col-lg-12">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-9 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="main_header_text">Информация для партнеров</h2>
-                                </div>
-                                <div class="col-lg-12">
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +38,7 @@ $this->title = "Галерея";
 
     <div class="container pb-5">
         <div class="main_title  my-4">
-            <span>Информация для партнеров</span>
+            <span>медиа галерея</span>
         </div>
 
         <div class="media_tab_wrapper">

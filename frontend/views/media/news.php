@@ -5,20 +5,23 @@ $this->title = "News";
 
 
 ?>
-<div class="main-banner media_banner wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <img class="top_banner w-100" src="/uploads/banners/media.png" alt="">
+    <div class="content_top_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-9 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="main_header_text color_techno">новости</h2>
+                                    </div>
+                                    <div class="col-lg-12">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-9 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="main_header_text">новости</h2>
-                                </div>
-                                <div class="col-lg-12">
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +54,7 @@ $this->title = "News";
                 <div class="col-md-6 text-center mt-4 mt-md-0">
                     <div class="news_text ">
                         <div class="news_text_title">
-                            <?= $item['title_'. Yii::$app->language] ?>
+                            <?= $item['title_' . Yii::$app->language] ?>
                         </div>
                         <div class="news_text_btn mt-4">
                             <a href="full/<?= $item->id ?>" class="btn btn-primary bg_techno">

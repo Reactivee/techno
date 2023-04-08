@@ -7,21 +7,24 @@ $this->title = "Vacancy";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
 
 ?>
-<div class="main-banner contact_banner wow fadeIn position-relative" id="top" data-wow-duration="1s"
-     data-wow-delay="0.5s">
+<div class="wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-9 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="main_header_text text-uppercase">КОНТАКТЫ</h2>
-                                </div>
-                                <div class="col-lg-12">
+    <img class="top_banner w-100" src="/uploads/banners/contacts.png" alt="">
+    <div class="content_top_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-9 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="main_header_text text-uppercase">КОНТАКТЫ</h2>
+                                    </div>
+                                    <div class="col-lg-12">
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
