@@ -73,13 +73,17 @@ use yii\helpers\Url;
                                         </div>
                                     </div>
                                     <div class="product_card_bottom py-4">
-                                        <ul>
+
+                                        <div class="row">
                                             <? foreach ($item->element as $element) { ?>
-                                                <li><a class="btn_link_hover"
-                                                       href="/category/view?slug=<?= $element->slug ?> "><?= $element['title_' . Yii::$app->language] ?></a>
-                                                </li>
+                                                <div class="col-6">
+                                                    <a class="btn_link_hover"
+                                                       href="/category/view?slug=<?= $element->slug ?> ">
+                                                        <?= $element['title_' . Yii::$app->language] ?>
+                                                    </a>
+                                                </div>
                                             <? } ?>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

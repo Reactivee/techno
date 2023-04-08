@@ -2126,11 +2126,12 @@ element Style
     /*height: 100%*/
 }
 
-.product_card_bottom li {
+.product_card_bottom a {
     font-size: 16px;
-    color: #717171;
     text-transform: uppercase;
     line-height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+
 }
 
 .product_category_list:hover a {
@@ -2162,9 +2163,6 @@ element Style
     margin-bottom: 20px;
 }
 
-.product_card_bottom a {
-    color: #222222;
-}
 
 .element_options_list div {
     margin-top: 20px;
