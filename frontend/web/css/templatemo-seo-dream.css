@@ -1885,6 +1885,10 @@ form#contact button:hover {
     font-size: 17px;
 }
 
+.element_desc {
+    overflow: scroll;
+}
+
 /*
 ---------------------------------------------
 element Style
