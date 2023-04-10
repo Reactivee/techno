@@ -1,7 +1,7 @@
 <div class="product_item">
     <div class="item_content pb-0">
         <div class="item_text">
-            <span><?= $products['title_' . Yii::$app->language] ?></span>
+            <span><?= $products['short_title_' . Yii::$app->language] ?></span>
         </div>
     </div>
     <div class="item_img">
