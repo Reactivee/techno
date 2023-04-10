@@ -2439,6 +2439,12 @@ responsive
 
     .product_img {
         margin: 0 auto;
+
+    }
+
+    .product_img img {
+        height: 100%;
+
     }
 
     .main-banner .info-stat {
