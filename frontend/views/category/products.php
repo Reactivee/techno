@@ -61,8 +61,9 @@ use yii\helpers\Url;
                             ?>
                             <div class="col-md-4 mt-4 mt-md-4">
                                 <div class="product_card">
+
                                     <div class="product_card_top d-flex justify-content-between align-items-end overflow-hidden">
-                                        <div class="product_title mb-3 col-8">
+                                        <div class="product_title mb-3">
                                             <h4 class="font-weight-bold">
                                                 <a class="title_product_filter"
                                                    href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
@@ -72,6 +73,7 @@ use yii\helpers\Url;
                                             <img class="w-100" src="<?= $item->image ?>" alt="">
                                         </div>
                                     </div>
+
                                     <div class="product_card_bottom py-4">
 
                                         <div class="row">
@@ -79,7 +81,7 @@ use yii\helpers\Url;
                                                 <div class="col-6">
                                                     <a class="btn_link_hover"
                                                        href="/category/view?slug=<?= $element->slug ?> ">
-                                                        <?= $element['title_' . Yii::$app->language] ?>
+                                                        <?= $element['short_title_' . Yii::$app->language] ?>
                                                     </a>
                                                 </div>
                                             <? } ?>

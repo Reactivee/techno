@@ -43,6 +43,12 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'short_title_ru')->textInput(['maxlength' => true])->label('Кароткое имя ru') ?>
+
+    <?= $form->field($model, 'short_title_uz')->textInput(['maxlength' => true])->label('Кароткое имя uz') ?>
+
+    <?= $form->field($model, 'short_title_en')->textInput(['maxlength' => true]) ->label('Кароткое имя en')?>
+
     <?php echo $form->field($model, 'desc_en')->widget(CKEditor::className(), [
         'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
             ['elfinder', 'path' => '/'],

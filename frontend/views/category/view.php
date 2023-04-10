@@ -55,7 +55,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                                 <ul>
                                     <? foreach ($element->product->element as $item) { ?>
                                         <li><a href="?slug=<?= $item->slug ?>"
-                                               class="<?= $item->slug == $slug ? 'color_techno' : 'no' ?>"> <?= $item['title_' . Yii::$app->language] ?></a>
+                                               class="<?= $item->slug == $slug ? 'color_techno' : 'no' ?>"> <?= $item['short_title_' . Yii::$app->language] ?></a>
                                         </li>
                                     <? } ?>
                                 </ul>

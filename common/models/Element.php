@@ -70,7 +70,7 @@ class Element extends \yii\db\ActiveRecord
         return [
             [['product_id', 'created_at', 'updated_at'], 'integer'],
             [['desc_en', 'desc_uz', 'desc_ru'], 'string'],
-            [['uploaded_images', 'deleted_images', 'sorted_images', 'top_element', 'fat_element_id'], 'safe'],
+            [['uploaded_images', 'deleted_images', 'sorted_images', 'top_element', 'fat_element_id', 'short_title_ru', 'short_title_en', 'short_title_uz'], 'safe'],
             [['product_id', 'title_ru', 'title_uz', 'title_en',], 'required'],
             [['title_ru', 'title_uz', 'title_en', 'img', 'slug'], 'string', 'max' => 255],
         ];

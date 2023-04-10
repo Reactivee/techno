@@ -729,6 +729,7 @@ header
     .header-area.header-sticky .nav {
         margin-top: 100px;
     }
+
     .nav_sub {
         background: white;
     }
@@ -1054,7 +1055,7 @@ Banner Style
     padding-top: 20px;
     margin-bottom: 45px;
     /*font-size: 60px;*/
-    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
 
     font-weight: 800;
     /*color: #2a2a2a;*/
@@ -2323,7 +2324,8 @@ responsive
     .header-area .main-nav .nav li:last-child {
         /*padding-left: 20px;*/
     }
-    .top_banner{
+
+    .top_banner {
         margin-top: 100px;
     }
 }
@@ -2401,18 +2403,23 @@ responsive
         /*max-width: 1420px !important;*/
         padding: 0 40px;
     }
+
     .middle_line_button h3 {
         font-size: 15px;
     }
-    .line_item h4{
+
+    .line_item h4 {
         font-size: 15px;
     }
-    .banner_text{
+
+    .banner_text {
         font-size: 15px;
     }
-    .banner_text_sub{
+
+    .banner_text_sub {
         font-size: 10px;
     }
+
     .header-area .main-nav .logo h4 {
         font-size: 30px;
     }
@@ -2420,6 +2427,14 @@ responsive
     .header-area .main-nav .logo h4 img {
         max-width: 30px;
         margin-left: 5px;
+    }
+
+    .product_card_top {
+        flex-direction: column-reverse;
+    }
+
+    .product_img {
+        margin: 0 auto;
     }
 
     .main-banner .info-stat {
