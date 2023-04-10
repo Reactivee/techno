@@ -2112,8 +2112,8 @@ element Style
 }
 
 .product_img {
-    width: 175px;
-    height: 130px;
+    width: 235px;
+    max-height: 130px;
 }
 
 
@@ -2442,10 +2442,10 @@ responsive
 
     }
 
-    .product_img img {
-        height: 100%;
-
-    }
+    /*.product_img img {*/
+    /*    height: 100%;*/
+    /**/
+    /*}*/
 
     .main-banner .info-stat {
         margin-bottom: 15px;
