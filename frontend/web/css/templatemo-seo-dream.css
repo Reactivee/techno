@@ -2257,13 +2257,7 @@ element Style
     align-content: center;
 }
 
-.team_item:hover .inner_content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .card_item_advantage {
     height: 100%;
