@@ -1886,7 +1886,7 @@ form#contact button:hover {
 }
 
 .element_desc {
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 /*
