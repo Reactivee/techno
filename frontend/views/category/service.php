@@ -43,7 +43,7 @@ $this->title = "О Нас";
     </div>
 </div>
 <section class="about">
-    <div class=" mt-5 py-5">
+    <div class=" mb-5 pb-5">
         <div class="main_title text-center my-4">
             <span>Наши услуги</span>
         </div>

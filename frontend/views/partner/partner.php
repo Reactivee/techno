@@ -75,21 +75,6 @@ $this->title = "Partner";
             </div>
 
 
-            <!--            <div class="row align-items-center ">-->
-            <!--                <div class="col-md-3">-->
-            <!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-            <!--                </div>-->
-            <!--                <div class="col-md-3">-->
-            <!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-            <!--                </div>-->
-            <!--                <div class="col-md-3">-->
-            <!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-            <!--                </div>-->
-            <!--                <div class="col-md-3">-->
-            <!--                    <img class="w-100" src="/uploads/catalog/8mOWArtK8C7H28iGOsPnCE-XqgYyCWJa.jpg" alt="asd">-->
-            <!--                </div>-->
-            <!---->
-            <!--            </div>-->
         </div>
     </div>
 </section>

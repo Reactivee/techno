@@ -49,40 +49,6 @@ $this->title = "Partner";
 
             <? } ?>
 
-            <!--            <div class="row">-->
-            <!--                <div class="col-md-8">-->
-            <!--                    <div class="block_content mb-4">-->
-            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
-            <!--                            Уважаемые партнеры!-->
-            <!--                        </div>-->
-            <!--                        <div class="uni_text">-->
-            <!--                            Наша продукция успешно конкурирует по ценам с аналогичными изделиями других производителей-->
-            <!--                            страны и ближнего зарубежья. СП ООО «Techno Cable Group» - является надежным поставщиком для-->
-            <!--                            крупных предприятий энергетики,-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="block_content mb-4">-->
-            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
-            <!--                            Мы предлагаем:-->
-            <!--                        </div>-->
-            <!--                        <div class="uni_text">-->
-            <!--                            индивидуальный подход к клиентам;-->
-            <!--                            прогрессивную систему скидок;-->
-            <!--                            гарантию качества продукции по ГОСТ.-->
-            <!---->
-            <!--                            Ждем Ваших заявок!-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="block_content mb-4">-->
-            <!--                        <div class="partner_title uni_title color_techno font-weight-bold">-->
-            <!--                            Ждем Ваших заявок!-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!---->
-            <!--                </div>-->
-            <!--                <div class="col-md-4"></div>-->
-            <!--            </div>-->
-
             <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
                 <div class="row">
                     <div class="col-lg-12">
