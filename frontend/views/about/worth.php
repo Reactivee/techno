@@ -69,11 +69,11 @@ $this->title = "О Нас";
                     <? } ?>
 
                 </div>
-                <div class="col-12">
-                    <div class="all_content mt-4">
-                        <span>С 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этикиС 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этики</span>
-                    </div>
-                </div>
+<!--                <div class="col-12">-->
+<!--                    <div class="all_content mt-4">-->
+<!--                        <span>С 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этикиС 2018 года в предприятии действует корпоративная Политика, которая  гарантирует каждому работнику безопасные условия труда, предотвращение любых форм дискриминации, соблюдение норм и правил деловой этики</span>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             <div class="col-12">
                 <div class="all_content mt-4">
@@ -114,17 +114,17 @@ $this->title = "О Нас";
                                     </div>
 
                                     <div class="inner_content">
-                                        <h2 class="profile-username"><?= $item->name ?></h2>
+                                        <h2 class="profile-username font-weight-bold"><?= $item->name ?></h2>
                                         <small class="profile-user-handle mt-3"><?= $item['text_' . Yii::$app->language] ?></small>
                                         <div class="profile-links">
-                                            <a href="#" class="link link--icon">
-                                                <i class="ph-twitter-logo"></i>
+                                            <a href="<?= $item->tg ?>" class="link link--icon">
+                                                <i class="fab fa-telegram"></i>
                                             </a>
-                                            <a href="#" class="link link--icon">
-                                                <i class="ph-facebook-logo"></i>
+                                            <a href="<?= $item->instagram ?>" class="link link--icon">
+                                                <i class="fab fa-instagram"></i>
                                             </a>
-                                            <a href="#" class="link link--icon">
-                                                <i class="ph-instagram-logo"></i>
+                                            <a href="<?= $item->facebook ?>" class="link link--icon">
+                                                <i class="fab fa-facebook"></i>
                                             </a>
                                         </div>
                                     </div>
