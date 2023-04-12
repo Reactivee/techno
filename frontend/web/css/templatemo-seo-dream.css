@@ -2407,7 +2407,9 @@ responsive
         /*max-width: 1420px !important;*/
         padding: 0 40px;
     }
-
+    .main_title{
+        line-height: 35px;
+    }
     .middle_line_button h3 {
         font-size: 15px;
     }
