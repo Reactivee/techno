@@ -2133,7 +2133,7 @@ element Style
 
 .product_card_bottom a {
     font-size: 16px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     line-height: 30px;
     color: rgba(0, 0, 0, 0.7);
 
@@ -2439,14 +2439,13 @@ responsive
 
     .product_img {
         margin: 0 auto;
-
+        max-height: 100%;
     }
 
     /*.product_img img {*/
     /*    height: 100%;*/
     /**/
     /*}*/
-
     .main-banner .info-stat {
         margin-bottom: 15px;
     }
