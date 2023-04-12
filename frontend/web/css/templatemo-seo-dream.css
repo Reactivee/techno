@@ -2428,6 +2428,10 @@ responsive
         font-size: 30px;
     }
 
+    .element_options_list {
+        overflow-x: scroll;
+    }
+
     .header-area .main-nav .logo h4 img {
         max-width: 30px;
         margin-left: 5px;
