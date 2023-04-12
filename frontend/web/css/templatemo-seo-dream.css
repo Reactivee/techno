@@ -644,7 +644,7 @@ header
     position: absolute;
     top: 2.9em;
     /*height: 100%;*/
-    right: 0;
+    left: -21px;
     text-align: left;
     border-radius: 10px;
     padding: 8px;
@@ -2339,6 +2339,10 @@ responsive
         font-size: 20px;
     }
 
+    .nav_sub {
+        right: 0;
+    }
+
     .main-banner .left-content {
         margin-right: 0px;
     }
@@ -2407,9 +2411,11 @@ responsive
         /*max-width: 1420px !important;*/
         padding: 0 40px;
     }
-    .main_title{
+
+    .main_title {
         line-height: 35px;
     }
+
     .middle_line_button h3 {
         font-size: 15px;
     }

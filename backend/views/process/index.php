@@ -37,9 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'title_uz',
             'title_ru',
             'title_en',
-            'text_en:ntext',
-            'text_ru:ntext',
-            'text_uz:ntext',
+            [
+                'attribute' =>   'text_en',
+                'format' => "html",
+                'value' => function ($model) {
+                    return $model->text_en;
+                }
+            ],
 //            [
 //                'attribute' => 'img',
 //                'format' => "raw",
