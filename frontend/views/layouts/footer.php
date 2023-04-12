@@ -21,19 +21,19 @@ $settings = Settings::find()->one();
             </div>
             <div class="col-md-6">
                 <ul class="navbar_footer text-uppercase">
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'about') ?> </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'product') ?> </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'company') ?></a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'news') ?> </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'clients') ?> </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white text-uppercase" href="#"><?= Yii::t('main', 'laboratory') ?> </a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'about') ?> </a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'product') ?> </a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'company') ?></a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'news') ?> </a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'clients') ?> </a></li>
+                    <li><a class="text-decoration-none  color_white text-uppercase" href="#"><?= Yii::t('main', 'laboratory') ?> </a></li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <ul class="contact_footer text-center">
                     <li><a class="text-decoration-none text-capitalize color_white font-weight-bold" href="#">+998(71) 209-80-00 </a></li>
                     <li><a class="text-decoration-none text-capitalize color_white font-weight-bold" href="#">+998(71) 287-42-42 </a></li>
-                    <li><a class="text-decoration-none text-capitalize color_white" href="#">Ташкентская обл.,
+                    <li><a class="text-decoration-none text-capitalize color_white mt-4" href="#">Ташкентская обл.,
                             Зангиатинский район, Катартал кфи </a></li>
 
                 </ul>
