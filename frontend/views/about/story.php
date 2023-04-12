@@ -58,7 +58,7 @@ $this->title = "О Нас";
                 <? foreach ($process as $proces) {
                     ?>
 
-                    <div class="step_year_block d-flex align-items-center  text-left">
+                    <div class="step_year_block d-flex ">
                         <div class="step_item_year font-weight-bold mr-4 position-relative color_techno col-md-2">
                             <span><?= $proces['title_' . Yii::$app->language] ?></span>
                         </div>

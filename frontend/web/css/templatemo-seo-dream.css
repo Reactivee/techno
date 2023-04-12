@@ -27,7 +27,9 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 
 /*
 ---------------------------------------------
@@ -73,7 +75,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     background-color: #fff;
     -ms-text-size-adjust: 100%;
@@ -694,7 +696,7 @@ header
     .header-area {
         background-color: #EB632A !important;
         padding: 0px 15px;
-        height: 100px;
+        height: 120px;
         box-shadow: none;
         text-align: center;
     }
@@ -2073,6 +2075,7 @@ element Style
 }
 
 .step_item_year {
+    text-align: center;
     /*width: 300px;*/
 }
 
@@ -2082,27 +2085,22 @@ element Style
 
 }
 
-.step_item_year span:after {
+.step_year_block:before {
     /*content: "";*/
     /*position: absolute;*/
     /*height: 5px;*/
     /*background: black;*/
-    /*bottom: -27px;*/
+    /*bottom: -97px;*/
     /*width: 77%;*/
     /*transform: rotate(90deg);*/
-    /*right: 8px;*/
+    /*right: 24px;*/
 }
 
-.step_item_year span:after {
-    /*content: "";*/
-    /*position: absolute;*/
-    /*height: 5px;*/
-    /*background: black;*/
-    /*bottom: -27px;*/
-    /*width: 77%;*/
-    /*transform: rotate(90deg);*/
-    /*right: 8px;*/
+.step_year_block:last-child .step_item_year:before {
+    display: none !important;
+    position: relative !important;
 }
+
 
 .product_card_bottom {
     background: #F5F5F5;
@@ -2256,7 +2254,6 @@ element Style
     height: 100%;
     align-content: center;
 }
-
 
 
 .card_item_advantage {
