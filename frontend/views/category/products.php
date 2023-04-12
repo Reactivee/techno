@@ -63,13 +63,13 @@ use yii\helpers\Url;
                                 <div class="product_card">
 
                                     <div class="product_card_top d-flex justify-content-between align-items-end overflow-hidden">
-                                        <div class="product_title mb-3">
+                                        <div class="product_title mb-3 col-md-8">
                                             <h4 class="font-weight-bold">
                                                 <a class="title_product_filter"
                                                    href="/category/view?slug=<?= $item->element[0]->slug ?>"> <?= $item['title_' . Yii::$app->language] ?> </a>
                                             </h4>
                                         </div>
-                                        <div class="product_img">
+                                        <div class="product_img col-md-4">
                                             <img class="w-100" src="<?= $item->image ?>" alt="">
                                         </div>
                                     </div>
