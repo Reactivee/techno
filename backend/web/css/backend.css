@@ -4,7 +4,9 @@
     width: auto;
     border: none;
 }
-
+.process-index{
+    overflow: scroll;
+}
 .user-menu .dropdown-menu {
     background-color: #222d32;
     border-radius: 0 !important;

@@ -21,6 +21,9 @@
     flex: 1 1 auto;
     border-radius: 10px;
 }
+.process-index{
+    overflow: scroll;
+}
 a {
     color: #7792b1;
 }
