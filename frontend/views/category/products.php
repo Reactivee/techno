@@ -78,7 +78,7 @@ use yii\helpers\Url;
 
                                         <div class="row">
                                             <? foreach ($item->element as $element) { ?>
-                                                <div class="col-6">
+                                                <div class="col-md-6">
                                                     <a class="btn_link_hover"
                                                        href="/category/view?slug=<?= $element->slug ?> ">
                                                         <?= $element['short_title_' . Yii::$app->language] ?>
