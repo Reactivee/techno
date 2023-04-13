@@ -29,7 +29,7 @@ use yii\helpers\Url;
                                                 <a href="/frontend/web/catalog.pdf"><h4
                                                             class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
                                                 </a>
-                                                <img style="width: 53px; height: 53px;" src="/uploads/logo/line1.svg"
+                                                <img class="logo_down"  src="/uploads/logo/line1.svg"
                                                      alt="">
                                             </div>
                                         </div>

@@ -1891,6 +1891,11 @@ form#contact button:hover {
     /*overflow: scroll;*/
 }
 
+.logo_down {
+    width: 53px;
+    height: 53px;
+}
+
 /*
 ---------------------------------------------
 element Style
@@ -2341,6 +2346,7 @@ responsive
     .top_banner {
         margin-top: 120px;
     }
+
     .content_top_banner {
         top: 36%;
     }
@@ -2374,6 +2380,10 @@ responsive
 
     .features-item {
         margin-bottom: 45px;
+    }
+    .logo_down {
+        width: 40px;
+        height: 40px;
     }
 
     .last-features-item,
@@ -2433,7 +2443,7 @@ responsive
     }
 
     .line_item h4 {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .banner_text {
