@@ -32,7 +32,7 @@ class Worth extends \yii\db\ActiveRecord
     {
         return [
             [['text_en', 'text_uz', 'text_ru'], 'string'],
-            [['title_ru', 'title_en', 'img'], 'string', 'max' => 255],
+            [['title_ru', 'title_en', 'img', 'title_uz'], 'safe',],
         ];
     }
 
