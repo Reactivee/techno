@@ -59,7 +59,7 @@ use yii\helpers\Url;
                     if ($item->element) {
 
                         ?>
-                        <div class="col-md-4 mt-4 mt-md-4">
+                        <div class="col-md-4 mt-4 mt-md-4 p-0">
                             <div class="product_card">
 
                                 <div class="product_card_top d-flex justify-content-between align-items-end overflow-hidden">
