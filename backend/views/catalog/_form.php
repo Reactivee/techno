@@ -52,7 +52,7 @@ foreach ($prod_img as $image) {
             'showRemove' => true,
             'showUpload' => true,
             'overwriteInitial' => true,
-            'maxFileSize' => 5000,
+            'maxFileSize' => 2000,
             'initialPreviewAsData' => true,
             'initialPreview' => $initialPreview,
             'initialPreviewConfig' => $initialPreviewConfig,
