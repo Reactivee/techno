@@ -32,8 +32,8 @@ AppAsset::register($this);
         <link rel="apple-touch-icon" sizes="144x144" href="<?= $settings->logo ?>">
         <link rel="mask-icon" href="<?= $settings->logo ?>">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <meta property="og:site_name" content="ZELAL TEXTILE">
-        <meta property="og:title" content="ZELAL TEXTILE PRODUCTS OF WORLD QUALITY">
+        <meta property="og:site_name" content="Techno Cable Group">
+        <meta property="og:title" content="Techno Cable Group">
         <meta property="og:locale" content="en">
         <meta name="keywords"
               content=" fashion,world, industry, textile industry,fashion designing,fashion designer,dresses,style">

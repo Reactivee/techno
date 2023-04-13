@@ -42,6 +42,7 @@ $this->title = "О Нас";
         <img src="/uploads/banners/ribbon.png" alt="">
     </div>
 </div>
+
 <section class="about">
     <div class=" mb-5 pb-5">
         <div class="main_title text-center my-4">
