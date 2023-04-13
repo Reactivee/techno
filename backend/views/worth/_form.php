@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'title_en')->textInput() ?>
+    <?= $form->field($model, 'title_uz')->textInput() ?>
 
     <?=
     $form->field($model, 'text_uz')->widget(Summernote::class, [
