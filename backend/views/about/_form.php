@@ -95,7 +95,7 @@ $initialPreview = [];
             'initialPreview' => ['' . $model->img],
             'initialPreviewAsData' => true,
             'deleteUrl' => Url::to(['delete-image', 'id' => $model->id]),
-            'maxFileSize' => 200
+            'maxFileSize' => 2000
 
         ],
         'pluginEvents' => [
