@@ -63,12 +63,12 @@ $settings = Settings::find()->one();
             <div class="col-12">
                 <nav class="main-nav row align-items-center position-relative">
                     <!-- ***** Logo Start ***** -->
-                    <div class="col-lg-2 col-8">
+                    <div class="col-xl-2 col-8">
                         <a href="/" class="logo">
                             <img class="w-100" src="/uploads/logo/Group_22.png" alt="asd">
                         </a>
                     </div>
-                    <div class="col-lg-10 col-4">
+                    <div class="col-xl-10 col-4">
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
