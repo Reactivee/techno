@@ -289,6 +289,7 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
     color: #fff;
+    max-width: 300px;
 }
 
 
