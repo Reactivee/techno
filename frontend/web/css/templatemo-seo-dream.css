@@ -289,9 +289,11 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
     color: #fff;
-    max-width: 300px;
 }
 
+.logo {
+    max-width: 300px;
+}
 
 .background-header .nav li a.active {
     position: relative;
@@ -2382,6 +2384,7 @@ responsive
     .features-item {
         margin-bottom: 45px;
     }
+
     .logo_down {
         width: 40px;
         height: 40px;
