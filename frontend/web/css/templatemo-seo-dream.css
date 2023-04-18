@@ -298,6 +298,7 @@ header
 .background-header .nav li a.active {
     position: relative;
     color: #fff;
+
 }
 
 .background-header .nav li a.active:after {
