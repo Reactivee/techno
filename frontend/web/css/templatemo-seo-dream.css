@@ -2352,7 +2352,12 @@ responsive
     }
 
     .content_top_banner {
-        top: 40%;
+        top: 30%;
+    }
+    .left-content h2{
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
     }
 }
 
