@@ -8,8 +8,10 @@ $address = Address::find()->one();
 $settings = Settings::find()->one();
 
 ?>
-<footer class="">
-    <div class="container py-0 py-md-5 ">
+<footer class="mb-0 pb-0">
+    <img class="w-100 footer_back parti" src="/uploads/banners/footer_1.png" alt="">
+    <img class="w-100 footer_back parti2" src="/uploads/banners/footer_back.png" alt="">
+    <div class="container  footer_content py-0 py-md-5 ">
         <div class="row align-items-center" >
             <div class="col-md-3 color_white">
                 <a href="/" class="logo">
