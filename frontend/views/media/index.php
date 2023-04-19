@@ -63,7 +63,11 @@ $this->title = "Галерея";
                     <div class="row">
                         <? foreach ($dataProvider->models as $item) { ?>
                             <div class="col-md-3 mb-4">
-                                <img class="w-100" src="<?= $item->img ?>" alt="">
+                                <a href="<?= $item->img ?>" data-lightbox="roadtrip">
+                                    <img class="w-100" src="<?= $item->img ?>" alt="">
+
+                                </a>
+
                             </div>
                         <? } ?>
                     </div>

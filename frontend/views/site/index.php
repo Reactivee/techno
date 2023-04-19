@@ -61,7 +61,7 @@ $this->title = 'Techno';
                         <h4 class="text-center mb-3 font-weight-bold"><?= Yii::t('main', 'our_advan') ?></h4>
                         <ul class="p-0 m-0 advan-content_items">
                             <? foreach ($advantages as $item) { ?>
-                                <li>
+                                <li class="mb-3">
                                     <?= $item['title_' . Yii::$app->language] ?>
                                 </li>
                             <? } ?>
@@ -90,7 +90,7 @@ $this->title = 'Techno';
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            <p class="p-0 m-0" >8</p><br>
+                                            <p class="p-0 m-0" >8</p>
                                             <span><?= Yii::t('main', 'work') ?> </span>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@ $this->title = 'Techno';
                     </span>
                                     <div class="progress-value">
                                         <div>
-                                            200<br>
+                                            200
                                             <span><?= Yii::t('main', 'worker') ?> </span>
                                         </div>
                                     </div>

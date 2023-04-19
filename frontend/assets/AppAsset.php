@@ -19,6 +19,7 @@ class AppAsset extends AssetBundle
         'fontawesome/css/all.min.css',
         'css/templatemo-seo-dream.css',
         'css/animated.css',
+        'css/lightbox.min.css',
         'css/owl.css',
 //        'css/style.css',
     ];

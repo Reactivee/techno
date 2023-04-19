@@ -63,7 +63,10 @@ $this->title = "Partner";
                                 <div class="item">
                                     <div class="portfolio-item align-items-center">
                                         <div class="thumb align-items-center">
-                                            <img class="w-100" src=<?= $item->img ?>>
+                                            <a href="<?= $item->img ?>" data-lightbox="roadtrip">
+                                                <img class="w-100" src=<?= $item->img ?>>
+
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
