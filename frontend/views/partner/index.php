@@ -19,7 +19,7 @@ $this->title = "Partner";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">ПОСТАВЩИКИ</h2>
+                                        <h2 class="main_header_text">ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ</h2>
                                     </div>
 
                                 </div>
@@ -65,6 +65,8 @@ $this->title = "Partner";
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class="main_title  my-4">
                 <span>Сертификаты</span>
@@ -84,8 +86,13 @@ $this->title = "Partner";
                     </div>
                 </div>
             </div>
-
+            <div class="map mt-5 mb-4">
+                <iframe style="width: 100%; height: 400px"
+                        src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=Techno+Cabel+Group@41.26652482973896,69.13118162610023"
+                        frameborder="0"></iframe>
+            </div>
         </div>
+
     </div>
 </section>
 
