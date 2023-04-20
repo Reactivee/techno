@@ -2303,6 +2303,7 @@ footer {
 }
 .parti{
     z-index: 5;
+    opacity: 0.6;
 }
 .footer_content {
     position: relative;
