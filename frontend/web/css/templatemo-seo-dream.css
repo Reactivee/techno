@@ -677,7 +677,7 @@ header
 
 .scroll-to-section {
     text-align: center;
-    max-width: 200px;
+    /*max-width: 200px;*/
     padding: 20px 0;
 }
 
@@ -730,6 +730,12 @@ header
         border-bottom: 1px solid #e7e7e7;
         padding-left: 0px !important;
         padding-right: 0px !important;
+        color: black !important;
+    }
+
+    .header-area .main-nav .nav li a {
+        color: black !important;
+        padding: 0 20px;
     }
 
     .header-area.header-sticky .nav {
@@ -796,7 +802,7 @@ header
     .header-area .main-nav .nav li a {
         /*height: 50px !important;*/
         /*line-height: 50px !important;*/
-        padding: 0px !important;
+        /*padding: 0px !important;*/
         border: none !important;
         /*background: #f7f7f7 !important;*/
         color: #191a20 !important;
@@ -1278,7 +1284,7 @@ Features Style
 }
 
 .advan-content_items li {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 .skill-item {
@@ -2292,23 +2298,28 @@ footer {
     /*background-size: cover;*/
     position: relative;
 }
-.footer_back{
+
+.footer_back {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
+    height: 100%;
 
 }
-.parti{
+
+.parti {
     z-index: 5;
     opacity: 0.6;
 }
+
 .footer_content {
     position: relative;
     z-index: 6;
 }
+
 footer p {
     text-align: center;
     margin: 30px 0px;
@@ -2371,7 +2382,8 @@ responsive
     .content_top_banner {
         top: 30%;
     }
-    .left-content h2{
+
+    .left-content h2 {
         margin-top: 0;
         padding-top: 0;
         margin-bottom: 0;
@@ -2470,7 +2482,7 @@ responsive
     }
 
     .line_item h4 {
-        font-size: 11px;
+        font-size: 20px;
     }
 
     .banner_text {
@@ -2556,6 +2568,15 @@ responsive
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .nav_sub {
+        width: 100%;
+        left: -25px;
+    }
+
+    .nav_sub a {
+        white-space: pre-wrap;
     }
 
     .our-services {
