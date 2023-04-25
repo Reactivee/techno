@@ -438,7 +438,7 @@ header
 
 
 .nav_sub a {
-    color: black !important;
+    /*color: black !important;*/
     opacity: 1;
 }
 
