@@ -20,10 +20,11 @@ $this->title = 'Labaratory';
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-9 align-self-center">
-                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                 data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text"><?= $laboratory['title_' . Yii::$app->language] ?></h2>
+                                        <h2 class="main_header_text"><?= $laboratory[0]['title_' . Yii::$app->language] ?></h2>
                                     </div>
                                 </div>
                             </div>
@@ -43,21 +44,29 @@ $this->title = 'Labaratory';
     <div class="">
 
         <div class="container">
-            <div class="main_title  my-4">
-                <span>  <?= $laboratory['title_' . Yii::$app->language] ?></span>
-            </div>
-            <div class="labar_content">
+
+            <?
+            foreach ($laboratory as $item) {
+                ?>
+                <div class="main_title  my-4">
+                    <span>  <?= $item['title_' . Yii::$app->language] ?></span>
+                </div>
+                <div class="labar_content">
                 <span>
-                        <?= $laboratory['text_' . Yii::$app->language] ?>
+                        <?= $item['text_' . Yii::$app->language] ?>
                 </span>
-            </div>
-            <div class="row mt-4">
-                <? foreach ($images as $image) { ?>
-                    <div class="col-md-6 mt-3 mt-md-0">
-                        <img class="w-100 border_radius" src="<?= $image->img ?>" alt="">
-                    </div>
-                <? } ?>
-            </div>
+                </div>
+
+                <div class="row mt-4">
+                    <? foreach ($images as $image) { ?>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <img class="w-100 border_radius" src="<?= $image->img ?>" alt="">
+                        </div>
+                    <? } ?>
+                </div>
+            <? }
+            ?>
+
         </div>
     </div>
 </section>

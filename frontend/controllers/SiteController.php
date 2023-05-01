@@ -150,7 +150,7 @@ class SiteController extends Controller
 
     public function actionLabaratory()
     {
-        $laboratory = Laboratory::find()->one();
+        $laboratory = Laboratory::find()->all();
         $images = LaboratoryImages::find()->all();
 
         return $this->render('labaratory', [

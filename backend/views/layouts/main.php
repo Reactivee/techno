@@ -104,7 +104,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "ПОСТАВЩИКИ", "url" => ["/suppliers"]],
                                             ["label" => "КЛИЕНТЫ", "url" => ["/clients"]],
                                             ["label" => "Info", "url" => ["/suppliers-info"]],
-                                            ["label" => "Images", "url" => ["/suppliers-img/update?id=1"]],
+                                            ["label" => "Images", "url" => ["/suppliers-img/update?id=6"]],
                                             ["label" => "Catalog", "url" => ["/catalog"]],
                                         ],
 
