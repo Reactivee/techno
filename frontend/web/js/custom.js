@@ -8,16 +8,15 @@
     var box = $('.header-text').height();
     var header = $('header').height();
 
-    if (scroll >= box - header) {
+    if (scroll >= 200) {
       $("header").addClass("background-header");
     } else {
       $("header").removeClass("background-header");
     }
   });
 
-
 	$('.loop').owlCarousel({
-      center: true,
+      // center: true,
       items:2,
       loop:false,
       nav: false,
