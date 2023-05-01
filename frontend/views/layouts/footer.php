@@ -35,7 +35,7 @@ $settings = Settings::find()->one();
                 <ul class="contact_footer text-center">
                     <li><a class="text-decoration-none text-capitalize color_white font-weight-bold" href="#"><?= $address->phone ?> </a></li>
 <!--                    <li><a class="text-decoration-none text-capitalize color_white font-weight-bold" href="#">+998(71) 287-42-42 </a></li>-->
-                    <li><a class="text-decoration-none text-capitalize color_white mt-4" href="#"><?= $address['address_' . Yii::$app->language] ?></a></li>
+                    <li><a class="text-decoration-none text-capitalize color_white mt-4 footer_address" href="#"><?= $address['address_' . Yii::$app->language] ?></a></li>
 
                 </ul>
             </div>

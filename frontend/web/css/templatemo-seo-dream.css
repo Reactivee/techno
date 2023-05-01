@@ -2352,9 +2352,10 @@ footer p a:hover {
 
 }
 
-.navbar_footer a {
+.footer_address, .navbar_footer a {
     font-size: 13px;
 }
+
 
 /*
 ---------------------------------------------
@@ -2392,12 +2393,14 @@ responsive
 }
 
 @media (max-width: 992px) {
-    .content_top_banner{
+    .content_top_banner {
         top: 44%;
     }
-    .left-content h2{
+
+    .left-content h2 {
         line-height: 36px
     }
+
     .header-area .main-nav .logo h4 {
         font-size: 20px;
     }
