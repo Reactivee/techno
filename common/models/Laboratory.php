@@ -36,7 +36,7 @@ class Laboratory extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
+            [['text_en', 'text_uz', 'text_ru'], 'safe'],
             [['uploaded_images', 'deleted_images','title_ru', 'title_en', 'title_uz', 'img'], 'safe']
         ];
     }
