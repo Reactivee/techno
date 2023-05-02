@@ -1,5 +1,6 @@
 <?php
 
+use kartik\editors\Summernote;
 use kartik\file\FileInput;
 use mihaildev\ckeditor\CKEditor;
 use yii\helpers\Html;
@@ -49,40 +50,20 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
 
     <?= $form->field($model, 'short_title_en')->textInput(['maxlength' => true]) ->label('Кароткое имя en')?>
 
-    <?php echo $form->field($model, 'desc_en')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
-    <?php echo $form->field($model, 'desc_uz')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
+    <?=
+    $form->field($model, 'desc_en')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+    <?=
+    $form->field($model, 'desc_ru')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
 
-    <?php echo $form->field($model, 'desc_ru')->widget(CKEditor::className(), [
+    <?php echo $form->field($model, 'desc_uz')->widget(CKEditor::className(), [
         'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
             ['elfinder', 'path' => '/'],
             [

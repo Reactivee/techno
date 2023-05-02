@@ -1,5 +1,6 @@
 <?php
 
+use kartik\editors\Summernote;
 use kartik\file\FileInput;
 use mihaildev\ckeditor\CKEditor;
 use yii\helpers\Html;
@@ -91,22 +92,12 @@ foreach ($prod_img as $image) {
 
 <!--    --><?//= $form->field($model, 'desc')->textarea(['maxlength' => true]) ?>
 
-    <?php echo $form->field($model, 'desc')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
+    <?=
+    $form->field($model, 'desc')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

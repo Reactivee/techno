@@ -1,5 +1,6 @@
 <?php
 
+use kartik\editors\Summernote;
 use mihaildev\ckeditor\CKEditor;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -19,54 +20,26 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
-    <?php echo $form->field($model, 'text_en')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
-    <?php echo $form->field($model, 'text_uz')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
-    <?php echo $form->field($model, 'text_ru')->widget(CKEditor::className(), [
-        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
-            ['elfinder', 'path' => '/'],
-            [
-                'allowedContent' => true,
-                'height' => 400,
-                'toolbarGroups' => [
-                    'mode', 'undo', 'selection',
-                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
-                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
-                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
-                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
-                ]
-            ]
-        ),
-    ]) ?>
+    <?=
+    $form->field($model, 'text_en')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+
+    <?=
+    $form->field($model, 'text_uz')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+    <?=
+    $form->field($model, 'text_ru')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+
     <?= $form->field($model, 'img')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
