@@ -14,7 +14,6 @@ class AppAsset extends AssetBundle
     public $css = [
         'https://unpkg.com/aos@2.3.1/dist/aos.css',
         'https://unpkg.com/swiper/swiper-bundle.min.css',
-
         'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap',
         'fontawesome/css/all.min.css',
         'css/templatemo-seo-dream.css',
@@ -35,6 +34,15 @@ class AppAsset extends AssetBundle
         'js/imagesloaded.js',
         'js/custom.js',
         'js/main.js',
+    ];
+    public $jsOptions = [
+        "defer" => true,
+        'as' => 'script'
+    ];
+    public $cssOptions = [
+//        'rel'=>"prerender",
+        'defer' => true,
+        'as' => 'font'
     ];
     public $depends = [
         'yii\web\YiiAsset',
