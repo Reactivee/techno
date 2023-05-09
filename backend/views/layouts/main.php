@@ -84,6 +84,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                             ["label" => "ДЛЯ ДОСТИЖЕНИЯ ", "url" => ["/tasks"]],
                                             ["label" => "ПРЕИМУЩЕСТВА ", "url" => ["/advantages-factory"]],
                                             ["label" => "ПРОИЗВОДСТВО ", "url" => ["/process-images/index"]],
+                                            ["label" => "Цифри ", "url" => ["/our-numbers"]],
                                         ],
 
                                     ],
