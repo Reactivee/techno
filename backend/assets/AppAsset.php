@@ -32,6 +32,6 @@ class AppAsset extends AssetBundle
     public $depends = [
         'backend\extensions\adminlte\assets\AdminLteAsset',
         'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
+//        'yii\bootstrap4\BootstrapAsset',
     ];
 }
