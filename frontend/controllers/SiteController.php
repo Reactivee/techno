@@ -12,7 +12,9 @@ use common\models\Element;
 use common\models\Gallery;
 use common\models\Laboratory;
 use common\models\LaboratoryImages;
+use common\models\OurNumbers;
 use common\models\Posts;
+use common\models\Product;
 use common\models\Settings;
 use common\models\TopBanner;
 use frontend\models\ResendVerificationEmailForm;
@@ -97,9 +99,10 @@ class SiteController extends Controller
 
         $gallery = Posts::find()->orderBy(['id' => SORT_DESC])->limit(9)->all();
         $catalog = Catalog::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
-        $element = Element::find()->orderBy(['id' => SORT_DESC])->limit(20)->all();
-
-        return $this->render('index', compact('main_banner', 'address', 'about', 'advantages', 'ad_icons', 'gallery', 'catalog', 'element'));
+        $element = Product::find()->where(['not', ['image' => null]])->orderBy(['id' => SORT_DESC])->limit(20)->all();
+        $our_numbers = OurNumbers::find()->all();
+//        dd($element);
+        return $this->render('index', compact('main_banner', 'address', 'our_numbers', 'about', 'advantages', 'ad_icons', 'gallery', 'catalog', 'element'));
     }
 
     /**

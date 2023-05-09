@@ -12,14 +12,9 @@ $this->title = 'Techno';
 </style>
 <div class="wow fadeIn position-relative container_fluid" id="top" data-wow-duration="1s"
      data-wow-delay="0.5s">
-    <img class="w-100 top_banner" src="uploads/banners/main_banner.png" alt="">
+    <img class="w-100 top_banner" src=<?= $main_banner['img_path'] ?> alt="">
     <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
 
-        <!--        <img style="width: 93px; height: 93px;" src="/uploads/icons/Слой_x0020_1.png" alt="asd">-->
-        <!--        <h4 class="color_techno text-capitalize pr-5 pl-4">-->
-        <!--            <a class="text-decoration-none stretched-link" href="/category/all-category">каталог-->
-        <!--                продукции</a>-->
-        <!--        </h4>-->
     </div>
 
     <div class="content_top_banner">
@@ -76,63 +71,31 @@ $this->title = 'Techno';
                 <div class="skills-content">
                     <div class="section-heading wow bounceIn animated pl-3" data-wow-duration="1s" data-wow-delay="0.2s"
                          style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                        <h2> <?= Yii::t('main', 'we_number') ?></h2>
+                        <h2> <?= $our_numbers[0]['title_' . Yii::$app->language] ?></h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                <div class="progress" data-percentage="100">
+                        <? foreach ($our_numbers as $item) { ?>
+                            <div class="col-lg-4">
+                                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                                    <div class="progress" data-percentage="100">
                     <span class="progress-left">
                       <span class="progress-bar"></span>
                     </span>
-                                    <span class="progress-right">
+                                        <span class="progress-right">
                       <span class="progress-bar"></span>
                     </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            <p class="p-0 m-0" >8</p>
-                                            <span><?= Yii::t('main', 'work') ?> </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                <p class="p-0 m-0"><?= $item->numbers ?></p>
+                                                <span><?= $item['text_' . Yii::$app->language] ?> </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                <div class="progress" data-percentage="100">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            200
-                                            <span><?= Yii::t('main', 'worker') ?> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="progress" data-percentage="100">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            50+<br>
-                                            <span><?= Yii::t('main', 'partner_comp') ?> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        <? } ?>
+
                     </div>
                 </div>
             </div>
@@ -149,13 +112,14 @@ $this->title = 'Techno';
 
         </div>
     </div>
-    <div class="container wow  fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="loop owl-carousel products_owl">
 
-                    <? foreach ($element as $item) { ?>
-                        <a class="text-decoration-none color_techno" href="category/view?slug=<?= $item->slug ?>">
+                    <? foreach ($element as $key => $item) { ?>
+                        <a data-aos="fade-up" data-aos-delay="<?= $key+1 ?>00" class="text-decoration-none color_techno"
+                           href="category/view?slug=<?= $item->element[0]->slug ?>">
                             <? echo \frontend\widgets\ElementWidget::widget(['products' => $item])
                             ?>
                         </a>

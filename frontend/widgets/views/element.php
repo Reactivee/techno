@@ -1,11 +1,12 @@
 <div class="product_item">
     <div class="item_content pb-0">
         <div class="item_text">
-            <span><?= $products['short_title_' . Yii::$app->language] ?></span>
+<!--            --><?// dd($products); ?>
+<!--            <span>--><?//= $products['title_' . Yii::$app->language] ?><!--</span>-->
         </div>
     </div>
     <div class="item_img">
-        <img class="w-100 h-100" src="/frontend/web<?= $products->image->path ?>" alt="">
+        <img class="w-100 h-100" src="<?= $products->image ?>" alt="">
     </div>
 
 

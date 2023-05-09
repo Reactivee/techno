@@ -29,6 +29,6 @@ return [
     'application' => 'arizangizni yuboring',
     'catalog' => 'hammasini ko\'rish',
     'how_work' => 'Biz qanday ishlaymiz',
-    'projects' => 'Как Мы работаем',
+    'projects' => 'Partnyorlar',
 
 ];

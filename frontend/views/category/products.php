@@ -70,7 +70,7 @@ use yii\helpers\Url;
                                         </h4>
                                     </div>
                                     <div class="product_img col-md-4">
-                                        <img class="w-100" src="<?= $item->image ?>" alt="">
+                                        <img class="w-100" src="<?=  $item->image ?>" alt="">
                                     </div>
                                 </div>
 
