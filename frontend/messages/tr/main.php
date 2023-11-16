@@ -1,12 +1,9 @@
 <?php
 
-
 return [
 
+    /*Index*/
     'about' => 'О Нас',
-    'main' => 'Главная',
-    'cat' => 'Каталог',
-
     'story' => 'История и планы развития',
     'company' => 'О Компании',
     'advantage' => 'Ценности предприятия ',
@@ -43,8 +40,7 @@ return [
     'manufacturing' => 'ПРОИЗВОДСТВО',
     'mission_text' => 'Миссия СП ООО "Techno Cable Group',
 
-
-//    category
+    //    category
     'explanation' => 'Указания по эксплуатации',
     'construction' => 'Конструкция',
 
@@ -57,8 +53,10 @@ return [
     'media_gallery' => 'МЕДИА ГАЛЕРЕЯ',
     'video' => 'Video',
 
+
     /*news*/
     'full_info' => 'Подробнее',
+
 
     /*worth*/
     'value' => 'ЦЕННОСТИ ПРЕДПРИЯТИЯ',

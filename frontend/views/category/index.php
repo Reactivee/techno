@@ -3,8 +3,10 @@
     <div class="category__banner">
         <div class="container">
             <div class="category__banner_breadcrumb d-flex color_gray pt-5">
-                <a class="text-decoration-none color_white mr-2 " href="/">Главная</a> / <a
-                        class="text-decoration-none color_white mx-2" href="/category/all-category">Каталог</a> / <?= $category['name_' . Yii::$app->language] ?>
+                <a class="text-decoration-none color_white mr-2 " href="/"><?= Yii::t('main', 'main') ?></a> / <a
+                        class="text-decoration-none color_white mx-2"
+                        href="/category/all-category"><?= Yii::t('main', 'cat') ?></a>
+                / <?= $category['name_' . Yii::$app->language] ?>
             </div>
             <div class="category__banner_content text-center text-md-left">
 
@@ -47,16 +49,13 @@
                             </a>
                         </div>
                     <? } ?>
-
-
                 </div>
             </div>
             <div class="load_btn d-flex justify-content-center">
-                <a href="category?limit=<?= $limit + 6 ?>" class="btn bg_color_yel px-5 py-3 font-weight-bolder mb-4 ">Загрузить
-                    еще</a>
+                <a href="category?limit=<?= $limit + 6 ?>" class="btn bg_color_yel px-5 py-3 font-weight-bolder mb-4 "
+                <?= Yii::t('main', 'catalog') ?>
+                </a>
             </div>
-
-
         </div>
 
         <? Pjax::end(); ?>

@@ -18,7 +18,7 @@ $this->title = "Галерея";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text ">ПРОИЗВОДСТВО</h2>
+                                        <h2 class="main_header_text "><?= Yii::t('main', 'manufacturing') ?></h2>
                                     </div>
                                     <div class="col-lg-12">
 
@@ -39,7 +39,7 @@ $this->title = "Галерея";
 <section class="view_wrapper">
     <div class="container">
         <div class="main_title">
-            <span>ПРОИЗВОДСТВО</span>
+            <span><?= Yii::t('main', 'manufacturing') ?></span>
         </div>
 
         <div class="tab-content mt-4" id="myTabContent">

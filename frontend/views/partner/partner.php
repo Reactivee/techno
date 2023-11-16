@@ -19,7 +19,9 @@ $this->title = "Partner";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">ПОСТАВЩИКИ</h2>
+                                        <h2 class="main_header_text">
+                                            <?= Yii::t('main', 'courier') ?>
+                                        </h2>
                                     </div>
 
                                 </div>
@@ -40,7 +42,7 @@ $this->title = "Partner";
 
         <div class="container">
             <div class="main_title  my-4">
-                <span>Поставщики</span>
+                <span><?= Yii::t('main', 'courier') ?></span>
             </div>
             <div class="row">
                 <? foreach ($suppliers as $item) { ?>
@@ -64,20 +66,16 @@ $this->title = "Partner";
                                     <div class="portfolio-item align-items-center">
                                         <div class="thumb align-items-center">
                                             <a href="<?= $item->img ?>" data-lightbox="roadtrip">
-                                                <img class="w-100" src=<?= $item->img ?>>
-
+                                                <img class="w-100 ml-2" src=<?= $item->img ?>>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             <? } ?>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

@@ -11,8 +11,6 @@ $this->title = "О Фабрике";
 ?>
 <?php
 /** @var yii\web\View $this */
-$this->title = 'My Yii Application';
-$this->title = "О Нас";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
 
 ?>
@@ -27,7 +25,7 @@ $this->title = "О Нас";
                          data-wow-delay="1s">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 class="main_header_text">ЦЕННОСТИ ПРЕДПРИЯТИЯ</h2>
+                                <h2 class="main_header_text"><?= Yii::t('main', 'value') ?></h2>
                             </div>
                         </div>
                     </div>
@@ -77,7 +75,7 @@ $this->title = "О Нас";
             </div>
             <div class="col-12">
                 <div class="all_content mt-4">
-                    <span class="font-weight-bold">В основе ценностей СП ООО «Techno Cable Group» заложены следующие принципы, подходы и стандарты:</span>
+                    <span class="font-weight-bold"><?= Yii::t('main', 'value_text') ?></span>
                 </div>
                 <div class="row mt-5">
                     <? foreach ($principe as $item) { ?>
@@ -96,11 +94,11 @@ $this->title = "О Нас";
 
         <div class="our_team mt-5">
             <div class="main_title mt-5">
-                <span>Наша команда</span>
+                <span><?= Yii::t('main', 'our_team') ?></span>
             </div>
 
             <div class="all_content mt-4">
-                <span>Мы – команда опытных и компетентных специалистов, профессионалов своего дела! Наша команда найдет эффективное решение для реализации любой поставленной задачи и обеспечит ее исполнение на достойном уровне. Сплоченность, постоянное развитие, клиент ориентированность – это наши катализаторы, которые помогают преодолевать нам все трудности и препятствия на пути к успеху</span>
+                <span><?= Yii::t('main', 'our_team_text') ?></span>
             </div>
             <div class="our_team_cards py-5 text-center ">
                 <div class="row">
@@ -110,7 +108,7 @@ $this->title = "О Нас";
                             <div class="team_item overflow-hidden">
                                 <article class="profile position-relative">
                                     <div class="profile-image">
-                                        <img class="w-100" src=<?= $item->empty ?>>
+                                        <img class="w-100" src="<?= $item->empty ?>" alt="">
                                     </div>
 
                                     <div class="inner_content">
@@ -131,12 +129,9 @@ $this->title = "О Нас";
                                 </article>
                             </div>
                         </div>
-
                     <? } ?>
                 </div>
-
             </div>
-
         </div>
     </div> <!--end container -->
 

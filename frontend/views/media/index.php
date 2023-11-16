@@ -17,7 +17,9 @@ $this->title = "Галерея";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text color_techno text-uppercase">медиа галерея</h2>
+                                        <h2 class="main_header_text color_techno text-uppercase">
+                                            <?= Yii::t('main', 'media_gallery') ?>
+                                        </h2>
                                     </div>
                                     <div class="col-lg-12">
 
@@ -38,7 +40,9 @@ $this->title = "Галерея";
 
     <div class="container pb-5">
         <div class="main_title  my-4">
-            <span>медиа галерея</span>
+            <span>
+                <?= Yii::t('main', 'media_gallery') ?>
+</span>
         </div>
 
         <div class="media_tab_wrapper">
@@ -47,14 +51,15 @@ $this->title = "Галерея";
                     <a class="active text-decoration-none w-100 " id="home-tab" data-toggle="tab"
                        href="#home" role="tab"
                        aria-controls="home" aria-selected="true">
-                        Photo
+                        <?= Yii::t('main', 'photo') ?>
                     </a>
                 </li>
                 <span class="vertical_line"></span>
                 <li class="nav-media  py-2" role="presentation">
                     <a class="w-100 text-decoration-none w-100 media_link color_black" id="profile-tab"
                        data-toggle="tab" href="#profile" role="tab"
-                       aria-controls="profile" aria-selected="false">Video</a>
+                       aria-controls="profile" aria-selected="false">
+                        <?= Yii::t('main', 'video') ?></a>
                 </li>
             </ul>
 
@@ -65,9 +70,7 @@ $this->title = "Галерея";
                             <div class="col-md-3 mb-4">
                                 <a href="<?= $item->img ?>" data-lightbox="roadtrip">
                                     <img class="w-100" src="<?= $item->img ?>" alt="">
-
                                 </a>
-
                             </div>
                         <? } ?>
                     </div>

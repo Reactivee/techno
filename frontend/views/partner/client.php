@@ -19,10 +19,11 @@ $this->title = "Partner";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">КЛИЕНТЫ</h2>
+                                        <h2 class="main_header_text">
+                                            <?= Yii::t('main', 'clients') ?>
+                                        </h2>
                                     </div>
                                     <div class="col-lg-12">
-
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +43,7 @@ $this->title = "Partner";
 
         <div class="container">
             <div class="main_title  my-4">
-                <span>Клиенты</span>
+                <span><?= Yii::t('main', 'clients') ?></span>
             </div>
             <div class="row">
                 <? foreach ($clients as $client) { ?>
@@ -73,13 +74,10 @@ $this->title = "Partner";
                                     </div>
                                 </div>
                             <? } ?>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

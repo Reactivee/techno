@@ -3,7 +3,7 @@
 
 use yii\helpers\Url;
 
-$this->title = "Vacancy";
+$this->title = Yii::t('main', 'contact');
 //$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
 
 ?>
@@ -20,7 +20,7 @@ $this->title = "Vacancy";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text text-uppercase">КОНТАКТЫ</h2>
+                                        <h2 class="main_header_text text-uppercase"><?= Yii::t('main', 'contact') ?></h2>
                                     </div>
                                     <div class="col-lg-12">
 
@@ -42,16 +42,16 @@ $this->title = "Vacancy";
     <div class="">
 
         <div class="container">
-            <div class="main_title  my-4">
-                <span>КОНТАКТЫ</span>
+            <div class="main_title mx-0 my-4">
+                <span><?= Yii::t('main', 'company') ?></span>
             </div>
             <div class="row block_vacancy flex-column py-4">
                 <div class="address_text">
-                    <span class="address_title color_techno font-weight-bold">Адрес:</span>
+                    <span class="address_title color_techno font-weight-bold"><?= Yii::t('main', 'address') ?>:</span>
                     <span class="address_content font-weight-bold"><?= $address['address_' . Yii::$app->language] ?></span>
                 </div>
                 <div class="address_text mt-4">
-                    <span class="address_phone color_techno font-weight-bold">Телефон:</span>
+                    <span class="address_phone color_techno font-weight-bold"><?= Yii::t('main', 'phone') ?> :</span>
                     <span class="address_phone_text font-weight-bold"><?= $address->phone ?></span>
                 </div>
                 <div class="address_text mt-2 mb-2">
@@ -64,14 +64,14 @@ $this->title = "Vacancy";
                             frameborder="0"></iframe>
                 </div>
                 <div class="main_title  my-4">
-                    <span>отделы </span>
+                    <span><?= Yii::t('main', 'partly') ?>  </span>
                 </div>
                 <? foreach ($departs as $depart) { ?>
                     <div class="address_text mt-1">
                         <span class="address_phone color_techno font-weight-bold"> <?= $depart['title_' . Yii::$app->language] ?>:</span>
-                        <span class="address_phone  ">Тел</span>
+                        <span class="address_phone"><?= Yii::t('main', 'phone') ?></span>
                         <span class="address_phone_text font-weight-bold"><?= $depart['phone'] ?></span>
-                        <span class="address_phone ">e-mail</span>
+                        <span class="address_phone ">E-mail</span>
                         <span class="address_phone_text font-weight-bold"><?= $depart['email'] ?></span>
                     </div>
                 <? } ?>

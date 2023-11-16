@@ -11,8 +11,7 @@ $this->title = "О Фабрике";
 ?>
 <?php
 /** @var yii\web\View $this */
-$this->title = 'My Yii Application';
-$this->title = "О Нас";
+$this->title = Yii::t('main', 'mission');
 //$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
 
 ?>
@@ -28,7 +27,7 @@ $this->title = "О Нас";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">МИССИЯ</h2>
+                                        <h2 class="main_header_text"><?= Yii::t('main', 'mission') ?></h2>
                                     </div>
                                     <div class="col-lg-12">
 
@@ -48,7 +47,9 @@ $this->title = "О Нас";
 <section class="about">
     <div class="mission mt-5 py-5">
         <div class="main_title text-center my-4">
-            <span>Миссия СП ООО "Techno Cable Group</span>
+            <span>
+                <?= Yii::t('main', 'mission_text') ?>
+              </span>
         </div>
         <div class="container">
             <div class="mission_block text-center">
@@ -104,7 +105,6 @@ $this->title = "О Нас";
 
 <div class="advantages">
     <div class="container pb-5">
-
         <div class="main_title text-center my-4">
             <span><?= $advantages[0]['title_' . Yii::$app->language] ?></span>
         </div>
@@ -113,10 +113,7 @@ $this->title = "О Нас";
                 <?= $item['text_' . Yii::$app->language] ?>
             </div>
         <? } ?>
-
-
     </div>
-
 
 </div>
 

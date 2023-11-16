@@ -3,7 +3,7 @@
 
 use yii\helpers\Url;
 
-$this->title = "Partner";
+$this->title = Yii::t('main', 'title_partner');
 //$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
 
 ?>
@@ -19,7 +19,8 @@ $this->title = "Partner";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ</h2>
+                                        <h2 class="main_header_text">
+                                            <?= Yii::t('main', 'title_partner') ?></h2>
                                     </div>
 
                                 </div>
@@ -46,7 +47,6 @@ $this->title = "Partner";
                 <div class="uni_text">
                     <?= $item['text_' . Yii::$app->language] ?>
                 </div>
-
             <? } ?>
 
             <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
@@ -57,7 +57,7 @@ $this->title = "Partner";
                                 <div class="item">
                                     <div class="portfolio-item align-items-center">
                                         <div class="thumb align-items-center">
-                                            <img class="w-100" src=<?= $item->path ?>>
+                                            <img class="w-100 ml-4" src=<?= $item->path ?>>
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ $this->title = "Partner";
 
             </div>
             <div class="main_title  my-4">
-                <span>Сертификаты</span>
+                <span><?= Yii::t('main', 'certificate') ?></span>
             </div>
             <div class="row">
                 <div class="col-lg-12">

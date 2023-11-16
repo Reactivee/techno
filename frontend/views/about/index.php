@@ -1,7 +1,6 @@
 <?php
 /** @var yii\web\View $this */
-$this->title = 'My Yii Application';
-$this->title = "О Нас";
+$this->title = Yii::t('main', 'about');
 //$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
 
 ?>
@@ -20,7 +19,7 @@ $this->title = "О Нас";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">О НАС</h2>
+                                        <h2 class="main_header_text"><?= Yii::t('main', 'about') ?></h2>
                                     </div>
                                     <div class="col-lg-12">
 

@@ -29,7 +29,7 @@ use yii\helpers\Url;
                                                 <a href="/frontend/web/catalog.pdf"><h4
                                                             class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
                                                 </a>
-                                                <img class="logo_down"  src="/uploads/logo/line1.svg"
+                                                <img class="logo_down" src="/uploads/logo/line1.svg"
                                                      alt="">
                                             </div>
                                         </div>
@@ -50,15 +50,12 @@ use yii\helpers\Url;
         <? $products = $products->models ?>
         <div class="container pb-5 ">
             <div class="main_title  my-4">
-                <span>наша продукция</span>
+                <span><?= Yii::t('main', 'our_product') ?></span>
             </div>
             <div class="row">
 
-
                 <? foreach ($products as $item) {
-                    if ($item->element) {
-
-                        ?>
+                    if ($item->element) { ?>
                         <div class="col-md-4 mt-4 mt-md-4 p-0 p-md-3">
                             <div class="product_card">
 
@@ -70,7 +67,7 @@ use yii\helpers\Url;
                                         </h4>
                                     </div>
                                     <div class="product_img col-md-4">
-                                        <img class="w-100" src="<?=  $item->image ?>" alt="">
+                                        <img class="w-100" src="<?= $item->image ?>" alt="">
                                     </div>
                                 </div>
 

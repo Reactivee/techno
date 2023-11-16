@@ -44,10 +44,7 @@ $this->title = 'Labaratory';
     <div class="">
 
         <div class="container">
-
-            <?
-            foreach ($laboratory as $item) {
-                ?>
+            <? foreach ($laboratory as $item) { ?>
                 <div class="main_title  my-4">
                     <span>  <?= $item['title_' . Yii::$app->language] ?></span>
                 </div>

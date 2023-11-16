@@ -17,7 +17,9 @@ $this->title = "News";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text color_techno">новости</h2>
+                                        <h2 class="main_header_text color_techno">
+                                            <?= Yii::t('main', 'news') ?>
+                                        </h2>
                                     </div>
                                     <div class="col-lg-12">
 
@@ -40,7 +42,7 @@ $this->title = "News";
 
     <div class="container">
         <div class="main_title  my-4">
-            <span>новости</span>
+            <span><?= Yii::t('main', 'news') ?></span>
         </div>
         <div class="row align-items-center pb-5">
             <? foreach ($dataProvider->models as $item) { ?>
@@ -58,7 +60,7 @@ $this->title = "News";
                         </div>
                         <div class="news_text_btn mt-4">
                             <a href="full/<?= $item->id ?>" class="btn btn-primary bg_techno">
-                                Подробнее</a>
+                                <?= Yii::t('main', 'full_info') ?></a>
                         </div>
                     </div>
                 </div>

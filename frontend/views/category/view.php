@@ -93,8 +93,9 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                 </div>
                 <? if ($element['desc_' . Yii::$app->language]) { ?>
                     <div class="element_desc  ">
-                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white">Указания по
-                            эксплуатации</h4>
+                        <h4 class="title_desc mt-5 mb-3 font-weight-bold text-center color_white">
+                            <?= Yii::t('main', 'explanation') ?>
+                        </h4>
                         <div class="content_desc color_white ">
                             <?= $element['desc_' . Yii::$app->language] ?>
                         </div>
@@ -105,7 +106,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                     <div class="construction mt-4">
                         <div class="const_main_title text-center mb-4">
                             <h4 class="color_white font-weight-bold ">
-                                Конструкция</h4>
+                                <?= Yii::t('main', 'construction') ?></h4>
                         </div>
                         <div class="row ">
                             <? foreach ($cont as $item) { ?>
@@ -128,6 +129,3 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
         </div>
     </div>
 <?php Pjax::end() ?>
-<? // echo \frontend\widgets\RequestWidget::widget([
-//    'address' => $address
-//]); ?>

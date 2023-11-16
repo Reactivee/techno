@@ -1,20 +1,10 @@
 <?php
 /** @var yii\web\View $this */
 
-use yii\helpers\Url;
-
-$this->title = 'My Yii Application';
-/** @var \common\models\Process $process */
-$this->title = "О Фабрике";
-//$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
-
 ?>
 <?php
 /** @var yii\web\View $this */
-$this->title = 'My Yii Application';
-$this->title = "О Нас";
-//$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
-
+$this->title = Yii::t('main', 'history_plan');
 ?>
 <div class=" wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <img class="top_banner w-100" src="/uploads/banners/about.png" alt="">
@@ -28,7 +18,7 @@ $this->title = "О Нас";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text">ИСТОРИЯ И ПЛАНЫ РАЗВИТИЯ</h2>
+                                        <h2 class="main_header_text"><?= Yii::t('main', 'history_plan') ?></h2>
                                     </div>
                                 </div>
                             </div>
@@ -46,12 +36,11 @@ $this->title = "О Нас";
 <section class="about view_wrapper">
     <div class="container">
         <div class="main_title text-center my-4">
-            <span>История и планы развития </span>
+            <span><?= Yii::t('main', 'history_plan') ?> </span>
         </div>
         <div class="history_content">
-           <span>СП ООО «Techno Cable Group» —основан 2013 году в Зангиатинском районе Ташкентской области, Республики Узбекистан. Это завод по производству кабельной и проводниковой продукции с различными видами изоляции.
-Заводская программа развития направлена на постоянное улучшение качества продукции, модернизацию оборудования, внедрению измерительно-испытательной техники, новых прогрессивных технологий. В рамках этой программы:
-</span>
+           <span>
+               <?= Yii::t('main', 'history_plan_text') ?></span>
         </div>
         <div class="step_year">
             <div class="row">
@@ -67,8 +56,6 @@ $this->title = "О Нас";
                         </div>
                     </div>
                 <? } ?>
-
-
             </div>
         </div>
 
@@ -76,7 +63,9 @@ $this->title = "О Нас";
 
     <div>
         <div class="main_title text-center my-4">
-            <span>Стратегии и принципы СП ООО «Techno Cable Group»</span>
+            <span>
+                <?= Yii::t('main', 'strategy') ?>
+              </span>
         </div>
 
         <div class="container mt-5">

@@ -21,8 +21,7 @@ AppAsset::register($this);
         <meta charset="<?= Yii::$app->charset ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="title" content="Techno Cable Group">
-        <meta name="Description"
-              content="Techno Cable Group">
+        <meta name="Description" content="Techno Cable Group">
         <?php $this->registerCsrfMetaTags() ?>
         <title>Techno Cable Group</title>
         <?php $this->head() ?>
@@ -36,19 +35,18 @@ AppAsset::register($this);
         <meta property="og:title" content="Techno Cable Group">
         <meta property="og:locale" content="en">
         <meta name="keywords"
-              content=" fashion,world, industry, textile industry,fashion designing,fashion designer,dresses,style">
+              content="world, industry, industry">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
               integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
               crossorigin="anonymous" referrerpolicy="no-referrer">
-
     </head>
     <style>
 
-            .container, .container-sm, .container-md, .container-lg, .container-xl {
-                max-width: 1420px !important;
-                /*padding:0 40px;*/
-            }
+        .container, .container-sm, .container-md, .container-lg, .container-xl {
+            max-width: 1420px !important;
+            /*padding:0 40px;*/
+        }
     </style>
     <body class="">
     <?php $this->beginBody() ?>

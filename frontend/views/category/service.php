@@ -3,7 +3,6 @@
 
 use yii\helpers\Url;
 
-$this->title = 'My Yii Application';
 /** @var \common\models\Process $process */
 $this->title = "О Фабрике";
 //$this->params['breadcrumbs'][] = Yii::t('main', 'process_factory');
@@ -11,8 +10,7 @@ $this->title = "О Фабрике";
 ?>
 <?php
 /** @var yii\web\View $this */
-$this->title = 'My Yii Application';
-$this->title = "О Нас";
+$this->title = Yii::t('main', 'service');
 //$this->params['breadcrumbs'][] = Yii::t('main', 'factory');
 
 ?>
@@ -26,7 +24,7 @@ $this->title = "О Нас";
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h2 class="main_header_text">Наши услуги</h2>
+                                    <h2 class="main_header_text"><?= Yii::t('main', 'service') ?></h2>
                                 </div>
                                 <div class="col-lg-12">
 
@@ -46,7 +44,7 @@ $this->title = "О Нас";
 <section class="about">
     <div class=" mb-5 pb-5">
         <div class="main_title text-center my-4">
-            <span>Наши услуги</span>
+            <span><?= Yii::t('main', 'service') ?></span>
         </div>
         <div class="container">
             <div class="mission_block text-center">
