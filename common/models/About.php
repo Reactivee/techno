@@ -33,8 +33,8 @@ class About extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_uz', 'title_ru', 'title_en', 'link'], 'string', 'max' => 255],
-            [['img', 'text_en', 'text_uz', 'text_ru','number'], 'safe']
+            [['title_uz', 'title_ru', 'title_en','title_tr', 'link'], 'string', 'max' => 255],
+            [['img', 'text_en', 'text_uz', 'text_ru','text_tr','number'], 'safe']
         ];
     }
 

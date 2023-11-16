@@ -30,16 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'title_en',
+            'title_tr',
+            'title_uz',
+            'title_ru',
 
-            [
-                'attribute' =>   'text_en',
-                'format' => "html",
-                'value' => function ($model) {
-                    return $model->text_en;
-                }
-            ],
             'link',
             'number',
             [

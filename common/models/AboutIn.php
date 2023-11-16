@@ -42,9 +42,9 @@ class AboutIn extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_uz', 'text_en', 'text_ru'], 'safe'],
-            [['title_en', 'title_ru', 'title_uz', 'title_sub_uz', 'title_sub_ru', 'title_sub_en', 'text_sub_uz', 'text_sub_ru', 'text_sub_en', 'video', 'img', 'img_2', 'number_1', 'number_2', 'background'], 'safe', ],
-            [['text_sub_uz_2', 'text_sub_uz_3', 'text_sub_ru_2', 'text_sub_ru_3', 'text_sub_en_2', 'text_sub_en_3', 'text_uz_2', 'text_uz_3', 'text_en_2', 'text_en_3', 'text_ru_2', 'text_ru_3'], 'safe', ],
+            [['text_uz', 'text_en', 'text_ru', 'text_tr'], 'safe'],
+            [['title_en', 'title_ru', 'title_uz', 'title_tr', 'title_sub_uz', 'title_sub_ru', 'title_sub_en', 'title_sub_tr', 'text_sub_uz', 'text_sub_ru', 'text_sub_en', 'text_sub_tr', 'video', 'img', 'img_2', 'number_1', 'number_2', 'background'], 'safe',],
+            [['text_sub_uz_2', 'text_sub_uz_3', 'text_sub_ru_2', 'text_sub_ru_3', 'text_sub_en_2', 'text_sub_en_3', 'text_sub_tr_2', 'text_sub_tr_3', 'text_uz_2', 'text_uz_3', 'text_en_2', 'text_en_3', 'text_ru_2', 'text_ru_3', 'text_tr_2', 'text_tr_3'], 'safe',],
         ];
     }
 

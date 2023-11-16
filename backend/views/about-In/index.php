@@ -35,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Url::toRoute([$action, 'id' => $model->id]);
                 }
             ],
-
             'title_sub_en',
+            'title_sub_tr',
             'text_sub_en',
             'text_en:ntext',
 
