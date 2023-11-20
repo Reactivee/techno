@@ -39,6 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
 //            'name_uz',
             'name_ru',
+            'name_tr',
 //            'name_en',
 
             [

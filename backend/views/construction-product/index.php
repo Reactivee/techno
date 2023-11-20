@@ -50,6 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title_en',
             'title_uz',
             'text_en:ntext',
+            'text_tr:ntext',
             //'text_uz:ntext',
             //'text_ru:ntext',
 //            'product_id',

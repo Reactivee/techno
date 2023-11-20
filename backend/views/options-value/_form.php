@@ -64,6 +64,22 @@ use yii\widgets\ActiveForm;
             ]
         ),
     ]) ?>
+    <?php echo $form->field($model, 'name_tr')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
     <!--    --><? //= $form->field($model, '')->textInput(['maxlength' => true]) ?>
 
     <!--    --><? //= $form->field($model, '')->textInput(['maxlength' => true]) ?>

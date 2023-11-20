@@ -33,10 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'id',
 //            'title_ru',
 //            'title_en',
-            'title_uz',
+            'title_tr',
+            'title_ru',
             'text_en:ntext',
-            'text_uz:ntext',
-            'text_ru:ntext',
+            'text_tr:ntext',
             'numbers',
             [
                 'class' => ActionColumn::className(),

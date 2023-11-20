@@ -43,12 +43,14 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'short_title_ru')->textInput(['maxlength' => true])->label('Кароткое имя ru') ?>
 
     <?= $form->field($model, 'short_title_uz')->textInput(['maxlength' => true])->label('Кароткое имя uz') ?>
 
     <?= $form->field($model, 'short_title_en')->textInput(['maxlength' => true]) ->label('Кароткое имя en')?>
+    <?= $form->field($model, 'short_title_tr')->textInput(['maxlength' => true]) ->label('Кароткое имя en')?>
 
     <?=
     $form->field($model, 'desc_en')->widget(Summernote::class, [
@@ -58,6 +60,12 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
     ?>
     <?=
     $form->field($model, 'desc_ru')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+    <?=
+    $form->field($model, 'desc_tr')->widget(Summernote::class, [
         'useKrajeePresets' => true,
         // other widget settings
     ]);

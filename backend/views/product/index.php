@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'id',
             'title_uz',
             'title_ru',
-            'title_en',
+            'title_tr',
             [
                 'attribute' => 'category_id',
                 'value' => function ($model) {

@@ -17,6 +17,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'name_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'name_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name_tr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
 

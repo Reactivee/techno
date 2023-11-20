@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'title_ru',
             'title_uz',
-            'title_en',
+            'title_tr',
             'desc_en:ntext',
             [
                 'attribute' => 'image',

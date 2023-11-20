@@ -29,8 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
 //            'name_uz',
 //            'name_ru',
 //            'name_en',
@@ -39,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'title_uz',
             'text_en:ntext',
             'text_uz:ntext',
-            'text_ru:ntext',
+            'text_tr:ntext',
             //'img',
             [
                 'class' => ActionColumn::className(),
