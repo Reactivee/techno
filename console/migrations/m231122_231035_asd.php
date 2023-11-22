@@ -12,7 +12,7 @@ class m231122_231035_asd extends Migration
      */
     public function safeUp()
     {
-        $this->addColumn('top_banner', 'title_tr', $this->string());
+//        $this->addColumn('top_banner', 'title_tr', $this->string());
 
     }
 

@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\Address;
 use common\models\Departments;
+use common\models\Settings;
 use yii\web\Controller;
 
 
@@ -37,9 +38,12 @@ class ContactController extends Controller
     public function actionIndex()
     {
         $address = Address::find()->one();
+        $settings = Settings::find()->one();
+
         $depart = Departments::find()->all();
         return $this->render('index', [
             'address' => $address,
+            'settings' => $settings,
             'departs' => $depart,
         ]);
     }

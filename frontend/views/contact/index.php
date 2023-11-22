@@ -54,10 +54,22 @@ $this->title = Yii::t('main', 'contact');
                     <span class="address_phone color_techno font-weight-bold"><?= Yii::t('main', 'phone') ?> :</span>
                     <span class="address_phone_text font-weight-bold"><?= $address->phone ?></span>
                 </div>
-                <div class="address_text mt-2 mb-2">
+                <div class="address_text my-2  d-flex align-items-center">
                     <span class="address_phone color_techno font-weight-bold">E-mail:</span>
                     <span class="address_phone_text font-weight-bold"><?= $address->email ?></span>
+                    <div class="social_link d-flex align-items-center ml-5">
+                        <a href="<?= $settings->facebook ?>" class="mr-4">
+                            <img src="/uploads/icons/fb.png" alt="icon">
+                        </a>
+                        <a href="<?= $settings->instagram ?>" class="mr-4">
+                            <img src="/uploads/icons/ins.png" alt="icon">
+                        </a>
+                        <a href="<?= $settings->telegram ?>">
+                            <img src="/uploads/icons/tg.png" alt="icon">
+                        </a>
+                    </div>
                 </div>
+
                 <div class="map">
                     <iframe style="width: 100%; height: 400px"
                             src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=Techno+Cabel+Group@41.26652482973896,69.13118162610023"
