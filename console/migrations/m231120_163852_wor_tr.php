@@ -17,7 +17,6 @@ class m231120_163852_wor_tr extends Migration
         $this->addColumn('target', 'title_tr', $this->text());
         $this->addColumn('tasks', 'title_tr', $this->string());
         $this->addColumn('tasks', 'text_tr', $this->text());
-        $this->addColumn('top_banner', 'title_tr', $this->string());
 
     }
 
