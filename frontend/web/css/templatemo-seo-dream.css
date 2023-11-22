@@ -1913,7 +1913,7 @@ element Style
 ---------------------------------------------
 */
 .item_img {
-    height: 400px;
+    /*height: 400px;*/
 }
 
 .products_owl .owl-item {

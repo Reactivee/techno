@@ -215,7 +215,7 @@ $this->title = 'Techno';
             <div class="col-lg-12">
                 <div class="loop owl-carousel">
 
-                    <? foreach ($catalog as $item) { ?>
+                    <? foreach ($catalog as $item) {  ?>
                         <div class="item">
                             <div class="portfolio-item align-items-center">
                                 <div class="thumb align-items-center">

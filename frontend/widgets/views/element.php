@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="item_img">
-        <img class="w-100 h-100" src="<?= $products->image ?>" alt="">
+        <img class="w-100" src="<?= $products->image ?>" alt="">
     </div>
 
 

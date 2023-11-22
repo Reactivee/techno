@@ -3,66 +3,73 @@
 return [
 
     /*Index*/
-    'about' => 'О Нас',
-    'story' => 'История и планы развития',
-    'company' => 'О Компании',
-    'advantage' => 'Ценности предприятия ',
-    'mission' => 'Миссия',
-    'factory' => 'ПРОИЗВОДСТВО',
-    'product' => 'ПРОДУКЦИЯ',
-    'service' => 'Наши услуги',
-    'partner' => 'Партнеры',
-    'supply' => 'Поставщики',
-    'clients' => 'Клиенты',
-    'info' => 'Информация для партнеров',
-    'laboratory' => 'ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ',
-    'media' => 'Медиа',
-    'photo' => 'Фотогалерея',
-    'news' => 'Новости',
-    'contact' => 'Контакты',
-    'vacancy' => 'Вакансии',
-    'our_advan' => 'Наши преимущества',
-    'we_number' => 'Мы в цифрах',
-    'work' => 'Лет опыта работ',
-    'worker' => 'Работников',
-    'partner_comp' => 'Компаний с нами сотруднияют',
-    'application' => 'оставить заявку',
-    'catalog' => 'смотреть все',
-    'how_work' => 'Как Мы работаем',
-    'projects' => 'Партнеры',
-    'our_product' => 'наша продукция',
+    'about' => 'Hakkımızda',
+    'main' => 'Ana',
+    'cat' => 'Katalog',
+    'story' => 'Tarih ve kalkınma planları',
+    'company' => 'Şirket hakkında',
+    'advantage' => 'Şirket değerleri',
+    'mission' => 'Misyon',
+    'factory' => 'ÜRETME',
+    'product' => 'ÜRETME',
+    'service' => 'Hizmetlerimiz',
+    'partner' => 'Ortaklar',
+    'supply' => 'Tedarikçiler',
+    'clients' => 'Müşteriler',
+    'info' => 'Ortaklar için bilgiler',
+    'laboratory' => 'TEST LABORATUVARI',
+    'media' => 'Medya',
+    'photo' => 'fotoğraf Galerisi',
+    'news' => 'haberler',
+    'contact' => 'Kişiler',
+    'vacancy' => 'Boş pozisyonlar',
+    'our_advan' => 'Bizim avantajlarımız',
+    'we_number' => 'Sayılar içindeyiz',
+    'work' => 'Yılların iş tecrübesi',
+    'worker' => 'İşçiler',
+    'partner_comp' => 'Şirketler bizimle işbirliği yapıyor',
+    'application' => 'başvurunuzu gönderin',
+    'catalog' => 'hepsini gör',
+    'how_work' => 'Nasıl çalışıyoruz?',
+    'projects' => 'Ortaklar',
+    'our_product' => 'Üretimimiz',
 
     //    abouts
-    'history_plan' => 'ИСТОРИЯ И ПЛАНЫ РАЗВИТИЯ',
-    'strategy' => 'Стратегии и принц    ипы СП ООО «Techno Cable Group»',
-    'history_plan_text' => 'СП ООО «Techno Cable Group» —основан 2013 году в Зангиатинском районе Ташкентской области, Республики Узбекистан. Это завод по производству кабельной и проводниковой продукции с различными видами изоляции.
-Заводская программа развития направлена на постоянное улучшение качества продукции, модернизацию оборудования, внедрению измерительно-испытательной техники, новых прогрессивных технологий. В рамках этой программы:',
-    'manufacturing' => 'ПРОИЗВОДСТВО',
-    'mission_text' => 'Миссия СП ООО "Techno Cable Group',
+    'history_plan' => 'TARİH VE GELİŞİM PLANLARI',
+    'strategy' => "JV Techno Cable Group LLC'nin stratejileri ve ilkeleri",
+    'history_plan_text' => "JV Techno Cable Group LLC, 2013 yılında Özbekistan Cumhuriyeti'nin Taşkent bölgesinin Zangiata bölgesinde kuruldu. Bu, çeşitli yalıtım türlerine sahip kablo ve iletken ürünlerinin üretimine yönelik bir tesistir.
+Fabrika geliştirme programı, ürün kalitesini sürekli iyileştirmeyi, ekipmanı modernleştirmeyi, ölçüm ve test ekipmanlarını ve yeni ilerici teknolojileri tanıtmayı amaçlamaktadır. Bu programın bir parçası olarak:",
+    'manufacturing' => 'ÜRETME',
+    'mission_text' => "JV Techno Cable Group LLC'nin Misyonu",
 
     //    category
-    'explanation' => 'Указания по эксплуатации',
-    'construction' => 'Конструкция',
+    'explanation' => 'Kullanma talimatları',
+    'construction' => 'Yapı',
 
     /*contact*/
-    'address' => 'Address',
-    'phone' => 'Телефон',
-    'partly' => 'Отделы',
+    'address' => 'Adres',
+    'phone' => 'Telefon',
+    'partly' => 'Bölümler',
 
     /*media*/
-    'media_gallery' => 'МЕДИА ГАЛЕРЕЯ',
+    'media_gallery' => 'MEDYA GALERİSİ',
     'video' => 'Video',
 
 
     /*news*/
-    'full_info' => 'Подробнее',
+    'full_info' => 'Daha fazla detay',
+
+    /*partners*/
+    'title_partner' => 'ORTAKLAR İÇİN BİLGİ',
+    'certificate' => 'Sertifikalar',
+    'courier' => 'TEDARİKÇİLER',
 
 
     /*worth*/
-    'value' => 'ЦЕННОСТИ ПРЕДПРИЯТИЯ',
-    'value_text' => 'В основе ценностей СП ООО «Techno Cable Group» заложены следующие принципы, подходы и стандарты:',
-    'our_team' => 'Наша команда',
-    'our_team_text' => 'Мы – команда опытных и компетентных специалистов, профессионалов своего дела! Наша команда найдет эффективное решение для реализации любой поставленной задачи и обеспечит ее исполнение на достойном уровне. Сплоченность, постоянное развитие, клиент ориентированность – это наши катализаторы, которые помогают преодолевать нам все трудности и препятствия на пути к успеху',
+    'value' => 'ŞİRKET DEĞERLERİ',
+    'value_text' => "JV Techno Cable Group LLC'nin değerleri aşağıdaki ilkelere, yaklaşımlara ve standartlara dayanmaktadır:",
+    'our_team' => 'Bizim emrimiz',
+    'our_team_text' => "Alanında deneyimli ve yetkin uzmanlardan, profesyonellerden oluşan bir ekibiz! Ekibimiz herhangi bir görevi uygulamak ve bunun iyi bir düzeyde uygulanmasını sağlamak için etkili bir çözüm bulacaktır. Birlik, sürekli gelişim, müşteri odaklılık; bunlar başarıya giden yolda tüm zorlukların ve engellerin üstesinden gelmemize yardımcı olan katalizörlerimizdir.",
 
 
 ];
