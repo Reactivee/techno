@@ -31,7 +31,7 @@ class Materials extends \yii\db\ActiveRecord
     {
         return [
             [['status'], 'integer'],
-            [['title_uz', 'title_ru', 'title_en', 'image'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'image'], 'string', 'max' => 255],
         ];
     }
 

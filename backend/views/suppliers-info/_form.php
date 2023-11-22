@@ -19,12 +19,15 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'name_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'name_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name_tr')->textInput(['maxlength' => true]) ?>
+
 
     <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
     <?=
     $form->field($model, 'text_en')->widget(Summernote::class, [
@@ -40,6 +43,12 @@ use yii\widgets\ActiveForm;
     ?>
     <?=
     $form->field($model, 'text_ru')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+    <?=
+    $form->field($model, 'text_tr')->widget(Summernote::class, [
         'useKrajeePresets' => true,
         // other widget settings
     ]);

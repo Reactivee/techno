@@ -68,9 +68,9 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['category_id'], 'integer'],
-            [['title_uz', 'title_ru', 'title_en', 'category_id'], 'required'],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'category_id'], 'required'],
             [['status', 'uploaded_images', 'deleted_images', 'slug', 'sorted_images', 'image', 'desc'], 'safe'],
-            [['title_uz', 'title_ru', 'title_en', 'slug', 'type',], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'slug', 'type',], 'string', 'max' => 255],
         ];
     }
 

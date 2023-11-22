@@ -20,6 +20,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'address_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'address_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'address_tr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'fax')->textInput(['maxlength' => true]) ?>
 

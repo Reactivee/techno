@@ -30,7 +30,7 @@ class OptionsValue extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name_uz', 'name_ru', 'name_en', 'option_id'], 'string'],
+            [['name_uz', 'name_ru', 'name_en', 'name_tr', 'option_id'], 'string'],
         ];
     }
 

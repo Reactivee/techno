@@ -74,8 +74,8 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name_uz', 'name_ru', 'name_en', 'slug', 'image', 'type', 'sort', 'desc'], 'string', 'max' => 255],
-            [['options', 'title_ru', 'title_uz', 'title_en', 'text_ru', 'text_en', 'text_uz', 'status'], 'safe']
+            [['name_uz', 'name_ru', 'name_en','name_tr', 'slug', 'image', 'type', 'sort', 'desc'], 'string', 'max' => 255],
+            [['options', 'title_ru', 'title_uz', 'title_en','title_tr', 'text_ru', 'text_en', 'text_uz','text_tr', 'status'], 'safe']
         ];
     }
 

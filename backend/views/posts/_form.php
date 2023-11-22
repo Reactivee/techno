@@ -19,6 +19,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
     <?php echo $form->field($model, 'text_en')->widget(CKEditor::className(), [
         'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
@@ -53,6 +54,22 @@ use yii\widgets\ActiveForm;
         ),
     ]) ?>
     <?php echo $form->field($model, 'text_uz')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
+            ['elfinder', 'path' => '/'],
+            [
+                'allowedContent' => true,
+                'height' => 400,
+                'toolbarGroups' => [
+                    'mode', 'undo', 'selection',
+                    ['name' => 'clipboard', 'groups' => ['clipboard', 'doctools', 'cleanup']],
+                    ['name' => 'basicstyles', 'groups' => ['basicstyles', 'colors']],
+                    ['name' => 'paragraph', 'groups' => ['align', 'templates', 'list', 'indent']],
+                    'styles', 'insert', 'blocks', 'links', 'find', 'tools', 'about',
+                ]
+            ]
+        ),
+    ]) ?>
+    <?php echo $form->field($model, 'text_tr')->widget(CKEditor::className(), [
         'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
             ['elfinder', 'path' => '/'],
             [

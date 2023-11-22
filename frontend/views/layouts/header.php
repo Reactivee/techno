@@ -92,7 +92,7 @@ $settings = Settings::find()->one();
                             <li class="scroll-to-section position-relative"><a
                                         href="#"><?= Yii::t('main', 'partner') ?></a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/partner'> <?= Yii::t('main', 'supply') ?> </a>
+                                    <a href='/partner'><?= Yii::t('main', 'supply') ?> </a>
                                     <a href="/partner/client"><?= Yii::t('main', 'clients') ?></a>
                                 </div>
                             </li>

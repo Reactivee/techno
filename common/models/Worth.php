@@ -31,8 +31,8 @@ class Worth extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
-            [['title_ru', 'title_en', 'img', 'title_uz'], 'safe',],
+            [['text_en', 'text_uz', 'text_ru', 'text_tr'], 'string'],
+            [['title_ru', 'title_en', 'img', 'title_uz', 'title_tr'], 'safe'],
         ];
     }
 

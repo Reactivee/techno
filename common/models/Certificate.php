@@ -23,6 +23,7 @@ class Certificate extends \yii\db\ActiveRecord
     public $uploaded_images;
     public $deleted_images;
     public $sorted_images;
+
     /**
      * {@inheritdoc}
      */
@@ -37,10 +38,10 @@ class Certificate extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
+            [['text_en', 'text_uz', 'text_ru', 'text_tr'], 'string'],
             [['created_at', 'updated_at'], 'integer'],
             [['uploaded_images', 'deleted_images',], 'safe'],
-            [['title_ru', 'title_uz', 'title_en', 'img'], 'string', 'max' => 255],
+            [['title_ru', 'title_uz', 'title_en', 'title_tr', 'img'], 'string', 'max' => 255],
         ];
     }
 
@@ -62,6 +63,7 @@ class Certificate extends \yii\db\ActiveRecord
             'updated_at' => 'Updated At',
         ];
     }
+
     public function saveImages()
     {
         $images = $this['uploaded_images'];

@@ -31,7 +31,7 @@ class Advantages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_uz', 'title_ru', 'title_en', 'text_en', 'text_uz', 'text_ru'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'text_en', 'text_tr', 'text_uz', 'text_ru'], 'string', 'max' => 255],
         ];
     }
 

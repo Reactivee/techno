@@ -33,7 +33,7 @@ class Team extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
+            [['text_en', 'text_uz', 'text_ru', 'text_tr'], 'string'],
             [['name', 'facebook', 'tg', 'instagram', 'empty'], 'string', 'max' => 255],
         ];
     }

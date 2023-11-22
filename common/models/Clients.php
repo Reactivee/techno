@@ -34,8 +34,8 @@ class Clients extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
-            [['title_ru', 'title_en', 'title_uz', 'img', 'icon', 'key'], 'string', 'max' => 255],
+            [['text_en', 'text_uz', 'text_tr', 'text_ru'], 'string'],
+            [['title_ru', 'title_en', 'title_uz', 'title_tr', 'img', 'icon', 'key'], 'string', 'max' => 255],
         ];
     }
 

@@ -33,6 +33,7 @@ foreach ($prod_img as $image) {
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_uz')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
 
     <?=
@@ -49,6 +50,12 @@ foreach ($prod_img as $image) {
     ?>
     <?=
     $form->field($model, 'text_ru')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
+    <?=
+    $form->field($model, 'text_tr')->widget(Summernote::class, [
         'useKrajeePresets' => true,
         // other widget settings
     ]);

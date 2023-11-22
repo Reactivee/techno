@@ -36,9 +36,9 @@ class Process extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_ru', 'text_uz'], 'string'],
+            [['text_en', 'text_ru', 'text_uz', 'text_tr'], 'string'],
             ['uploaded_images', 'safe'],
-            [['title_uz', 'title_ru', 'title_en', 'img'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'img'], 'string', 'max' => 255],
         ];
     }
 

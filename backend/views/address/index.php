@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'address_uz',
             'address_ru',
             'address_en',
+            'address_tr',
             'fax',
             'phone',
             'email:email',

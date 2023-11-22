@@ -46,7 +46,7 @@ $slug = trim(Yii::$app->request->queryParams['slug']);
                     <div class="col-md-4">
                         <div class="product_card">
                             <div class="product_card_top mb-3 d-flex justify-content-start ">
-
+<!--                    --><?//  dd( $element->image->path) ?>
                                 <div class="product_img_view">
                                     <img class="w-100" src="<?= $element->image->path ?>" alt="">
                                 </div>

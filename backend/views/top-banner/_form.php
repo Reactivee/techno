@@ -18,12 +18,14 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'title_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'title_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'text_uz')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'text_ru')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'text_en')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'text_tr')->textInput(['maxlength' => true]) ?>
 
     <!--    --><? //= $form->field($model, 'status')->textInput() ?>
 

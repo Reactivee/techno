@@ -29,7 +29,7 @@ class LaboratoryImages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_ru', 'title_en', 'title_uz', 'img'], 'string', 'max' => 255],
+            [['title_ru', 'title_en', 'title_uz', 'title_tr', 'img'], 'string', 'max' => 255],
         ];
     }
 

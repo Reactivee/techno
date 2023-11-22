@@ -34,7 +34,7 @@ class AboutSet extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_en', 'title_ru', 'title_uz', 'video', 'img', 'img_2', 'number_1', 'number_2', 'background'], 'string', 'max' => 255],
+            [['title_en', 'title_ru', 'title_uz','title_tr', 'video', 'img', 'img_2', 'number_1', 'number_2', 'background'], 'string', 'max' => 255],
         ];
     }
 

@@ -110,7 +110,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                         ],
 
                                     ],
-                                    ["label" => "ИНФОРМАЦИЯ ДЛЯ ПАРТНЕРОВ", "url" => ["/suppliers-info"], "icon" => "file"],
                                     ["label" => "Laboratory", "url" => ["/laboratory"], "icon" => "key"],
                                     ["label" => "Media", "url" => '#', "icon" => "film",
                                         "items" => [

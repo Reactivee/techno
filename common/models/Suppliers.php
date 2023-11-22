@@ -34,7 +34,7 @@ class Suppliers extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_ru', 'title_en', 'title_uz', 'text_en', 'text_uz', 'text_ru'], 'string'],
+            [['title_ru', 'title_en', 'title_uz','title_tr', 'text_en', 'text_uz', 'text_ru','text_tr'], 'string'],
             [['img', 'icon', 'key'], 'string', 'max' => 255],
         ];
     }

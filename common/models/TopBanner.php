@@ -35,7 +35,7 @@ class TopBanner extends \yii\db\ActiveRecord
     {
         return [
             [['status'], 'integer'],
-            [['title_uz', 'title_ru', 'title_en', 'text_uz', 'text_ru', 'text_en', 'link',], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'text_uz', 'text_ru', 'text_en', 'text_tr', 'link',], 'string', 'max' => 255],
             ['img_path', 'file']
         ];
     }

@@ -31,7 +31,7 @@ class MaterialsOptions extends \yii\db\ActiveRecord
     {
         return [
             [['materials_id'], 'integer'],
-            [['text_uz', 'text_ru', 'text_en'], 'string'],
+            [['text_uz', 'text_ru', 'text_en', 'text_tr'], 'string'],
         ];
     }
 

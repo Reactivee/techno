@@ -37,7 +37,12 @@ foreach ($prod_img as $image) {
     <?= $form->field($model, 'title_tr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'category_id')->dropDownList($model->getCategoryAll()) ?>
-
+    <?=
+    $form->field($model, 'desc')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
     <!--    --><? //= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
     <?php echo $form->field($model, 'uploaded_images')->hiddenInput(['id' => 'uploaded_images'])->label(false) ?>
     <?php $this->registerJs(
@@ -93,12 +98,7 @@ foreach ($prod_img as $image) {
 
 <!--    --><?//= $form->field($model, 'desc')->textarea(['maxlength' => true]) ?>
 
-    <?=
-    $form->field($model, 'desc')->widget(Summernote::class, [
-        'useKrajeePresets' => true,
-        // other widget settings
-    ]);
-    ?>
+
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

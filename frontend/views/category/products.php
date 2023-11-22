@@ -55,6 +55,7 @@ use yii\helpers\Url;
             <div class="row">
 
                 <? foreach ($products as $item) {
+
                     if ($item->element) { ?>
                         <div class="col-md-4 mt-4 mt-md-4 p-0 p-md-3">
                             <div class="product_card">

@@ -35,8 +35,8 @@ class Departments extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
-            [['title_ru', 'title_en', 'title_uz', 'img', 'phone', 'email', 'social'], 'string', 'max' => 255],
+            [['text_en', 'text_uz', 'text_ru', 'text_tr'], 'string'],
+            [['title_ru', 'title_en', 'title_uz', 'title_tr', 'img', 'phone', 'email', 'social'], 'string', 'max' => 255],
         ];
     }
 

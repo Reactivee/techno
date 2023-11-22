@@ -37,7 +37,7 @@ class Sorts extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title_uz', 'title_ru', 'title_en', 'desc'], 'string', 'max' => 255],
+            [['title_uz', 'title_ru', 'title_en', 'title_tr', 'desc'], 'string', 'max' => 255],
             [['type', 'status'], 'safe']
         ];
     }

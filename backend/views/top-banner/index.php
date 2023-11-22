@@ -31,12 +31,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'title_uz',
             'title_ru',
             'title_en',
-            'text_uz',
+            'title_tr',
             'text_ru',
             'text_en',
+            'text_tr',
             'link',
             [
                 'attribute' => 'img_path',

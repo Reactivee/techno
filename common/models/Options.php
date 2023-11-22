@@ -30,7 +30,7 @@ class Options extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name_uz', 'name_ru', 'name_en', 'image', 'icon'], 'string', 'max' => 255],
+            [['name_uz', 'name_ru', 'name_en', 'name_tr', 'image', 'icon'], 'string', 'max' => 255],
         ];
     }
 

@@ -35,9 +35,9 @@ class Posts extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text_en', 'text_uz', 'text_ru'], 'string'],
+            [['text_en', 'text_uz', 'text_ru', 'text_tr'], 'string'],
             [['created_at', 'updated_at'], 'integer'],
-            [['title_ru', 'title_uz', 'title_en', 'img'], 'string', 'max' => 255],
+            [['title_ru', 'title_uz', 'title_en', 'title_tr', 'img'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,6 +47,7 @@ class Posts extends \yii\db\ActiveRecord
             TimestampBehavior::class,
         ];
     }
+
     /**
      * {@inheritdoc}
      */
