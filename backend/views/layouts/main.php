@@ -133,6 +133,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                     ["label" => "Вакансии", "url" => ["/vacancy-info/"], "icon" => "building"],
                                     ["label" => "Certificate", "url" => ["/certificate"], "icon" => "film"],
                                     ["label" => "Настройка", "url" => ["/settings"], "icon" => "gavel"],
+                                    ["label" => "Язык", "url" => ["/site/language"], "icon" => "gavel"],
                                 ],
                             ]
                         )

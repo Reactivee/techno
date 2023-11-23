@@ -22,18 +22,19 @@ $this->title = "Sayt lug`ati:"
                            aria-controls="rus" aria-selected="false">Русский</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="custom-tabs-two-profile-tab3" data-toggle="pill" href="#eng" role="tab"
-                           aria-controls="eng" aria-selected="false">Eng</a>
+                        <a class="nav-link" id="custom-tabs-two-profile-tab2" data-toggle="pill" href="#eng" role="tab"
+                           aria-controls="rus" aria-selected="false">English</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="custom-tabs-two-profile-tab4" data-toggle="pill" href="#turk" role="tab"
-                           aria-controls="turk" aria-selected="false">Turk</a>
+                        <a class="nav-link" id="custom-tabs-two-profile-tab2" data-toggle="pill" href="#turk" role="tab"
+                           aria-controls="rus" aria-selected="false">Turkish</a>
                     </li>
+
                 </ul>
             </div>
             <div class="card-body">
-                <div style=" overflow-y: scroll; max-height: 500px;  overflow-x: hidden;" class="tab-content" id="uzbek">
-                    <div class="tab-pane fade active show" id="custom-tabs-two-home" role="tabpanel"
+                <div style="overflow-y: scroll; max-height: 500px;  overflow-x: hidden;" class="tab-content">
+                    <div class="tab-pane fade active" id="uzbek" role="tabpanel"
                          aria-labelledby="custom-tabs-two-home-tab">
                         <?php foreach ($current1 as $x => $x_value) { ?>
                             <div class="row">
@@ -44,7 +45,8 @@ $this->title = "Sayt lug`ati:"
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="tab-pane fade" id="custom-tabs-two-profile" role="tabpanel" aria-labelledby="rus">
+                    <div class="tab-pane fade active" id="rus" role="tabpanel"
+                         aria-labelledby="custom-tabs-two-home-tab">
                         <?php foreach ($current2 as $x => $x_value) { ?>
                             <div class="row">
                                 <div class="col-md-12">
@@ -54,26 +56,29 @@ $this->title = "Sayt lug`ati:"
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="tab-pane fade" id="custom-tabs-two-profile" role="tabpanel" aria-labelledby="eng">
-                        <?php foreach ($current2 as $x => $x_value) { ?>
+                    <div class="tab-pane fade active" id="eng" role="tabpanel"
+                         aria-labelledby="custom-tabs-two-home-tab">
+                        <?php foreach ($current3 as $x => $x_value) { ?>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <textarea class="form-control" name="ru[<?= $x ?>]" rows="2"
+                                    <textarea class="form-control" name="en[<?= $x ?>]" rows="2"
                                               style="margin-bottom: 10px"><?= $x_value ?></textarea>
                                 </div>
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="tab-pane fade" id="custom-tabs-two-profile" role="tabpanel" aria-labelledby="turk">
-                        <?php foreach ($current2 as $x => $x_value) { ?>
+                    <div class="tab-pane fade active" id="turk" role="tabpanel"
+                         aria-labelledby="custom-tabs-two-home-tab">
+                        <?php foreach ($current4 as $x => $x_value) { ?>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <textarea class="form-control" name="ru[<?= $x ?>]" rows="2"
+                                    <textarea class="form-control" name="tr[<?= $x ?>]" rows="2"
                                               style="margin-bottom: 10px"><?= $x_value ?></textarea>
                                 </div>
                             </div>
                         <?php } ?>
                     </div>
+
                 </div>
             </div>
         </div>

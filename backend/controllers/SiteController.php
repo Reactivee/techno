@@ -28,7 +28,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','language'],
+                        'actions' => ['logout', 'index', 'language'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -124,13 +124,23 @@ class SiteController extends Controller
             $data2 = Yii::$app->request->post()['ru'];
             $data3 = Yii::$app->request->post()['en'];
             $data4 = Yii::$app->request->post()['tr'];
+//            $dif = [];
+//            foreach ($source as $_key => $item) {
+//                $check_dif = array_key_exists($_key, $data1);
+//                if (!$check_dif) {
+//                    $dif[] = $_key;
+//                }
+//            }
+//            d($dif);
+//            dd('asd');
+//             Combining array values with source language values
 
-            // Combining array values with source language values
             $data1 = array_combine($source, $data1);
+
             $data2 = array_combine($source, $data2);
             $data3 = array_combine($source, $data3);
             $data4 = array_combine($source, $data4);
-
+//        dd($data1);
             // Initial part of yii.php files
             $text1 = $text2 = $text3 = $text4 = "<?php" . " return [ \n";
 
@@ -138,14 +148,15 @@ class SiteController extends Controller
             foreach ($data1 as $x => $x_value) {
                 $text1 .= "    \"" . $x . "\" => \"" . $x_value . "\", \n";
             }
-            foreach ($data2 as $x => $x_value) {
-                $text2 .= "    \"" . $x . "\" => \"" . $x_value . "\", \n";
+
+            foreach ($data2 as $x => $x_value2) {
+                $text2 .= "    \"" . $x . "\" => \"" . $x_value2 . "\", \n";
             }
-            foreach ($data3 as $x => $x_value) {
-                $text3 .= "    \"" . $x . "\" => \"" . $x_value . "\", \n";
+            foreach ($data3 as $x => $x_value3) {
+                $text3 .= "    \"" . $x . "\" => \"" . $x_value3 . "\", \n";
             }
-            foreach ($data4 as $x => $x_value) {
-                $text4 .= "    \"" . $x . "\" => \"" . $x_value . "\", \n";
+            foreach ($data4 as $x => $x_value4) {
+                $text4 .= "    \"" . $x . "\" => \"" . $x_value4 . "\", \n";
             }
 
             // Writing complete array consisted text to php files
@@ -153,6 +164,7 @@ class SiteController extends Controller
             file_put_contents(Yii::getAlias('@frontend') . "/messages/ru/main.php", $text2 . " ];");
             file_put_contents(Yii::getAlias('@frontend') . "/messages/en/main.php", $text3 . " ];");
             file_put_contents(Yii::getAlias('@frontend') . "/messages/tr/main.php", $text4 . " ];");
+
             return $this->render('language', [
                 'current1' => $data1,
                 'current2' => $data2,
