@@ -73,7 +73,7 @@ $settings = Settings::find()->one();
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav align-items-center">
                             <li class="scroll-to-section position-relative">
-                                <a href="#" class=""><?= Yii::t('main', 'about') ?> </a>
+                                <a  class="nav_link"><?= Yii::t('main', 'about') ?> </a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/about/story'><?= Yii::t('main', 'story') ?></a>
                                     <a href="/about"><?= Yii::t('main', 'company') ?></a>
@@ -82,34 +82,35 @@ $settings = Settings::find()->one();
                                     <a href="/about/factory"><?= Yii::t('main', 'factory') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a
-                                        href="#"><?= Yii::t('main', 'product') ?></a>
+                            <li class="scroll-to-section position-relative">
+                                <a  class="nav_link"><?= Yii::t('main', 'product') ?></a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/category/service'><?= Yii::t('main', 'service') ?></a>
                                     <a href='/category/all-category'><?= Yii::t('main', 'product') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section position-relative"><a
-                                        href="#"><?= Yii::t('main', 'partner') ?></a>
+                            <li class="scroll-to-section position-relative">
+                                <a  class="nav_link"><?= Yii::t('main', 'partner') ?></a>
                                 <div class="nav_sub   flex-column">
                                     <a href='/partner'><?= Yii::t('main', 'supply') ?> </a>
                                     <a href="/partner/client"><?= Yii::t('main', 'clients') ?></a>
                                 </div>
                             </li>
 
-                            <li class="scroll-to-section"><a href="/partner/info"><?= Yii::t('main', 'info') ?></a></li>
-                            <li class="scroll-to-section"><a
-                                        href="/site/labaratory"><?= Yii::t('main', 'laboratory') ?></a></li>
+                            <li class="scroll-to-section">
+                                <a href="/partner/info" class=""><?= Yii::t('main', 'info') ?></a></li>
+                            <li class="scroll-to-section">
+                                <a href="/site/labaratory" class="nav_link"><?= Yii::t('main', 'laboratory') ?></a></li>
 
-                            <li class="scroll-to-section position-relative"><a
-                                        href="#"><?= Yii::t('main', 'media') ?></a>
+                            <li class="scroll-to-section position-relative">
+                                <a href="#" class="nav_link"><?= Yii::t('main', 'media') ?></a>
                                 <div class="nav_sub   flex-column">
-                                    <a href='/media'><?= Yii::t('main', 'photo') ?></a>
-                                    <a href="/media/news"><?= Yii::t('main', 'news') ?></a>
+                                    <a class="nav_link" href='/media'><?= Yii::t('main', 'photo') ?></a>
+                                    <a class="nav_link" href="/media/news"><?= Yii::t('main', 'news') ?></a>
                                 </div>
                             </li>
-                            <li class="scroll-to-section"><a href="/contact"><?= Yii::t('main', 'contact') ?></a></li>
-                            <li class="scroll-to-section"><a href="/vacancy"><?= Yii::t('main', 'vacancy') ?></a></li>
+                            <li class="scroll-to-section"><a href="/contact" class="nav_link"><?= Yii::t('main', 'contact') ?></a></li>
+                            <li class="scroll-to-section"><a href="/vacancy" class="nav_link"><?= Yii::t('main', 'vacancy') ?></a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>

@@ -61,14 +61,14 @@ $this->title = Yii::t('main', 'history_plan');
 
     </div>
 
-    <div>
+    <div class="container">
         <div class="main_title text-center my-4">
             <span>
                 <?= Yii::t('main', 'strategy') ?>
               </span>
         </div>
 
-        <div class="container mt-5">
+        <div class=" mt-5">
 
             <div class="row">
                 <? foreach ($ad_icons as $key => $advantage) { ?>
