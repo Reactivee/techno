@@ -62,18 +62,18 @@ $this->title = Yii::t('main', 'history_plan');
     </div>
 
     <div class="container">
-        <div class="main_title text-center my-4">
+        <div class="main_title  text-center my-4">
             <span>
                 <?= Yii::t('main', 'strategy') ?>
               </span>
         </div>
 
-        <div class=" mt-5">
+        <div class="pb-5 mt-5">
 
             <div class="row">
                 <? foreach ($ad_icons as $key => $advantage) { ?>
                     <div class="col-lg-3">
-                        <div class="service-item wow bounceInUp" data-wow-duration="1s"
+                        <div class="service-item h-100 wow bounceInUp" data-wow-duration="1s"
                              data-wow-delay="<?= $key / 10 ?>s">
                             <div class="row align-content-center">
                                 <div class="col-12 text-center">
