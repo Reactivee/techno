@@ -34,7 +34,7 @@ $this->title = "Sayt lug`ati:"
             </div>
             <div class="card-body">
                 <div style="overflow-y: scroll; max-height: 500px;  overflow-x: hidden;" class="tab-content">
-                    <div class="tab-pane fade active" id="uzbek" role="tabpanel"
+                    <div class="tab-pane  fade active in" id="uzbek" role="tabpanel"
                          aria-labelledby="custom-tabs-two-home-tab">
                         <?php foreach ($current1 as $x => $x_value) { ?>
                             <div class="row">
@@ -88,7 +88,7 @@ $this->title = "Sayt lug`ati:"
             <div class="card-body">
                 <div class="form-group">
                     <div class="form-group">
-                        <?= Html::submitButton('<div class="fa fa-save"></div> Saqlash', ['class' => 'btn btn-success', 'style' => 'width:100%; height:50px; font-size:24px']) ?>
+                        <?= Html::submitButton('<div class="fa fa-save"></div> Сохранить', ['class' => 'btn btn-success', 'style' => 'width:100%; height:50px; font-size:24px']) ?>
                     </div>
                     <?php ActiveForm::end(); ?>
                 </div>
