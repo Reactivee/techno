@@ -963,6 +963,9 @@ preloader
 Banner Style
 --------------------------------------------- 
 */
+.top_banner {
+    margin-top: -170px;
+}
 
 .content_top_banner {
     position: absolute;

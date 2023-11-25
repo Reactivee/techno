@@ -36,6 +36,17 @@ AOS.init();
 
 
 })(jQuery);
+var swiper_top_banner = new Swiper(".top_banner_swiper", {
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+
+        clickable: true,
+    },
+
+});
 
 let swiper = new Swiper(".mySwiper", {
     pagination: {

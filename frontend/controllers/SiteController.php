@@ -91,7 +91,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $main_banner = TopBanner::find()->one();
+        $main_banners = TopBanner::find()->all();
         $address = Address::find()->one();
         $about = About::find()->limit(2)->all();
         $advantages = Advantages::find()->all();
@@ -102,7 +102,7 @@ class SiteController extends Controller
         $element = Product::find()->where(['not', ['image' => null]])->orderBy(['id' => SORT_DESC])->limit(20)->all();
         $our_numbers = OurNumbers::find()->all();
 //        dd($element);
-        return $this->render('index', compact('main_banner', 'address', 'our_numbers', 'about', 'advantages', 'ad_icons', 'gallery', 'catalog', 'element'));
+        return $this->render('index', compact('main_banners', 'address', 'our_numbers', 'about', 'advantages', 'ad_icons', 'gallery', 'catalog', 'element'));
     }
 
     /**

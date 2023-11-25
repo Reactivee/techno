@@ -10,39 +10,46 @@ $this->title = 'Techno';
         color: white;
     }
 </style>
-<div class="wow fadeIn position-relative container_fluid" id="top" data-wow-duration="1s"
-     data-wow-delay="0.5s">
-    <img class="w-100 top_banner" src=<?= $main_banner['img_path'] ?> alt="">
-    <div class="line_item line_item_right bg-white d-inline-flex liner_all_product align-items-center">
+<div class="swiper top_banner_swiper">
+    <div class="swiper-wrapper">
+        <? foreach ($main_banners as $main_banner) { ?>
+            <div class="swiper-slide">
+                <div class="wow fadeIn position-relative container_fluid" id="top" data-wow-duration="1s"
+                     data-wow-delay="0.5s">
+                    <img class="w-100 top_banner" src=<?= $main_banner['img_path'] ?> alt="">
 
-    </div>
+                    <div class="content_top_banner">
+                        <div class="container">
 
-    <div class="content_top_banner">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-8 align-self-center">
-                    <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
-                         data-wow-delay="1s">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2 class="banner_text"><?= $main_banner['title_' . Yii::$app->language] ?></h2>
-                                <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner['text_' . Yii::$app->language] ?></h4>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="main-green-button mt-5">
-                                    <a href="/about"
-                                       class="text-capitalize"><?= Yii::t('main', 'company') ?></a>
+                            <div class="row">
+                                <div class="col-lg-8 align-self-center">
+                                    <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
+                                         data-wow-delay="1s">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h2 class="banner_text"><?= $main_banner['title_' . Yii::$app->language] ?></h2>
+                                                <h4 class="banner_text_sub color_white pt-4 px-0"><?= $main_banner['text_' . Yii::$app->language] ?></h4>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="main-green-button mt-5">
+                                                    <a href="/about"
+                                                       class="text-capitalize"><?= Yii::t('main', 'company') ?></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="ribbon_main">
+                        <img src="/uploads/banners/ribbon.png" alt="">
+                    </div>
                 </div>
+
             </div>
-        </div>
-    </div>
-    <div class="ribbon_main">
-        <img src="/uploads/banners/ribbon.png" alt="">
+        <? } ?>
+
     </div>
 </div>
 
@@ -118,7 +125,8 @@ $this->title = 'Techno';
                 <div class="loop owl-carousel products_owl">
 
                     <? foreach ($element as $key => $item) { ?>
-                        <a data-aos="fade-up" data-aos-delay="<?= $key+1 ?>00" class="text-decoration-none color_techno"
+                        <a data-aos="fade-up" data-aos-delay="<?= $key + 1 ?>00"
+                           class="text-decoration-none color_techno"
                            href="category/view?slug=<?= $item->element[0]->slug ?>">
                             <? echo \frontend\widgets\ElementWidget::widget(['products' => $item])
                             ?>
@@ -215,7 +223,7 @@ $this->title = 'Techno';
             <div class="col-lg-12">
                 <div class="loop owl-carousel">
 
-                    <? foreach ($catalog as $item) {  ?>
+                    <? foreach ($catalog as $item) { ?>
                         <div class="item">
                             <div class="portfolio-item align-items-center">
                                 <div class="thumb align-items-center">
