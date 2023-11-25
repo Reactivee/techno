@@ -78,11 +78,11 @@ $this->title = Yii::t('main', 'history_plan');
                             <div class="row align-content-center">
                                 <div class="col-12 text-center">
                                     <div class="icon mb-4">
-                                        <? if (!$advantage->img) { ?>
+
                                             <span><?= $key + 1 ?></span>
-                                        <? } else { ?>
-                                            <img src="<?= $advantage->img ?>" alt="">
-                                        <? } ?>
+<!--                                        --><?// } else { ?>
+<!--                                            <img src="--><?//= $advantage->img ?><!--" alt="">-->
+<!--                                        --><?// } ?>
 
                                     </div>
                                     <div class="right-content">
