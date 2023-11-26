@@ -16,7 +16,7 @@ $this->title = 'Techno';
             <div class="swiper-slide">
                 <div class="wow fadeIn position-relative container_fluid" id="top" data-wow-duration="1s"
                      data-wow-delay="0.5s">
-                    <img class="w-100 top_banner" src=<?= $main_banner['img_path'] ?> alt="">
+                    <img class="w-100 top_banner_main" src=<?= $main_banner['img_path'] ?> alt="">
 
                     <div class="content_top_banner">
                         <div class="container">
