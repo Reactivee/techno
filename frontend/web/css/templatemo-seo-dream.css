@@ -2364,11 +2364,17 @@ footer p a:hover {
 responsive
 --------------------------------------------- 
 */
+@media (max-width: 1240px) {
+    .header-area .main-nav .nav li a{
+        font-size: 11px;
+    }
+}
 
 @media (max-width: 1200px) {
     .header-area .main-nav .logo h4 {
         font-size: 24px;
     }
+
 
     .header-area .main-nav .logo h4 img {
         max-width: 25px;
