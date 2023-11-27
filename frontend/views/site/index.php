@@ -74,7 +74,7 @@ $this->title = 'Techno';
                 </div>
             </div>
 
-            <div class="col-lg-9 mb-5">
+            <div class="col-lg-9 mt-0 mt-md-4 mb-5">
                 <div class="skills-content">
                     <div class="section-heading wow bounceIn animated pl-3" data-wow-duration="1s" data-wow-delay="0.2s"
                          style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
