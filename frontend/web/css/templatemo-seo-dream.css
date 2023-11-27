@@ -1067,7 +1067,6 @@ Banner Style
 .left-content h2 {
     /*border-top: 1px solid #eee;*/
     margin-top: 0;
-    padding-top: 20px;
     margin-bottom: 45px;
     /*font-size: 60px;*/
     font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
@@ -1084,7 +1083,7 @@ Banner Style
 }
 
 .main_header_text {
-    color: white;
+    color: black;
     text-transform: uppercase;
     /*border-top: 1px solid #eee;*/
     /*margin-top: 30px;*/
