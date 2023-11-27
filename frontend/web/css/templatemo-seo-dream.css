@@ -1069,7 +1069,7 @@ Banner Style
     margin-top: 0;
     margin-bottom: 45px;
     /*font-size: 60px;*/
-    font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(15px + (45 - 15) * ((100vw - 300px) / (1600 - 300)));
 
     font-weight: 800;
     /*color: #2a2a2a;*/
@@ -2042,7 +2042,7 @@ element Style
 .main_title {
     font-weight: 800;
     /*font-size: 31px;*/
-    font-size: calc(25px + (31 - 25) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (31 - 20) * ((100vw - 300px) / (1600 - 300)));
 
     line-height: 55px;
     text-transform: uppercase;
