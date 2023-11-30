@@ -62,10 +62,10 @@ $this->title = Yii::t('main', 'contact');
                         <a href="<?= $settings->instagram ?>" class="mr-4">
                             <img src="/uploads/icons/ins.png" alt="icon">
                         </a>
-                        <a href="<?= $settings->telegram ?>">
+                        <a href="<?= $settings->telegram ?>" class="mr-4">
                             <img src="/uploads/icons/tg.png" alt="icon">
                         </a>
-                        <a href="<?= $settings->utube ?>">
+                        <a href="<?= $settings->utube ?>" >
                             <img src="/uploads/icons/youtube.png" alt="icon">
                         </a>
                     </div>
