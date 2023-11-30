@@ -22,8 +22,10 @@ use yii\helpers\Url;
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="line_item d-flex align-items-center">
-                                                <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-3 px-3 no-border">
-                                                    <h3><?= Yii::t('main', 'application') ?></h3></button>
+                                                <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-2 px-2 no-border"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                    <span><?= Yii::t('main', 'application') ?> </span>
+                                                </button>
                                             </div>
                                             <div class="line_item  bg-white d-inline-flex align-items-center">
                                                 <a href="/frontend/web/catalog.pdf"><h4
