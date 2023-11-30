@@ -18,6 +18,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'instagram')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'telegram')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'utube')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'site_name')->textInput(['maxlength' => true]) ?>
 

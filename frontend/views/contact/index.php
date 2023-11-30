@@ -65,6 +65,9 @@ $this->title = Yii::t('main', 'contact');
                         <a href="<?= $settings->telegram ?>">
                             <img src="/uploads/icons/tg.png" alt="icon">
                         </a>
+                        <a href="<?= $settings->utube ?>">
+                            <img src="/uploads/icons/youtube.png" alt="icon">
+                        </a>
                     </div>
                 </div>
 

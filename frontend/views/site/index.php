@@ -60,7 +60,7 @@ $this->title = 'Techno';
             <div class="col-lg-3">
                 <div class="advan-content">
                     <div class="card purple">
-                        <h4 class="text-center mb-3 font-weight-bold"><?= Yii::t('main', 'our_advan') ?></h4>
+                        <h3 class="text-center mb-3 font-weight-bold"><?= Yii::t('main', 'our_advan') ?></h3>
                         <ul class="p-0 m-0 advan-content_items">
                             <? foreach ($advantages as $item) { ?>
                                 <li class="mb-3">

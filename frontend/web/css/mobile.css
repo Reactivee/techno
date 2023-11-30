@@ -12,7 +12,9 @@ hr {
     hr {
         display: block;
     }
-
+    .header-area{
+        position: relative;
+    }
     .btn_burger {
         display: block !important;
         position: absolute;

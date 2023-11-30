@@ -964,7 +964,7 @@ Banner Style
 --------------------------------------------- 
 */
 .top_banner {
-    margin-top: -170px;
+    margin-top: -140px;
 }
 
 .content_top_banner {
@@ -1287,7 +1287,7 @@ Features Style
 }
 
 .advan-content_items li {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .skill-item {
@@ -1680,7 +1680,7 @@ Portfolio
 }
 
 .portfolio-item .thumb img {
-    border-radius: 50px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
@@ -1889,7 +1889,7 @@ form#contact button:hover {
 /*Product page*/
 .line_item {
     border-radius: 50px;
-    /*padding: 0 0 0 15px ;*/
+    /*padding: 0 30px ;*/
 }
 
 .option_name {
@@ -2365,7 +2365,7 @@ responsive
 --------------------------------------------- 
 */
 @media (max-width: 1240px) {
-    .header-area .main-nav .nav li a{
+    .header-area .main-nav .nav li a {
         font-size: 11px;
     }
 }
@@ -2386,11 +2386,11 @@ responsive
     }
 
     .top_banner {
-        margin-top: 120px;
+        margin-top: 0;
     }
 
     .content_top_banner {
-        top: 30%;
+        top: 20%;
     }
 
     .left-content h2 {
@@ -2402,11 +2402,11 @@ responsive
 
 @media (max-width: 992px) {
     .content_top_banner {
-        top: 44%;
+        /*top: 44%;*/
     }
 
     .left-content h2 {
-        line-height: 36px
+        line-height: 25px
     }
 
     .header-area .main-nav .logo h4 {
@@ -2475,6 +2475,10 @@ responsive
         margin-top: 60px;
     }
 
+    .title_product_filter {
+        font-size: 18px;
+    }
+
     form#contact {
         padding: 45px;
     }
@@ -2489,6 +2493,10 @@ responsive
     .container, .container-sm, .container-md, .container-lg, .container-xl {
         /*max-width: 1420px !important;*/
         padding: 0 40px;
+    }
+
+    .header-area {
+        position: relative;
     }
 
     .main_title {
@@ -2589,7 +2597,7 @@ responsive
     }
 
     .nav_sub {
-        width: 100%;
+        /*width: 100%;*/
         left: -25px;
     }
 

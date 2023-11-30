@@ -30,7 +30,7 @@ class Settings extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['facebook', 'instagram', 'telegram', 'site_name', 'meta', 'logo'], 'string', 'max' => 255],
+            [['facebook', 'instagram', 'telegram', 'site_name', 'meta', 'logo', 'utube'], 'string', 'max' => 255],
         ];
     }
 

@@ -34,7 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'facebook',
             'instagram',
             'telegram',
-            'site_name',
+            'utube',
+//            'site_name',
             //'meta',
             //'logo',
             [
