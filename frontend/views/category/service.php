@@ -15,7 +15,7 @@ $this->title = Yii::t('main', 'service');
 
 ?>
 <div class=" wow fadeIn position-relative" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <img class="top_banner w-100" src="/uploads/banners/main_banner.png" alt="">
+    <img class="top_banner w-100" src="/uploads/banners/about.png" alt="">
     <div class="content_top_banner">
         <div class="container">
             <div class="row">
