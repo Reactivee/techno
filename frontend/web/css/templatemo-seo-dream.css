@@ -2374,7 +2374,9 @@ responsive
     .header-area .main-nav .logo h4 {
         font-size: 24px;
     }
-
+    .header-area {
+        position: relative;
+    }
 
     .header-area .main-nav .logo h4 img {
         max-width: 25px;
@@ -2502,9 +2504,7 @@ responsive
         padding: 0 40px;
     }
 
-    .header-area {
-        position: relative;
-    }
+
 
     .main_title {
         line-height: 35px;
