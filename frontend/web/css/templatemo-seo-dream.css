@@ -2392,6 +2392,9 @@ responsive
     .content_top_banner {
         top: 20%;
     }
+    .category_product .content_top_banner {
+        top: 0;
+    }
 
     .left-content h2 {
         margin-top: 0;
@@ -2477,6 +2480,10 @@ responsive
 
     .title_product_filter {
         font-size: 18px;
+    }
+    .btn_products_top{
+        font-size: 13px!important;
+
     }
 
     form#contact {

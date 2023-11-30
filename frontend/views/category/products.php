@@ -22,22 +22,22 @@ use yii\helpers\Url;
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="line_item d-flex align-items-center">
-                                                <button class="btn btn-success ibtn_outline_yellow middle_line_button  py-2 px-2 no-border"
+                                                <button class="btn btn-success btn_products_top ibtn_outline_yellow middle_line_button  py-2 px-2 no-border"
                                                         data-toggle="modal" data-target="#exampleModal">
                                                     <span><?= Yii::t('main', 'application') ?> </span>
                                                 </button>
                                             </div>
                                             <div class="line_item  bg-white d-inline-flex align-items-center">
                                                 <a href="/frontend/web/catalog.pdf"><h4
-                                                            class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
+                                                            class="color_techno btn_products_top text-capitalize pl-3 pr-3"><?= Yii::t('main', 'catalog') ?></h4>
                                                 </a>
                                                 <img class="logo_down" src="/uploads/logo/line1.svg"
                                                      alt="">
                                             </div>
                                             <br>
                                             <div class="mt-3 line_item  bg-white d-inline-flex align-items-center">
-                                                <a href="/frontend/web/catalog2.pdf"><h4
-                                                            class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'nomen') ?></h4>
+                                                <a href="/frontend/web/catalog2.pdf">
+                                                    <h4 class="color_techno btn_products_top text-capitalize pl-3 pr-3"><?= Yii::t('main', 'nomen') ?></h4>
                                                 </a>
                                                 <img class="logo_down" src="/uploads/logo/line1.svg"
                                                      alt="">
