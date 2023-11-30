@@ -21,6 +21,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\caching\DbDependency;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -285,22 +286,24 @@ class SiteController extends Controller
 
     public function actionSendRequest()
     {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-        if (Yii::$app->request->isAjax) {
-            $form = Yii::$app->request->post();
+
+//        Yii::$app->response->format = Response::FORMAT_JSON;
+        if (Yii::$app->request->get()) {
+            $form = Yii::$app->request->get();
+
             $phone = $form['phone'];
             $text = $form['text'];
-            $email = $form['email'];
+            $name = $form['name'];
             $app = new Application();
             $app->text = $text;
             $app->phone = $phone;
-            $app->email = $email;
+            $app->email = $name;
 
-            if ($app->save()) {
-                return true;
+            if (!$app->save()) {
+                return false;
             }
+            return $this->redirect(Yii::$app->request->referrer);
         }
-        return false;
 
     }
 

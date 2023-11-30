@@ -89,6 +89,15 @@ return [
 //                ],
 //            ],
 //        ],
+        'response' => [
+            'formatters' => [
+                'json' => [
+                    'class' => 'yii\web\JsonResponseFormatter',
+                    'prettyPrint' => YII_DEBUG,
+                    'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE,
+                ],
+            ],
+        ],
 
         'request' => [
             'csrfParam' => '_csrf-frontend',
