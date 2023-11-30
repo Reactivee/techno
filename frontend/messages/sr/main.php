@@ -30,6 +30,7 @@ return [
     'partner_comp' => 'partner_comp',
     'application' => 'application',
     'catalog' => 'catalog',
+    'nomen' => 'nomen',
     'how_work' => 'how_work',
     'projects' => 'projects',
     'our_product' => 'our_product',

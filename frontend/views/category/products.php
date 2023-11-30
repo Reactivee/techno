@@ -34,6 +34,14 @@ use yii\helpers\Url;
                                                 <img class="logo_down" src="/uploads/logo/line1.svg"
                                                      alt="">
                                             </div>
+                                            <br>
+                                            <div class="mt-3 line_item  bg-white d-inline-flex align-items-center">
+                                                <a href="/frontend/web/catalog2.pdf"><h4
+                                                            class="color_techno text-capitalize pl-3 pr-3"><?= Yii::t('main', 'nomen') ?></h4>
+                                                </a>
+                                                <img class="logo_down" src="/uploads/logo/line1.svg"
+                                                     alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

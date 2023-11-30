@@ -25,7 +25,9 @@
     "worker" => "Работников", 
     "partner_comp" => "Companies cooperate with us", 
     "application" => "Send Application", 
-    "catalog" => "see all", 
+    "catalog" => "Catalog",
+    'nomen' => 'See all',
+
     "how_work" => "How we are working?", 
     "projects" => "Partners", 
     "our_product" => "Our Productions", 
