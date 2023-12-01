@@ -45,7 +45,7 @@ $this->title = Yii::t('main', 'about');
             ?>
             <div class="content_block mt-4">
                 <div class="main_title">
-                    <span><?= $item->title_ru ?></span>
+                    <span><?= $item['title_' . Yii::$app->language] ?></span>
                 </div>
                 <div class="all_content mt-4">
                     <div class="row align-items-center">
