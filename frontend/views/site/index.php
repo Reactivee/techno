@@ -146,6 +146,7 @@ $this->title = 'Techno';
                 <h4 class="pl-5 pr-4 color_techno text-capitalize">
                     <a class="text-decoration-none color_techno"
                        href="/frontend/web/catalog.pdf"> <?= Yii::t('main', 'catalog') ?> </a>
+
                 </h4>
                 <img class="" style="width: 93px; height: 93px;" src="/uploads/logo/line1.svg" alt="">
             </div>
@@ -159,7 +160,7 @@ $this->title = 'Techno';
                 <img style="width: 93px; height: 93px;" src="/uploads/logo/line1.svg" alt="">
                 <h4 class="color_techno text-capitalize pr-5 pl-4">
                     <a class="text-decoration-none color_techno"
-                       href="/frontend/web/catalog.pdf"><?= Yii::t('main', 'catalog') ?></a>
+                       href="/frontend/web/catalog2.pdf"><?= Yii::t('main', 'nomen') ?></a>
                 </h4>
             </div>
         </div>
