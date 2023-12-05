@@ -74,9 +74,7 @@ $this->title = Yii::t('main', 'about');
                 </div>
             </div>
         <? } ?>
-
     </div>
-
 
     <section>
         <div class="sertificate mt-5">

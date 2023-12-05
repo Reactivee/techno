@@ -1278,7 +1278,9 @@ Features Style
     border-radius: 39px;
     color: #EB632A;
 }
-
+.advan-content .card.purple h3{
+    font-size: 23px;
+}
 .advan-content_items {
     color: black;
     font-weight: 600;
@@ -1287,7 +1289,7 @@ Features Style
 }
 
 .advan-content_items li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skill-item {
@@ -1378,7 +1380,9 @@ Features Style
     height: 100%;
     font-weight: 700;
 }
-
+.progress-value span{
+    line-height: 0;
+}
 .progress .progress-value div {
     margin-top: 10px;
 }
