@@ -50,5 +50,12 @@ The factory development program is aimed at constantly improving product quality
     "value" => "COMPANY VALUES", 
     "value_text" => "The values of JV Techno Cable Group LLC are based on the following principles, approaches and standards:", 
     "our_team" => "our team", 
-    "our_team_text" => "We are a team of experienced and competent specialists, professionals in their field! Our team will find an effective solution to implement any task and ensure its implementation at a decent level. Unity, constant development, customer focus - these are our catalysts that help us overcome all difficulties and obstacles on the path to success.", 
- ];
+    "our_team_text" => "We are a team of experienced and competent specialists, professionals in their field! Our team will find an effective solution to implement any task and ensure its implementation at a decent level. Unity, constant development, customer focus - these are our catalysts that help us overcome all difficulties and obstacles on the path to success.",
+
+    /*Vacancy*/
+
+    'vacancy' => 'vacancy',
+    'occupation' => 'occupation',
+    'request' => 'request',
+    'salary' => 'salary'
+    ];

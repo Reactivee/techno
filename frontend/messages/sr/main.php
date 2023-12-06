@@ -69,4 +69,11 @@ return [
     'value_text' => 'value_text',
     'our_team' => 'our_team',
     'our_team_text' => 'our_team_text',
+
+    /*Vacancy*/
+
+    'vacancy' => 'vacancy',
+    'occupation' => 'occupation',
+    'request' => 'request',
+    'salary' => 'salary'
 ];

@@ -19,7 +19,8 @@ $this->title = "Vacancy";
                                  data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2 class="main_header_text text-uppercase">вакансии</h2>
+                                        <h2 class="main_header_text text-uppercase"><?= Yii::t('main', 'vacancy') ?>
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
@@ -40,78 +41,57 @@ $this->title = "Vacancy";
 
         <div class="container">
             <div class="main_title  my-4 d-flex align-items-center flex-column flex-md-row">
-                <span>вакансии</span>
+                <span><?= Yii::t('main', 'vacancy') ?></span>
 
                 <div class="main-green-button ml-4">
-                    <a href="#" data-toggle="modal" data-target="#exampleModal">оставить заявку</a>
+                    <a href="#" data-toggle="modal" data-target="#exampleModal"><?= Yii::t('main', 'application') ?></a>
                 </div>
             </div>
             <div class="row block_vacancy text-center">
                 <div class="col-md-4 mb-3">
                     <div class="title_prof">
-                        <h4> Наименование должности</h4>
+                        <h4><?= Yii::t('main', 'occupation') ?> </h4>
                     </div>
                     <div class=" block_vacancy text-center">
                         <? foreach ($vacancy as $item) { ?>
 
-                                <div class="text_prof">
-                                    <?= $item->title_ru ?>
-                                </div>
+                            <div class="text_prof">
+                                <?= $item['title_' . Yii::$app->language] ?>
+                            </div>
                             <hr>
                         <? } ?>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="title_requested">
-                        <h4>Требования к кандидату</h4>
+                        <h4><?= Yii::t('main', 'request') ?></h4>
                     </div>
                     <div class=" block_vacancy text-center">
                         <? foreach ($vacancy as $item) { ?>
-
-                                <div class="text_prof">
-                                    <?= $item->text_ru ?>
-                                </div>
+                            <div class="text_prof">
+                                <?= $item['text_' . Yii::$app->language] ?>
+                            </div>
                             <hr>
                         <? } ?>
+
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="title_salary">
-                        <h4> Должностной оклад</h4>
+                        <h4><?= Yii::t('main', 'salary') ?></h4>
                     </div>
                     <div class=" block_vacancy text-center">
                         <? foreach ($vacancy as $item) { ?>
 
-                                <div class="text_prof ">
-                                    <?= $item->salary ?>
-                                </div>
+                            <div class="text_prof ">
+                                <?= $item->salary ?>
+                            </div>
 
                             <hr>
                         <? } ?>
                     </div>
                 </div>
             </div>
-            <!--            <div class="row block_vacancy text-center">-->
-            <!--                --><? // foreach ($vacancy as $item) { ?>
-            <!--                    <div class="col-md-4 mb-3">-->
-            <!--                        <div class="text_prof">-->
-            <!--                            --><? //= $item->title_ru ?>
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="col-md-4 mb-3">-->
-            <!--                        <div class="text_prof">-->
-            <!--                            --><? //= $item->text_ru ?>
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="col-md-4 mb-3">-->
-            <!--                        <div class="text_prof">-->
-            <!--                            --><? //= $item->salary ?>
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <hr>-->
-            <!--                --><? // } ?>
-            <!--            </div>-->
-
         </div>
     </div>
 </section>
