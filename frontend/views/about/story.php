@@ -55,6 +55,7 @@ $this->title = Yii::t('main', 'history_plan');
                             <span><?= $proces['text_' . Yii::$app->language] ?> </span>
                         </div>
                     </div>
+                    <hr>
                 <? } ?>
             </div>
         </div>
