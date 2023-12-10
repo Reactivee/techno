@@ -196,7 +196,7 @@ $this->title = 'Techno';
                                     <? //= $advantage->img ?><!--" alt="">-->
                                 </div>
                                 <div class="right-content">
-                                    <h4><?= $advantage->title_ru ?> </h4>
+                                    <h4><?= $advantage['title_' . Yii::$app->language] ?> </h4>
                                 </div>
                             </div>
                         </div>
