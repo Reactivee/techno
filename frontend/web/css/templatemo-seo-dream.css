@@ -2092,8 +2092,7 @@ element Style
 }
 
 .step_year_block {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 50px 0;
 }
 
 .step_item_year {

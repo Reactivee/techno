@@ -66,10 +66,10 @@ AppAsset::register($this);
 <!-- ***** Preloader End ***** -->
 <div role="main" class="flex-shrink-0">
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => $this->params['breadcrumbs'],
-        ]);
-        ?>
+<!--        --><?//= Breadcrumbs::widget([
+//            'links' => $this->params['breadcrumbs'],
+//        ]);
+//        ?>
     </div>
     <div class="">
 

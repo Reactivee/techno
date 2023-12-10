@@ -43,12 +43,12 @@ $this->title = Yii::t('main', 'history_plan');
                <?= Yii::t('main', 'history_plan_text') ?></span>
         </div>
         <div class="step_year">
-            <div class="row">
+            <div class="">
                 <? foreach ($process as $proces) {
                     ?>
 
-                    <div class="step_year_block d-flex ">
-                        <div class="step_item_year font-weight-bold mr-4 position-relative color_techno col-md-2">
+                    <div class="step_year_block row">
+                        <div class="step_item_year m font-weight-bold position-relative color_techno col-md-2">
                             <span><?= $proces['title_' . Yii::$app->language] ?></span>
                         </div>
                         <div class="step_item col-md-10 text-center">
