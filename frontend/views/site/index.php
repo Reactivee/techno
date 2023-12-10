@@ -185,7 +185,7 @@ $this->title = 'Techno';
     <div class="container-fluid">
         <div class="row">
             <? foreach ($ad_icons as $key => $advantage) { ?>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-3">
                     <div class="service-item wow bounceInUp" data-wow-duration="1s"
                          data-wow-delay="<?= $key / 10 ?>s">
                         <div class="row align-content-center">
