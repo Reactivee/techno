@@ -48,17 +48,16 @@ $this->title = "Галерея";
         <div class="media_tab_wrapper">
             <ul class="nav d-flex  text-center align-items-center" id="myTab" role="tablist">
                 <li class="nav-media  py-2" role="presentation">
-                    <a class="active text-decoration-none w-100 " id="home-tab" data-toggle="tab"
-                       href="#home" role="tab"
-                       aria-controls="home" aria-selected="true">
+                    <a class="active text-decoration-none w-100 " id="home-tab" data-toggle="tab" data-target="#home"
+                       type="button" role="tab" aria-controls="home" aria-selected="true">
                         <?= Yii::t('main', 'photo') ?>
                     </a>
                 </li>
                 <span class="vertical_line"></span>
                 <li class="nav-media  py-2" role="presentation">
                     <a class="w-100 text-decoration-none w-100 media_link color_black" id="profile-tab"
-                       data-toggle="tab" href="#profile" role="tab"
-                       aria-controls="profile" aria-selected="false">
+                       data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile"
+                       aria-selected="false">
                         <?= Yii::t('main', 'video') ?></a>
                 </li>
             </ul>

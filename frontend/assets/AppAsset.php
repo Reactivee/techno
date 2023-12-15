@@ -24,9 +24,9 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'https://unpkg.com/aos@2.3.1/dist/aos.js',
-//        "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js",
 //        "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js",
-//        'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js',
+        'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js',
         'https://unpkg.com/swiper/swiper-bundle.min.js',
         'js/lightbox.min.js',
         'js/owl-carousel.js',

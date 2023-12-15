@@ -86,6 +86,7 @@ class PostsController extends Controller
                     $path = '/frontend/web/uploads/posts/' . $generateName . '.' . $img->extension;
                     $model->img = $path;
                 }
+
                 if ($model['oldAttributes']['img'] && !$img) {
                     $model->img = $model['oldAttributes']['img'];
                 }
