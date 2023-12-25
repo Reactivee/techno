@@ -70,7 +70,7 @@ use yii\helpers\Url;
                         <div class="col-md-4 mt-4 mt-md-4 p-0 p-md-3">
                             <div class="product_card">
 
-                                <div class="product_card_top d-flex justify-content-between align-items-end overflow-hidden">
+                                <div class="product_card_top d-flex justify-content-between align-items-end">
                                     <div class="product_title mb-3 col-md-8">
                                         <h4 class="font-weight-bold">
                                             <a class="title_product_filter"
