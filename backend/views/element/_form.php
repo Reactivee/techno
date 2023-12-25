@@ -70,6 +70,12 @@ $elements = \common\models\Element::findOne(['fat_element_id' => $model->id]);
         // other widget settings
     ]);
     ?>
+    <?=
+    $form->field($model, 'desc_uz')->widget(Summernote::class, [
+        'useKrajeePresets' => true,
+        // other widget settings
+    ]);
+    ?>
 
     <!--    --><?php //echo $form->field($model, 'desc_uz')->widget(CKEditor::className(), [
     //        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions(
