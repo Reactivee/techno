@@ -42,11 +42,12 @@ $this->title = "News";
         <!--        <div class="main_title  my-4">-->
         <!--            <span>новости</span>-->
         <!--        </div>-->
+        <div class="news_text_title my-4 text-center">
+            <h2 class="font-weight-bold">  <?= $news['title_' . Yii::$app->language] ?></h2>
+        </div>
         <div class="row align-items-center pb-5">
 
-            <div class="news_text_title my-4 text-center">
-                <h2 class="font-weight-bold">  <?= $news['title_' . Yii::$app->language] ?></h2>
-            </div>
+
 
             <div class="col-md-5">
                 <div class="news_block ">
@@ -55,7 +56,6 @@ $this->title = "News";
             </div>
             <div class="col-md-7 text-center mt-5">
                 <div class="news_text ">
-
                     <div class="news_text_btn mt-4">
                         <?= $news['text_' . Yii::$app->language] ?>
                     </div>
